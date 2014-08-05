@@ -1,0 +1,22 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+
+# autoload some commands
+# autoload -U compinit promptinit
+# compinit
+# promptinit
+
+# Set the prompt style
+# prompt fade blue
+
+# alias ls='ls --color=always'
