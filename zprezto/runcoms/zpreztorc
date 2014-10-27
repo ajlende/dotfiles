@@ -135,6 +135,7 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
 # Set syntax highlighting styles.
 zstyle ':prezto:module:syntax-highlighting' styles \
   'root' 'bg=red' \
+  'cursor' 'bg=white' \
   'rm -rf *' 'fg=white,bold,bg=red'
 
 #

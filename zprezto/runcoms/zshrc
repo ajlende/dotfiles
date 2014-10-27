@@ -10,13 +10,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-
-# autoload some commands
-# autoload -U compinit promptinit
-# compinit
-# promptinit
-
-# Set the prompt style
-# prompt fade blue
-
-# alias ls='ls --color=always'
+alias sudo="sudo -E"
+alias m14="cd ~/Sites/Alex/M14"
+alias m14-www="cd ~/Sites/Alex/M14/WWW && tmux attach \; new-window \"chromium localhost/M14/WWW && gulp\""

@@ -11,9 +11,6 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
-# Restore the previous wallpaper
-nitrogen --restore &
-
 # Load compton composite manager
 compton -b &
 
@@ -28,6 +25,10 @@ if [ -d ~/.Xresources.d ]; then
   done
   unset f
 fi
+
+# Restore the previous wallpaper
+# nitrogen --restore &
+/home/ajlende/Documents/GitHub/wp/wp change
 
 # MPD daemon start (if no other user instance exists)
 # [ ! -s ~/.config/mpd/pid ] && mpd
