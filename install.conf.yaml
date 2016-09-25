@@ -13,6 +13,8 @@
     ~/.config/mopidy: mopidy
     ~/.config/nvim: nvim
     ~/.config/zsh: zsh
+    ~/.gitconfig: git/gitconfig
+    ~/.gitignore: git/gitignore
 
 - shell:
     - 

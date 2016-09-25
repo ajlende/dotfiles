@@ -1,0 +1,33 @@
+[user]
+	email = ajlende@gmail.com
+	name = Alex Lende
+[core]
+	excludesfile = /home/ajlende/.gitignore
+[credential]
+	helper = cache
+[help]
+	autocorrect = 5
+[alias]
+	visual = !gitkracken
+	graph = log --graph --color --pretty=format:"%C(yellow)%H%C(green)%d%C(reset)%n%x20%cd%n%x20%cn%x20(%ce)%n%x20%s%n"
+	stat = status -sb
+	last = log -1 --stat
+	unstage = reset HEAD --
+	cached = diff --cached
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+	df = diff
+	dt = difftool
+	mg = merge
+	mt = mergetool
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
