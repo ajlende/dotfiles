@@ -31,4 +31,7 @@
     - 
       description: Installing Neovim
       command: bin/install-nvim
+    - 
+      description: Installing Atom
+      command: bin/install-atom
 

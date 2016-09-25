@@ -7,6 +7,7 @@
 COMMAND=$1
 ARCHLINUX_PROGRAM=$2
 MACOS_PROGRAM=${3:-$2}
+CASK=$4
 
 OS=$(uname -s)
 
@@ -15,7 +16,11 @@ case "$OS" in
   Darwin)
     PROGRAM=$MACOS_PROGRAM
     INSTALLER="brew"
-    INSTALL="brew install $PROGRAM"
+    if [[ $CASK == 'cask' ]]; then
+      INSTALL="brew cask install $PROGRAM"
+    else
+      INSTALL="brew install $PROGRAM"
+    fi
     ;;
 
   Linux)
