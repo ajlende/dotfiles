@@ -2,10 +2,18 @@
     link:
       create: true
       relink: true
+    shell:
+      stderr: true
+      stdin: true
 
-- clean: ['~']
+- clean: ['~', '~/.config']
 
 - link:
     ~/.atom: atom
     ~/.config/mopidy: mopidy
+    ~/.config/zsh: zsh
 
+- shell:
+    - 
+      description: Installing Z-shell and making it the default shell
+      command: bin/install-zsh
