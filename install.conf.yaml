@@ -15,6 +15,7 @@
     ~/.config/zsh: zsh
     ~/.gitconfig: git/gitconfig
     ~/.gitignore: git/gitignore
+    ~/.gitkraken: gitkraken
     ~/.zcompcache: zsh/zcompcache  
     ~/.zcompdump: zsh/zcompdump   
     ~/.zdirs: zsh/zdirs       
@@ -37,4 +38,7 @@
     - 
       description: Installing Atom
       command: bin/install-atom
+    - 
+      description: Installing GitKraken
+      command: bin/install-gitkraken
 

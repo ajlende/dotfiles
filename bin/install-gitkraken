@@ -1,0 +1,18 @@
+#!/bin/bash
+
+BASEDIR=$(dirname "${BASH_SOURCE[0]}")
+
+$BASEDIR/universal-install gitkraken gitkraken gitkraken cask
+
+if [[ $(uname -s) == 'Linux' ]]; then
+  INOTIFY_LIMIT=$(cat /proc/sys/fs/inotify/max_user_watches)
+  NEW_LIMIT=524288
+  if [[ $INOTIFY_LIMIT < $NEW_LIMIT ]]; then
+    echo "inotify watcher limit will be increased from $INOTIFY_LIMIT" \
+      "to $NEW_LIMIT"
+    echo "fs.inotify.max_user_watches=$NEW_LIMIT" |
+      sudo tee /etc/sysctl.d/40-max-user-watches.conf &&
+        sudo sysctl --system
+  fi
+fi
+

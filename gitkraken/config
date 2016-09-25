@@ -1,0 +1,31 @@
+{
+  "appId": "8dc4f82997005e6b7a178803cb358eed8e0f28da",
+  "registration": {
+    "email": "ajlende@gmail.com",
+    "name": "Alex Lende",
+    "date": "2016-08-18T20:42:49.449Z",
+    "EULA": {
+      "version": "1.5.0",
+      "status": "agree_verified"
+    },
+    "status": "activated"
+  },
+  "userId": "a31eb06e-4e8e-4fd4-bd78-465162bfb4ad",
+  "newUserSetup": {
+    "complete": true,
+    "askedAboutBugReporting": true
+  },
+  "tours": {
+    "versionLastSeen": "1.5.0",
+    "gitFlowRefPanelSeen": true,
+    "releaseNotesSeen": true,
+    "submoduleRefPanelSeen": true
+  },
+  "optIntoBugReporting": false,
+  "profileGuid": "d6e5a8ca26e14325a4275fc33b17e16f",
+  "lastUpgradeScriptRun": "v1.6.0",
+  "licensedFeatures": [],
+  "ui": {
+    "showToolbarLabels": false
+  }
+}
