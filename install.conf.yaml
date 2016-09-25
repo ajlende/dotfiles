@@ -26,6 +26,9 @@
       description: Installing Homebrew Cask if macOS
       command: bin/install-cask
     - 
+      description: Installing pacaur if Linux
+      command: bin/install-pacaur
+    - 
       description: Installing Z-shell and making it the default shell
       command: bin/install-zsh
     - 
