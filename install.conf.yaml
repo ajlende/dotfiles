@@ -23,6 +23,9 @@
 
 - shell:
     - 
+      description: Installing Homebrew Cask if macOS
+      command: bin/install-cask
+    - 
       description: Installing Z-shell and making it the default shell
       command: bin/install-zsh
     - 

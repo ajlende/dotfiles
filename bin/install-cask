@@ -1,0 +1,10 @@
+#!/bin/bash
+
+OS=$(uname -s)
+
+if [[ $OS == 'Darwin' ]]; then
+  brew install caskroom/cask/brew-cask
+else
+  echo "cask does not need to be installed on $OS"
+fi
+
