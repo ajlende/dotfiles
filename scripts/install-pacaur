@@ -2,8 +2,8 @@
 
 # Copied mostly from https://gist.github.com/rumpelsepp/d646750910be19332753
 
-if [[ $(uname -s) != 'Linux' || $(type pacaur > /dev/null 2>&1) -eq 0 ]]; then
-  echo "pacaur does not need to be installed on this system"
+# Check if pacaur is already installed
+if type pacaur > /dev/null 2>&1; then
   exit
 fi
 
@@ -38,3 +38,7 @@ makepkg --syncdeps --install --noconfirm
 cd "$START" || exit 1
 rm -rf "$BUILDROOT"
 
+if ! type pacaur > /dev/null 2>&1; then
+  echo "pacaur installation failed"
+  exit 1
+fi

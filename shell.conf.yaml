@@ -1,0 +1,11 @@
+- defaults:
+    shell:
+      stderr: true
+      stdin: true
+- shell:
+  -
+    description: Setting Z-shell as default shell
+    command: scripts/default-zsh
+  -
+    description: Raising watcher limit for GitKracken
+    command: scripts/raise-inotify-limit

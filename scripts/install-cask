@@ -1,0 +1,53 @@
+#!/bin/bash
+
+# Check if Xcode CLI is installed
+# Based off of https://gist.github.com/mokagio/b974620ee8dcf5c0671f
+# To check that try to print the SDK path
+xcode-select -p &> /dev/null
+if [ $? -ne 0 ]; then
+  echo "Xcode CLI tools not found. Installing them..."
+  touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress;
+  PROD=$(softwareupdate -l |
+    grep "\*.*Command Line" |
+    head -n 1 | awk -F"*" '{print $2}' |
+    sed -e 's/^ *//' |
+    tr -d '\n')
+  softwareupdate -i "$PROD" -v;
+
+  # Verify install succeeded
+  xcode-select -p &> /dev/null
+  if [ $? -ne 0 ]; then
+    echo "Xcode CLI installation failed"
+    exit 1
+  else
+    echo "Xcode CLI installation succeeded"
+  fi
+fi
+
+# Check if brew is installed
+if ! type brew > /dev/null 2>&1; then
+  echo "Homebrew not found. Installing..."
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+  # Verify install succeeded
+  if ! type brew > /dev/null 2>&1; then
+    echo "Homebrew installation failed"
+    exit 1
+  else
+    echo "Homebrew installation complete"
+  fi
+fi
+
+# Check if cask is installed
+if ! brew info cask &>/dev/null; then
+  echo "Cask (Homebrew Extension) not found. Installing..."
+  brew install caskroom/cask/brew-cask
+
+  # Verify install succeeded
+  if ! brew info cask &>/dev/null; then
+    echo "Cask (Homebrew Extension) installation failed"
+    exit 1
+  else
+    echo "Cask (Homebrew Extension) installation complete"
+  fi
+fi

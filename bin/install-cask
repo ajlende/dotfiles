@@ -1,9 +1,0 @@
-#!/bin/bash
-
-if [[ $(uname -s) != 'Darwin' ]]; then
-  echo "cask does not need to be installed on this system"
-  exit
-fi
-
-brew install caskroom/cask/brew-cask
-

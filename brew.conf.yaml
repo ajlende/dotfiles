@@ -1,0 +1,6 @@
+- brew:
+  - zsh
+  - neovim/neovim/neovim
+- cask:
+  - atom
+  - gitkracken

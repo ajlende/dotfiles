@@ -1,5 +1,0 @@
-#!/bin/bash
-
-BASEDIR=$(dirname "${BASH_SOURCE[0]}")
-
-$BASEDIR/universal-install nvim neovim neovim/neovim/neovim

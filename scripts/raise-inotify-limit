@@ -1,10 +1,11 @@
 #!/bin/bash
 
-BASEDIR=$(dirname "${BASH_SOURCE[0]}")
+# For Arch Linux
 
-$BASEDIR/universal-install gitkraken gitkraken gitkraken cask
+# GitKraken has some issues when watching for files to change, so we need to raise the limit of
+# watchers that are allowed on the system
 
-if [[ $(uname -s) == 'Linux' ]]; then
+if [[ $(uname -s) == "Linux" ]]; then
   INOTIFY_LIMIT=$(cat /proc/sys/fs/inotify/max_user_watches)
   NEW_LIMIT=524288
   if [[ $INOTIFY_LIMIT < $NEW_LIMIT ]]; then
@@ -15,4 +16,3 @@ if [[ $(uname -s) == 'Linux' ]]; then
         sudo sysctl --system
   fi
 fi
-
