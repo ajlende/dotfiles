@@ -1,0 +1,54 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "e6acfbef-ccb6-4fff-8f8b-2c8708ecaf47"
+    js:
+      end_with_comma: true
+      end_with_newline: true
+      indent_size: 2
+      jslint_happy: true
+      keep_array_indentation: true
+      keep_function_indentation: true
+      unescape_strings: true
+      wrap_line_length: 100
+  core:
+    autoHideMenuBar: true
+    projectHome: "/home/ajlende/Documents/GitHub"
+    themes: [
+      "one-dark-ui"
+      "monokai"
+    ]
+  editor:
+    invisibles: {}
+    preferredLineLength: 100
+    scrollPastEnd: true
+  "exception-reporting":
+    userId: "eb5fee57-051e-35da-7ab6-f507533a1284"
+  fonts:
+    fontFamily: "Hasklig"
+    preview: "The Quick brown fox { 0 !== \"O\" } 1Ili 0Oo"
+  "git-plus":
+    pullBeforePush: "pull"
+  "language-babel":
+    createMap: true
+  linter:
+    showErrorInline: false
+  minimap:
+    absoluteMode: true
+    adjustAbsoluteModeHeight: true
+    plugins:
+      "my-minimap-plugin": true
+      "my-minimap-pluginDecorationsZIndex": 0
+  "open-terminal-here":
+    command: "terminator"
+  pigments:
+    groupPaletteColors: "by file"
+    markerType: "dot"
+    mergeColorDuplicates: true
+    sortPaletteColors: "by color"
+  "webbox-color": {}
+  welcome:
+    showOnStartup: false
+".elm.source":
+  editor:
+    preferredLineLength: 100
