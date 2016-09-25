@@ -11,9 +11,14 @@
 - link:
     ~/.atom: atom
     ~/.config/mopidy: mopidy
+    ~/.config/nvim: nvim
     ~/.config/zsh: zsh
 
 - shell:
     - 
       description: Installing Z-shell and making it the default shell
       command: bin/install-zsh
+    - 
+      description: Installing Neovim
+      command: bin/install-nvim
+
