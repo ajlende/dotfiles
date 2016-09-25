@@ -7,4 +7,5 @@
 
 - link:
     ~/.atom: atom
+    ~/.config/mopidy: mopidy
 
