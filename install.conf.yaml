@@ -15,6 +15,11 @@
     ~/.config/zsh: zsh
     ~/.gitconfig: git/gitconfig
     ~/.gitignore: git/gitignore
+    ~/.zcompcache: zsh/zcompcache  
+    ~/.zcompdump: zsh/zcompdump   
+    ~/.zdirs: zsh/zdirs       
+    ~/.zsh_history: zsh/zsh_history  
+    ~/.zshrc: zsh/zshrc       
 
 - shell:
     - 

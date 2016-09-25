@@ -1,12 +1,8 @@
 #!/bin/bash
 
 BINDIR=$(dirname "${BASH_SOURCE[0]}")
-BASEDIR=$(dirname $BINDIR)
 
 $BINDIR/universal-install zsh
-
-echo "Initializing zsh configuration"
-$BASEDIR/zsh/init.sh
 
 if [[ $SHELL != "/bin/zsh" ]]; then
   echo "Changing shell from $SHELL to /bin/zsh"
