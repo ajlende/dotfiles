@@ -13,8 +13,9 @@
     ~/.gitignore: git/gitignore
     ~/.gitkraken: gitkraken
     ~/.ncmpcpp: ncmpcpp
+    ~/.tmux.conf: tmux/tmux.conf
+    ~/.zdirs: zsh/zdirs
     ~/.zcompcache: zsh/zcompcache
     ~/.zcompdump: zsh/zcompdump
-    ~/.zdirs: zsh/zdirs
     ~/.zsh_history: zsh/zsh_history
     ~/.zshrc: zsh/zshrc

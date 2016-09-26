@@ -1,5 +1,6 @@
 - pacaur:
-  - zsh
-  - neovim
   - atom-editor-bin
+  - tmux
   - gitkraken
+  - neovim
+  - zsh
