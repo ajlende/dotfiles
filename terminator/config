@@ -1,0 +1,62 @@
+[global_config]
+  enabled_plugins = CustomCommandsMenu, InactivityWatch, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  title_hide_sizetext = True
+  window_state = maximise
+[keybindings]
+  help = <Primary><Shift>F1
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#121212"
+    background_darkness = 0.91
+    background_image = None
+    background_type = transparent
+    copy_on_selection = True
+    cursor_color = "#bbbbbb"
+    font = Monospace 10
+    foreground_color = "#bbbbbb"
+    palette = "#121212:#fa2573:#98e123:#dfd460:#1080d0:#8700ff:#43a8d0:#bbbbbb:#555555:#f6669d:#b1e05f:#fff26d:#00afff:#af87ff:#51ceff:#ffffff"
+    scrollback_infinite = True
+    visible_bell = True
+  [[Molokai]]
+    background_color = "#121212"
+    background_darkness = 0.91
+    background_image = None
+    background_type = transparent
+    copy_on_selection = True
+    cursor_color = "#bbbbbb"
+    font = Source Code Pro 10
+    foreground_color = "#bbbbbb"
+    palette = "#121212:#fa2573:#98e123:#dfd460:#1080d0:#8700ff:#43a8d0:#bbbbbb:#555555:#f6669d:#b1e05f:#fff26d:#00afff:#af87ff:#51ceff:#ffffff"
+    scrollback_infinite = True
+    use_system_font = False
+    visible_bell = True
+  [[Original]]
+    background_darkness = 0.54
+    background_image = None
+    background_type = transparent
+    copy_on_selection = True
+    font = DejaVu Sans Mono 10
+    palette = "#2e3436:#cc00b8:#069a0d:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef29c8:#35e234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
+    use_system_font = False
+  [[TV]]
+    background_color = "#121212"
+    background_darkness = 0.91
+    background_image = None
+    background_type = transparent
+    copy_on_selection = True
+    cursor_color = "#bbbbbb"
+    font = Source Code Pro 16
+    foreground_color = "#bbbbbb"
+    palette = "#121212:#fa2573:#98e123:#dfd460:#1080d0:#8700ff:#43a8d0:#bbbbbb:#555555:#f6669d:#b1e05f:#fff26d:#00afff:#af87ff:#51ceff:#ffffff"
+    scrollback_infinite = True
+    use_system_font = False
+    visible_bell = True
