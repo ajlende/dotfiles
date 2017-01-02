@@ -51,6 +51,9 @@ Plug 'Raimondi/delimitMate'           " Automatic closing of quotes, parenthesis
 """""""""""""""""""""""""""""
 " Language-Specific Plugins "
 """""""""""""""""""""""""""""
+" Elm
+Plug 'ElmCast/elm-vim', { 'for': 'elm' }                               " Elm Support
+
 " Javascript
 Plug 'othree/yajs.vim', { 'for': 'javascript' }                        " JavaScript support
 Plug 'othree/es.next.syntax.vim', { 'for': 'javascript' }              " ES2015 and beyond support

@@ -1,6 +1,11 @@
+- pacman:
+  - tmux
+  - neovim
+  - python
+  - python2
+  - python-pip
+  - python2-pip
+  - zsh
 - pacaur:
   - atom-editor-bin
-  - tmux
   - gitkraken
-  - neovim
-  - zsh

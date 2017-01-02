@@ -1,5 +1,7 @@
 "*":
   "atom-beautify":
+    elm:
+      beautify_on_save: true
     general:
       _analyticsUserId: "e6acfbef-ccb6-4fff-8f8b-2c8708ecaf47"
     js:
@@ -13,6 +15,9 @@
       wrap_line_length: 100
   core:
     autoHideMenuBar: true
+    disabledPackages: [
+      "vim-mode"
+    ]
     projectHome: "/home/ajlende/Documents/GitHub"
     themes: [
       "one-dark-ui"
@@ -22,8 +27,6 @@
     invisibles: {}
     preferredLineLength: 100
     scrollPastEnd: true
-  "exception-reporting":
-    userId: "eb5fee57-051e-35da-7ab6-f507533a1284"
   fonts:
     fontFamily: "Hasklig"
     preview: "The Quick brown fox { 0 !== \"O\" } 1Ili 0Oo"
@@ -50,5 +53,17 @@
   welcome:
     showOnStartup: false
 ".elm.source":
+  "auto-detect-indentation":
+    indentationTypes: [
+      {
+        name: "elm-format"
+        softTabs: true
+        tabLength: 4
+      }
+    ]
+  elmjutsu:
+    cacheDirectory: "/tmp/elmjutsu282524iml1RfVRgV3"
+  "exception-reporting":
+    userId: "eb5fee57-051e-35da-7ab6-f507533a1284"
   editor:
-    preferredLineLength: 100
+    preferredLineLength: 80

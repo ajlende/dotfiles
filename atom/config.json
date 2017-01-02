@@ -1,0 +1,66 @@
+{
+  "*": {
+    "atom-beautify": {
+      "elm": {
+        "beautify_on_save": true
+      },
+      "general": {
+        "_analyticsUserId": "b13cc22d-c1c5-4436-8e1c-feb6185406bb"
+      },
+      "html": {
+        "end_with_newline": true,
+        "indent_inner_html": true,
+        "indent_size": 2,
+        "wrap_attributes_indent_size": 2,
+        "wrap_line_length": 0
+      },
+      "markdown": {
+        "beautify_on_save": true
+      }
+    },
+    "core": {
+      "autoHideMenuBar": true,
+      "disabledPackages": [
+        "vim-mode"
+      ],
+      "telemetryConsent": "no",
+      "themes": [
+        "one-dark-ui",
+        "monokai"
+      ]
+    },
+    "editor": {},
+    "elmjutsu": {
+      "autocompleteEnabled": true,
+      "autocompleteSnippetsEnabled": true,
+      "cacheDirectory": "/tmp/elmjutsu30427k5UFMsxU8OoZ",
+      "hyperclickEnabled": true
+    },
+    "exception-reporting": {
+      "userId": "35cbf57d-c418-5431-b358-b7adc1d9cfca"
+    },
+    "language-elm": {
+      "autocompleteEnabled": false
+    },
+    "minimap": {
+      "absoluteMode": true
+    },
+    "welcome": {
+      "showOnStartup": false
+    }
+  },
+  ".elm.source": {
+    "auto-detect-indentation": {
+      "indentationTypes": [
+        {
+          "name": "elm-format",
+          "softTabs": true,
+          "tabLength": 4
+        }
+      ]
+    },
+    "editor": {
+      "preferredLineLength": 80
+    }
+  }
+}

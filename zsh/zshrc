@@ -1,8 +1,7 @@
 # Created for 5.2
-alias pacman=pacaur
-alias vim=nvim
-alias vi=nvim
-alias ls='ls --color=auto'
+alias pacman="pacaur"
+alias em="emacs -nw"
+alias ls="ls --color=auto"
 
 alias npm-clean="rm -rf ./node_modules && npm install"
 alias github="cd $HOME/Documents/GitHub"
@@ -28,5 +27,7 @@ XDG_DATA_HOME="$HOME/.local/share"
 XDG_RUNTIME_DIR="/tmp"
 XDG_DATA_DIRS="/usr/local/share:/usr/share"
 XDG_CONFIG_DIRS="/etc/xdg"
+
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 
 source $HOME/.config/zsh/git-flow-completion.zsh

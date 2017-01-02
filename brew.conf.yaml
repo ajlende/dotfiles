@@ -1,7 +1,10 @@
 - brew:
   - neovim/neovim/neovim
+  - python
   - tmux
   - zsh
+  - vim --with-python --with-ruby --with-perl
+  - macvim --with-override-system-vim
 - cask:
   - atom
   - gitkracken
