@@ -7,3 +7,6 @@
 [submodule "dotbot-brew"]
 	path = dotbot-brew
 	url = https://github.com/d12frosted/dotbot-brew.git
+[submodule "zsh/zsh-nvm"]
+	path = zsh/zsh-nvm
+	url = https://github.com/lukechilds/zsh-nvm

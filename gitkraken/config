@@ -8,24 +8,46 @@
       "version": "1.5.0",
       "status": "agree_verified"
     },
-    "status": "activated"
+    "status": "activated",
+    "trialStatus": "ignored",
+    "loginType": "github",
+    "providerToken": {
+      "access_token": "065ef74ab5bc6391e8f6165d35a08d292e3b6e45",
+      "token_type": "bearer",
+      "scope": "admin:public_key,repo,user:email",
+      "expires_at": null
+    }
   },
   "userId": "a31eb06e-4e8e-4fd4-bd78-465162bfb4ad",
   "newUserSetup": {
     "complete": true,
     "askedAboutBugReporting": true
   },
-  "tours": {
-    "versionLastSeen": "1.5.0",
-    "gitFlowRefPanelSeen": true,
-    "releaseNotesSeen": true,
-    "submoduleRefPanelSeen": true
-  },
   "optIntoBugReporting": false,
   "profileGuid": "d6e5a8ca26e14325a4275fc33b17e16f",
-  "lastUpgradeScriptRun": "v1.6.0",
+  "lastUpgradeScriptRun": "v3.6.0",
   "licensedFeatures": [],
   "ui": {
-    "showToolbarLabels": false
-  }
+    "showToolbarLabels": false,
+    "spellcheck": true
+  },
+  "windowSettings": {
+    "x": 1857,
+    "y": 171,
+    "width": 1717,
+    "height": 909,
+    "fullScreen": false,
+    "maximized": true
+  },
+  "hasSeenNewUserOnboarding": true,
+  "userFeatures": [
+    {
+      "betaFeaturesEnabled": false,
+      "name": "gitkraken"
+    },
+    {
+      "betaFeaturesEnabled": false,
+      "name": "glo"
+    }
+  ]
 }
