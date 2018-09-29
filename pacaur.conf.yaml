@@ -1,11 +1,12 @@
 - pacman:
+  - sdfasldifuasdcalk
   - tmux
-  - neovim
   - python
   - python2
   - python-pip
   - python2-pip
+  - firefox
   - zsh
-- pacaur:
-  - atom-editor-bin
+- pikaur:
   - gitkraken
+  - akira-git

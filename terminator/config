@@ -1,9 +1,23 @@
 [global_config]
-  enabled_plugins = CustomCommandsMenu, InactivityWatch, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
-  title_hide_sizetext = True
-  window_state = maximise
+  title_inactive_bg_color = "#4C566A"
+  title_inactive_fg_color = "#D8DEE9"
+  title_receive_bg_color = "#8FBCBB"
+  title_receive_fg_color = "#2E3440"
+  title_transmit_bg_color = "#88C0D0"
+  title_transmit_fg_color = "#2E3440"
 [keybindings]
-  help = <Primary><Shift>F1
+  split_horiz = <Primary><Shift>underscore
+  split_vert = <Primary><Shift>bar
+  switch_to_tab_1 = <Primary><Shift>exclam
+  switch_to_tab_10 = <Primary><Shift>parenright
+  switch_to_tab_2 = <Primary><Shift>at
+  switch_to_tab_3 = <Primary><Shift>numbersign
+  switch_to_tab_4 = <Primary><Shift>dollar
+  switch_to_tab_5 = <Primary><Shift>percent
+  switch_to_tab_6 = <Primary><Shift>asciicircum
+  switch_to_tab_7 = <Primary><Shift>ampersand
+  switch_to_tab_8 = <Primary><Shift>asterisk
+  switch_to_tab_9 = <Primary><Shift>parenleft
 [layouts]
   [[default]]
     [[[child1]]]
@@ -15,48 +29,13 @@
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#121212"
-    background_darkness = 0.91
-    background_image = None
-    background_type = transparent
-    copy_on_selection = True
-    cursor_color = "#bbbbbb"
-    font = Monospace 10
-    foreground_color = "#bbbbbb"
-    palette = "#121212:#fa2573:#98e123:#dfd460:#1080d0:#8700ff:#43a8d0:#bbbbbb:#555555:#f6669d:#b1e05f:#fff26d:#00afff:#af87ff:#51ceff:#ffffff"
+    background_color = "#2e3440"
+    cursor_color = "#D8DEE9"
+    foreground_color = "#d8dee9"
+    palette = "#3b4252:#bf616a:#a3be8c:#ebcb8b:#81a1c1:#b48ead:#88c0d0:#e5e9f0:#4c566a:#bf616a:#a3be8c:#ebcb8b:#81a1c1:#b48ead:#8fbcbb:#eceff4"
     scrollback_infinite = True
-    visible_bell = True
-  [[Molokai]]
-    background_color = "#121212"
-    background_darkness = 0.91
-    background_image = None
-    background_type = transparent
-    copy_on_selection = True
-    cursor_color = "#bbbbbb"
-    font = Source Code Pro 10
-    foreground_color = "#bbbbbb"
-    palette = "#121212:#fa2573:#98e123:#dfd460:#1080d0:#8700ff:#43a8d0:#bbbbbb:#555555:#f6669d:#b1e05f:#fff26d:#00afff:#af87ff:#51ceff:#ffffff"
-    scrollback_infinite = True
-    use_system_font = False
-    visible_bell = True
-  [[Original]]
-    background_darkness = 0.54
-    background_image = None
-    background_type = transparent
-    copy_on_selection = True
-    font = DejaVu Sans Mono 10
-    palette = "#2e3436:#cc00b8:#069a0d:#c4a000:#3465a4:#75507b:#06989a:#d3d7cf:#555753:#ef29c8:#35e234:#fce94f:#729fcf:#ad7fa8:#34e2e2:#eeeeec"
-    use_system_font = False
-  [[TV]]
-    background_color = "#121212"
-    background_darkness = 0.91
-    background_image = None
-    background_type = transparent
-    copy_on_selection = True
-    cursor_color = "#bbbbbb"
-    font = Source Code Pro 16
-    foreground_color = "#bbbbbb"
-    palette = "#121212:#fa2573:#98e123:#dfd460:#1080d0:#8700ff:#43a8d0:#bbbbbb:#555555:#f6669d:#b1e05f:#fff26d:#00afff:#af87ff:#51ceff:#ffffff"
-    scrollback_infinite = True
-    use_system_font = False
-    visible_bell = True
+  [[nord]]
+    background_color = "#2e3440"
+    cursor_color = "#D8DEE9"
+    foreground_color = "#d8dee9"
+    palette = "#3b4252:#bf616a:#a3be8c:#ebcb8b:#81a1c1:#b48ead:#88c0d0:#e5e9f0:#4c566a:#bf616a:#a3be8c:#ebcb8b:#81a1c1:#b48ead:#8fbcbb:#eceff4"

@@ -1,0 +1,6 @@
+[submodule "pikaur"]
+	path = pikaur
+	url = https://github.com/actionless/pikaur.git
+[submodule "pikaur-git"]
+	path = pikaur-git
+	url = https://github.com/actionless/pikaur.git

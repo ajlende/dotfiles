@@ -1,6 +1,7 @@
 # Created for 5.2
-alias pacman="pacaur"
-alias em="emacs -nw"
+alias pacman="pikaur"
+alias spacemacs="emacs"
+alias emacs="emacs -nw"
 alias ls="ls --color=auto"
 
 alias npm-clean="rm -rf ./node_modules && npm install"
@@ -8,26 +9,68 @@ alias github="cd $HOME/Documents/GitHub"
 
 alias SimpleHTTPServer="python2.7 -m SimpleHTTPServer 8000"
 
+alias open=xdg-open
+
 quiet() {
 	$* > /dev/null 2>&1
 }
 
-export XDG_DESKTOP_DIR="$HOME/Desktop"
-export XDG_DOWNLOAD_DIR="$HOME/Downloads"
-export XDG_TEMPLATES_DIR="$HOME/Templates"
-export XDG_PUBLICSHARE_DIR="$HOME/Public"
-export XDG_DOCUMENTS_DIR="$HOME/Documents"
-export XDG_MUSIC_DIR="$HOME/Music"
-export XDG_PICTURES_DIR="$HOME/Pictures"
-export XDG_VIDEOS_DIR="$HOME/Videos"
-
-XDG_CONFIG_HOME="$HOME/.config"
-XDG_CACHE_HOME="$HOME/.cache"
-XDG_DATA_HOME="$HOME/.local/share"
-XDG_RUNTIME_DIR="/tmp"
-XDG_DATA_DIRS="/usr/local/share:/usr/share"
-XDG_CONFIG_DIRS="/etc/xdg"
-
-PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+# export XDG_DESKTOP_DIR="$HOME/Desktop"
+# export XDG_DOWNLOAD_DIR="$HOME/Downloads"
+# export XDG_TEMPLATES_DIR="$HOME/Templates"
+# export XDG_PUBLICSHARE_DIR="$HOME/Public"
+# export XDG_DOCUMENTS_DIR="$HOME/Documents"
+# export XDG_MUSIC_DIR="$HOME/Music"
+# export XDG_PICTURES_DIR="$HOME/Pictures"
+# export XDG_VIDEOS_DIR="$HOME/Videos"
+# 
+# XDG_CONFIG_HOME="$HOME/.config"
+# XDG_CACHE_HOME="$HOME/.cache"
+# XDG_DATA_HOME="$HOME/.local/share"
+# XDG_RUNTIME_DIR="/tmp"
+# XDG_DATA_DIRS="/usr/local/share:/usr/share"
+# XDG_CONFIG_DIRS="/etc/xdg"
 
 source $HOME/.config/zsh/git-flow-completion.zsh
+fpath=($HOME/.config/zsh/zsh-completions/src $fpath)
+
+eval $(dircolors ~/.config/dircolors/dircolors.nms)
+
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    ssh-agent > /tmp/ssh-agent-thing
+fi
+if [[ "$SSH_AGENT_PID" == "" ]]; then
+    eval "$(</tmp/ssh-agent-thing)" > /dev/null
+fi
+
+# [ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
+# source /usr/share/nvm/nvm.sh
+# source /usr/share/nvm/install-nvm-exec
+
+source $HOME/.config/zsh/zsh-nvm/zsh-nvm.plugin.zsh
+# source /usr/share/nvm/bash_completion
+
+#
+# Haskell Stuff
+#
+
+# unregister broken GHC packages. Run this a few times to resolve dependency rot in installed packages.
+# ghc-pkg-clean -f cabal/dev/packages*.conf also works.
+function ghc-pkg-clean() {
+    for p in `ghc-pkg check $* 2>&1  | grep problems | awk '{print $6}' | sed -e 's/:$//'`
+    do
+        echo unregistering $p; ghc-pkg $* unregister $p
+    done
+}
+
+# remove all installed GHC/cabal packages, leaving ~/.cabal binaries and docs in place.
+# When all else fails, use this to get out of dependency hell and start over.
+function ghc-pkg-reset() {
+    read -p 'erasing all your user ghc and cabal packages - are you sure (y/n) ? ' ans
+    test x$ans == xy && ( \
+        echo 'erasing directories under ~/.ghc'; rm -rf `find ~/.ghc -maxdepth 1 -type d`; \
+        echo 'erasing ~/.cabal/lib'; rm -rf ~/.cabal/lib; \
+        # echo 'erasing ~/.cabal/packages'; rm -rf ~/.cabal/packages; \
+        # echo 'erasing ~/.cabal/share'; rm -rf ~/.cabal/share; \
+        )
+}

@@ -1,0 +1,372 @@
+<html>
+
+<head>
+    <title>Cysboard</title>
+    <meta name="position_x" content="0">
+    <meta name="position_y" content="0">
+    <meta name="width" content="1920">
+    <meta name="height" content="1048">
+    <meta name="time" content="1">
+    <style>
+        html {
+            background: transparent;
+        }
+
+        .system-information {
+            bottom: 50px;
+            left: 50px;
+            font-weight: 400;
+            /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+            font-family: Montserrat, sans-serif;
+            position: absolute;
+        }
+
+        .ram:not(:first-child) {
+            margin-top: 16px;
+        }
+
+        h2 {
+            color: #fff;
+            padding: 0;
+            margin: 20px 0 -10px;
+            font-weight: 300;
+        }
+
+        .label {
+            font-size: 12px;
+            color: #fff;
+            margin-left: 1px;
+            font-style: italic;
+        }
+
+        .label .total {
+            display: inline-block;
+            margin-left: 8px;
+            font-weight: 800;
+        }
+
+        .wrapper {
+            height: 36px;
+            font-size: 29px;
+            width: 367px;
+            margin: 4px 0 0 0;
+            max-width: 367px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 3px;
+            background: rgba(#fff, 0.9);
+        }
+
+        .bar {
+            position: absolute;
+            top: 0;
+            bottom: 0px;
+        }
+
+        .bar.used {
+            border-radius: 3px 0 0 3px;
+            background: rgba(#d7051d, 0.1);
+            border-bottom: 1px solid #d7051d;
+        }
+
+        .bar.free {
+            right: 0;
+            border-radius: 0 3px 3px 0;
+            background: rgba(#525252, 0.05);
+            border-bottom: 1px solid #525252;
+        }
+
+        .stats {
+            display: inline-block;
+            font-size: 0.5em;
+            text-overflow: ellipsis;
+            vertical-align: middle;
+            position: relative;
+            bottom: -50%;
+        }
+
+        .stats .small {
+            font-size: 0.8em;
+            margin-left: 2px;
+        }
+
+        .stats .free,
+        .stats .used {
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+
+        .stats .free {
+            margin-left: 12px;
+            color: #525252;
+        }
+
+        .stats .used {
+            color: #d7051d;
+            margin-left: 6px;
+            font-size: 0.9em;
+        }
+
+        .needle {
+            width: 0;
+            border-left: 1px dashed rgba(#d7051d, 0.2);
+            position: absolute;
+            top: 0;
+            bottom: -2px;
+        }
+
+        .needle span {
+            display: block;
+            position: relative;
+            color: #d7051d;
+            text-align: center;
+            font-size: 0.8em;
+            line-height: 0;
+            left: -0.25em;
+        }
+
+        .clock-wrapper {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 250px;
+            height: 250px;
+            padding: 5px;
+            background-color: #f7f7f7 #f7f7f7 #e3e3e3 #e3e3e3;
+            border-radius: 50%;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, .15), 0 2px 2px rgba(0, 0, 0, .2);
+
+        }
+
+        .clock-base {
+            width: 250px;
+            height: 250px;
+            background-color: #ebebeb;
+            border-radius: 50%;
+            box-shadow: 0 0 5px #ebebeb;
+        }
+
+        .click-indicator {
+            position: absolute;
+            z-index: 1;
+            top: 15px;
+            left: 15px;
+            width: 230px;
+            height: 230px;
+        }
+
+        .click-indicator div {
+            position: absolute;
+            width: 2px;
+            height: 4px;
+            margin: 113px 114px;
+            background-color: #dddddd;
+        }
+
+        .click-indicator .tick01 {
+            transform: rotate(30deg) translate(0 -113px);
+        }
+
+        .click-indicator .tick02 {
+            transform: rotate(60deg) translate(0 -113px);
+        }
+
+        .click-indicator .tick03 {
+            transform: rotate(90deg) translate(0 -113px);
+            background-color: #aaaaaa;
+        }
+
+        .click-indicator .tick04 {
+            transform: rotate(120deg) translate(0 -113px);
+        }
+
+        .click-indicator .tick05 {
+            transform: rotate(150deg) translate(0 -113px);
+        }
+
+        .click-indicator .tick06 {
+            transform: rotate(180deg) translate(0 -113px);
+            background-color: #aaaaaa;
+        }
+
+        .click-indicator .tick07 {
+            transform: rotate(210deg) translate(0 -113px);
+        }
+
+        .click-indicator .tick08 {
+            transform: rotate(240deg) translate(0 -113px);
+        }
+
+        .click-indicator .tick09 {
+            transform: rotate(270deg) translate(0 -113px);
+            background-color: #aaaaaa;
+        }
+
+        .click-indicator .tick10 {
+            transform: rotate(300deg) translate(0 -113px);
+        }
+
+        .click-indicator .tick11 {
+            transform: rotate(330deg) translate(0 -113px);
+        }
+
+        .click-indicator .tick12 {
+            transform: rotate(360deg) translate(0 -113px);
+            background-color: #d7051d;
+        }
+
+        .clock-hour {
+            position: absolute;
+            z-index: 2;
+            top: 80px;
+            left: 128px;
+            width: 4px;
+            height: 65px;
+            background-color: #555555;
+            border-radius: 2px;
+            box-shadow: 0 0 2px rgba(0, 0, 0, .2);
+            transform-origin: 2px 50px;
+        }
+
+        .clock-minute {
+            position: absolute;
+            z-index: 3;
+            top: 60px;
+            left: 128px;
+            width: 4px;
+            height: 85px;
+            background-color: #555555;
+            border-radius: 2px;
+            box-shadow: 0 0 2px rgba(0, 0, 0, .2);
+            transform-origin: 2px 70px;
+        }
+
+        .clock-second {
+            position: absolute;
+            z-index: 4;
+            top: 20px;
+            left: 129px;
+            width: 2px;
+            height: 130px;
+            background-color: #d7051d;
+            box-shadow: 0 0 2px rgba(0, 0, 0, .2);
+            transform-origin: 1px 110px;
+        }
+
+        .clock-second span {
+            display: block;
+            position: absolute;
+            left: -5px;
+            bottom: 14px;
+            width: 8px;
+            height: 8px;
+            background-color: #d7051d;
+            border: solid 2px #d7051d;
+            border-radius: 50%;
+            box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+        }
+
+        .clock-center {
+            position: absolute;
+            z-index: 1;
+            width: 150px;
+            height: 150px;
+            top: 55px;
+            left: 55px;
+            background-color: #e3e3e3 #e3e3e3 #f7f7f7 #f7f7f7;
+            border-radius: 50%;
+            box-shadow: inset 0 -1px 0 #fafafa, inset 0 1px 0 #e3e3e3;
+        }
+
+        .clock-center span {
+            display: block;
+            position: absolute;
+            top: 65px;
+            left: 65px;
+            width: 20px;
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clock-wrapper">
+        <div class="clock-base">
+            <div class="click-indicator">
+                <div class="tick01"></div>
+                <div class="tick02"></div>
+                <div class="tick03"></div>
+                <div class="tick04"></div>
+                <div class="tick05"></div>
+                <div class="tick06"></div>
+                <div class="tick07"></div>
+                <div class="tick08"></div>
+                <div class="tick09"></div>
+                <div class="tick10"></div>
+                <div class="tick11"></div>
+                <div class="tick12"></div>
+            </div>
+            <div class="clock-hour"></div>
+            <div class="clock-minute"></div>
+            <div class="clock-second"><span></span></div>
+            <div class="clock-center"><span></span></div>
+        </div>
+    </div>
+    <div class="system-information">
+        <h2 id="test">Memory</h2>
+        <div class='ram'>
+            <div class='label'>RAM
+                <span class='total' id="mem_total" mul="GB"></span> GB
+            </div>
+            <div class='wrapper'>
+                <div class='bar used'></div>
+                <div class='bar free'></div>
+
+                <div class='stats'>
+                    <div class='free'>
+                        <span id="mem_free" mul="MB"></span> MB
+                        <span class="small">free</span>
+                    </div>
+                    <div class='used'>
+                        <span id="mem_used" mul="MB"></span> MB
+                        <span class="small">used</span>
+                    </div>
+                </div>
+                <div class='needle'><span>▼</span></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/tiscript">
+            function clock() { 
+                var t = new Date(),
+                    s = t.second * 6,
+                    m = t.minute * 6,
+                    h = t.hour * 30;
+                $(.clock-hour).style#transform = "rotate(" + h + "deg)";
+                $(.clock-minute).style#transform = "rotate(" + m + "deg)";
+                $(.clock-second).style#transform = "rotate(" + s + "deg)";
+              }
+
+              function ram() {
+                var used = $(#mem_used).text.toFloat();
+                var free = $(#mem_free).text.toFloat();
+                var total = $(#mem_total).text.toFloat() * 988.75;
+                $(.used).style#width = (100 * used / total) + "%";
+                $(.free).style#width = (100 * free / total) + "%";
+                $(.needle).style#left = (100 * used / total) + "%";
+              }
+              
+              function update() {
+                clock();
+                ram();
+                return true;
+              }
+
+              self.timer(1000, update);
+    </script>
+</body>
+
+</html>

@@ -3,7 +3,7 @@ filetype off
 set mouse=a
 
 
-" vim-plug (https://github.com/junegunn/vim-plug) settings 
+" vim-plug (https://github.com/junegunn/vim-plug) settings
 " Automatically install vim-plug and run PlugInstall if vim-plug not found
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
@@ -22,12 +22,17 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sleuth'
 Plug 'scrooloose/nerdtree'
 
+Plug 'ajlende/nms.vim'
+
 call plug#end()
 
 
 " Colors/Styles
 set t_Co=256
 set background=dark
+if !has('gui_running')
+  let g:nms_background=0
+  let g:nms_cterm_bg="00"
+endif
 syntax on
 colorscheme nms
-let g:nms_background=1
