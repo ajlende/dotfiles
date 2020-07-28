@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+	<menu id="root-menu" label="Openbox 3">
+		<menu execute="cat /var/cache/xdg-menu/openbox/menu.xml" id="applications" label="Apps"/>
+		<item label="Run...">
+			<action name="Execute">
+				<execute>rofi -combi-modi window,drun -show combi -modi combi</execute>
+			</action>
+		</item>
+		<separator/>
+		<menu id="root-menu-4367" label="Config">
+			<item label="Screenshot">
+				<action name="Execute">
+					<execute>maim -d 3 ~/Desktop/screenshot_$(date +%s).png</execute>
+				</action>
+			</item>
+			<item label="Openbox Menu Settings">
+				<action name="Execute">
+					<execute>obmenu</execute>
+				</action>
+			</item>
+			<item label="Reconfigure Openbox">
+				<action name="Reconfigure"/>
+			</item>
+		</menu>
+		<item label="Log Out">
+			<action name="Exit">
+				<prompt>yes</prompt>
+			</action>
+		</item>
+	</menu>
+</openbox_menu>

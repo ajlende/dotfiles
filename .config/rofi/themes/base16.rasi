@@ -1,0 +1,149 @@
+// This file gets auto-generated with the command pybase16 inject -s SCHEME ~/.config/rofi/themes/base16.rasi
+
+// %%base16_template: rofi-sidebar##default %%
+/**
+ * Base16 Ayu Dark ROFI Sidebar theme
+ * User: Alex Lende (https://ajlende.com)
+ */
+ 
+configuration {
+	display-combi: "Open";
+	display-drun: "Activate";
+	display-run: "Execute";
+	display-window: "Window";
+	display-calc: "Calculator";
+	display-keys: "Hotkeys";
+	display-ssh: "SSH";
+	show-icons: true;
+	sidebar-mode: true;
+}
+
+* {
+	base00: #0F1419;
+	base01: #090D10;
+	base02: #475259;
+	base03: #5C6773;
+	base04: #F29718;
+	base05: #BFBAB0;
+	base06: #CCC9C2;
+	base07: #FAFAFA;
+	base08: #F07178;
+	base09: #FFEE99;
+	base0A: #E6B673;
+	base0B: #C2D94C;
+	base0C: #95E6CB;
+	base0D: #39BAE6;
+	base0E: #FF7733;
+	base0F: #F29668;
+
+	background-color: @base00;
+    ui-color: @base01;
+    text-color: @base05;
+    accent-color: @base04;
+}
+
+#window {
+	location: west;
+	anchor: west;
+	height: 100%;
+	width: 30em;
+	orientation: horizontal;
+	children: [mainbox];
+}
+
+#mainbox {
+	spacing: 0.8em;
+	children: [ entry, listview, sidebar ];
+}
+
+#inputbar {
+	padding: 5px;
+	spacing: 5px;
+}
+
+#listview {
+	spacing: 0.5em;
+	dynamic: false;
+	cycle: true;
+}
+
+#element {
+	padding: 10px;
+}
+
+#entry {
+	expand: false;
+	text-color: @text-color;
+	vertical-align: 1;
+    padding: 5px;
+    margin: 0 0 0 1em;
+}
+
+
+#button {
+	padding: 5px 2px;
+}
+
+#button selected {
+	background-color: @accent-color;
+	text-color: @background-color;
+}
+
+
+#element normal.normal {
+	background-color: @background-color;
+	text-color: @text-color;
+}
+
+#element alternate.normal {
+	background-color: @background-color;
+	text-color: @text-color;
+}
+
+#element selected.normal {
+	background-color: @ui-color;
+	text-color: @text-color;
+	border: 0 5px solid 0 0;
+	border-color: @accent-color;
+}
+
+
+#element normal.active {
+	background-color: @ui-color;
+	text-color: @accent-color;
+}
+
+#element alternate.active {
+	background-color: @ui-color;
+	text-color: @accent-color;
+}
+
+#element selected.active {
+	background-color: @ui-color;
+	text-color: @accent-color;
+	border: 0 5px solid 0 0;
+	border-color: @accent-color;
+}
+
+
+#element normal.urgent {
+	background-color: @base08;
+	text-color: @background-color;
+}
+
+#element alternate.urgent {
+	background-color: @base08;
+	text-color: @background-color;
+}
+
+#element selected.urgent {
+	background-color: @ui-color;
+	text-color: @base08;
+	border: 0 5px solid 0 0;
+	border-color: @accent-color;
+}
+// %%base16_template_end%%
+
+#window {
+	x-offset: 40px;
+}

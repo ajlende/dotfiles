@@ -1,0 +1,1066 @@
+<!DOCTYPE Theme PUBLIC "-//VideoLAN//DTD VLC Skins V2.0//EN" "skin.dtd">
+<Theme version="2.0">
+	<ThemeInfo name="MetroX v3.0.0" author="Maverick07x" email="" webpage="http://maverick07x.deviantart.com/"/>
+
+	<!-- Created using the VLC Skin Editor 0.8.6.dev (http://www.videolan.org/vlc/skineditor.html)-->
+
+	<Font id="zegoeuil_14" file="files/zegoeuilx.ttf" size="14"/>
+	<Font id="zegoeuil_13" file="files/zegoeuilx.ttf" size="13"/>
+	<Font id="segoeui_16" file="files/segoeui.ttf" size="16"/>
+	<Font id="segoeui_17" file="files/segoeui.ttf" size="17"/>
+	<Font id="segoeuil_title" file="files/zegoeuilx.ttf" size="16"/>
+	<Bitmap id="img_blank_all" file="files/blank_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_cover_blank" x="0" y="0" height="205" width="205"/>
+	</Bitmap>
+	<Bitmap id="img_playtree_all" file="files/playlist_playtree_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_playtree_blank" x="0" y="0" height="25" width="15"/>
+		<SubBitmap id="img_playtree_close" x="15" y="0" height="25" width="15"/>
+	</Bitmap>
+	<Bitmap id="img_pattern_all" file="files/bg_pattern_all.png" alphacolor="#FF00FF"/>
+	<Bitmap id="img_menu_titles_all" file="files/menu_titles_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_menu_title" x="24" y="0" height="36" width="200"/>
+		<SubBitmap id="img_settings_title" x="122" y="36" height="36" width="90"/>
+		<SubBitmap id="img_settings_adv_title" x="23" y="36" height="36" width="200"/>
+		<SubBitmap id="img_misc_title" x="24" y="72" height="36" width="100"/>
+		<SubBitmap id="img_playlist_title" x="24" y="108" height="36" width="83"/>
+		<SubBitmap id="img_playlist_opt_title" x="24" y="108" height="36" width="200"/>
+		<SubBitmap id="img_colors_title" x="24" y="144" height="36" width="200"/>
+		<SubBitmap id="img_hotkeys_title" x="73" y="180" height="36" width="150"/>
+		<SubBitmap id="img_hotkeys_adv_title" x="23" y="180" height="36" width="180"/>
+	</Bitmap>
+	<Bitmap id="img_menu_titles_02_all" file="files/menu_titles2_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_menu_title_02" x="24" y="0" height="36" width="200"/>
+		<SubBitmap id="img_settings_title_02" x="102" y="36" height="36" width="90"/>
+		<SubBitmap id="img_settings_adv_title_02" x="23" y="36" height="36" width="200"/>
+		<SubBitmap id="img_misc_title_02" x="24" y="72" height="36" width="100"/>
+		<SubBitmap id="img_playlist_title_02" x="24" y="108" height="36" width="65"/>
+		<SubBitmap id="img_playlist_opt_title_02" x="24" y="108" height="36" width="155"/>
+		<SubBitmap id="img_colors_title_02" x="23" y="144" height="36" width="200"/>
+		<SubBitmap id="img_hotkeys_title_02" x="63" y="180" height="36" width="75"/>
+		<SubBitmap id="img_hotkeys_adv_title_02" x="23" y="180" height="36" width="180"/>
+	</Bitmap>
+	<Bitmap id="img_menu_all" file="files/menu_part1_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_menu_bg" x="200" y="10" height="50" width="50"/>
+		<SubBitmap id="img_goto_settings" x="0" y="11" height="48" width="300"/>
+		<SubBitmap id="img_goto_settings_hover" x="300" y="11" height="48" width="300"/>
+		<SubBitmap id="img_goto_settings_active" x="600" y="11" height="48" width="300"/>
+		<SubBitmap id="img_goto_hotkeys" x="0" y="107" height="48" width="300"/>
+		<SubBitmap id="img_goto_hotkeys_hover" x="300" y="107" height="48" width="300"/>
+		<SubBitmap id="img_goto_hotkeys_active" x="600" y="107" height="48" width="300"/>
+		<SubBitmap id="img_goto_settings_adv" x="0" y="155" height="48" width="300"/>
+		<SubBitmap id="img_goto_settings_adv_hover" x="300" y="155" height="48" width="300"/>
+		<SubBitmap id="img_goto_settings_adv_active" x="600" y="155" height="48" width="300"/>
+		<SubBitmap id="img_goto_info" x="0" y="203" height="48" width="300"/>
+		<SubBitmap id="img_goto_info_hover" x="300" y="203" height="48" width="300"/>
+		<SubBitmap id="img_goto_info_active" x="600" y="203" height="48" width="300"/>
+		<SubBitmap id="img_goto_misc" x="0" y="251" height="48" width="300"/>
+		<SubBitmap id="img_goto_misc_hover" x="300" y="251" height="48" width="300"/>
+		<SubBitmap id="img_goto_misc_active" x="600" y="251" height="48" width="300"/>
+		<SubBitmap id="img_goto_pl" x="0" y="299" height="48" width="300"/>
+		<SubBitmap id="img_goto_pl_hover" x="300" y="299" height="48" width="300"/>
+		<SubBitmap id="img_goto_pl_active" x="600" y="299" height="48" width="300"/>
+		<SubBitmap id="img_goto_hotkeysadv" x="0" y="347" height="48" width="300"/>
+		<SubBitmap id="img_goto_hotkeysadv_hover" x="300" y="347" height="48" width="300"/>
+		<SubBitmap id="img_goto_hotkeysadv_active" x="600" y="347" height="48" width="300"/>
+		<SubBitmap id="img_goto_cinema" x="0" y="395" height="48" width="300"/>
+		<SubBitmap id="img_goto_cinema_hover" x="300" y="395" height="48" width="300"/>
+		<SubBitmap id="img_goto_cinema_active" x="600" y="395" height="48" width="300"/>
+		<SubBitmap id="img_take_screen" x="0" y="443" height="48" width="300"/>
+		<SubBitmap id="img_take_screen_hover" x="300" y="443" height="48" width="300"/>
+		<SubBitmap id="img_take_screen_active" x="600" y="443" height="48" width="300"/>
+		<SubBitmap id="img_goto_pref" x="0" y="491" height="48" width="300"/>
+		<SubBitmap id="img_goto_pref_hover" x="300" y="491" height="48" width="300"/>
+		<SubBitmap id="img_goto_pref_active" x="600" y="491" height="48" width="300"/>
+		<SubBitmap id="img_goto_log" x="0" y="539" height="48" width="300"/>
+		<SubBitmap id="img_goto_log_hover" x="300" y="539" height="48" width="300"/>
+		<SubBitmap id="img_goto_log_active" x="600" y="539" height="48" width="300"/>
+		<SubBitmap id="img_goto_wizard" x="0" y="587" height="48" width="300"/>
+		<SubBitmap id="img_goto_wizard_hover" x="300" y="587" height="48" width="300"/>
+		<SubBitmap id="img_goto_wizard_active" x="600" y="587" height="48" width="300"/>
+		<SubBitmap id="img_goto_pladv" x="0" y="635" height="48" width="300"/>
+		<SubBitmap id="img_goto_pladv_hover" x="300" y="635" height="48" width="300"/>
+		<SubBitmap id="img_goto_pladv_active" x="600" y="635" height="48" width="300"/>
+		<SubBitmap id="img_load" x="0" y="683" height="48" width="300"/>
+		<SubBitmap id="img_load_hover" x="300" y="683" height="48" width="300"/>
+		<SubBitmap id="img_load_active" x="600" y="683" height="48" width="300"/>
+		<SubBitmap id="img_save" x="0" y="731" height="48" width="300"/>
+		<SubBitmap id="img_save_hover" x="300" y="731" height="48" width="300"/>
+		<SubBitmap id="img_save_active" x="600" y="731" height="48" width="300"/>
+		<SubBitmap id="img_goto_color" x="0" y="779" height="48" width="300"/>
+		<SubBitmap id="img_goto_color_hover" x="300" y="779" height="48" width="300"/>
+		<SubBitmap id="img_goto_color_active" x="600" y="779" height="48" width="300"/>
+	</Bitmap>
+	<Bitmap id="img_menu_part2_all" file="files/menu_part3_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_alwaysontop_text" x="0" y="10" height="48" width="300"/>
+		<SubBitmap id="img_custompl_text" x="0" y="58" height="48" width="300"/>
+		<SubBitmap id="img_showtitlebar_text" x="0" y="106" height="48" width="300"/>
+		<SubBitmap id="img_record_text" x="0" y="154" height="48" width="300"/>
+		<SubBitmap id="img_hicolor_text" x="0" y="202" height="48" width="300"/>
+		<SubBitmap id="img_playlist_cont_text" x="0" y="250" height="48" width="300"/>
+		<SubBitmap id="img_playlist_shuff_text" x="0" y="298" height="48" width="300"/>
+		<SubBitmap id="img_arrow_text" x="0" y="346" height="48" width="300"/>
+		<SubBitmap id="img_posbar_text" x="0" y="394" height="48" width="300"/>
+		<SubBitmap id="img_cinema_color_text" x="0" y="442" height="48" width="300"/>
+		<SubBitmap id="img_drag_text" x="0" y="490" height="48" width="300"/>
+	</Bitmap>
+	<Bitmap id="img_menu_arrow_inactive" file="files/menu_inactive.png" alphacolor="#FF00FF"/>
+	<Bitmap id="img_menu_scroll_all" file="files/playlist_scroll_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_scroll" x="0" y="0" height="30" width="7"/>
+		<SubBitmap id="img_scroll_hover" x="7" y="0" height="30" width="7"/>
+		<SubBitmap id="img_scroll_active" x="14" y="0" height="30" width="7"/>
+	</Bitmap>
+	<Bitmap id="img_menu_icons_all" file="files/menu_icons_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_menu_close" x="28" y="0" height="28" width="28"/>
+		<SubBitmap id="img_menu_close_hover" x="28" y="28" height="28" width="28"/>
+		<SubBitmap id="img_menu_close_active" x="28" y="56" height="28" width="28"/>
+		<SubBitmap id="img_goback" x="0" y="0" height="27" width="27"/>
+		<SubBitmap id="img_goback_hover" x="0" y="28" height="27" width="27"/>
+		<SubBitmap id="img_goback_active" x="0" y="56" height="27" width="27"/>
+		<SubBitmap id="img_menu_add" x="56" y="0" height="28" width="28"/>
+		<SubBitmap id="img_menu_add_hover" x="56" y="28" height="28" width="28"/>
+		<SubBitmap id="img_menu_add_active" x="56" y="56" height="28" width="28"/>
+		<SubBitmap id="img_menu_remove" x="84" y="0" height="28" width="28"/>
+		<SubBitmap id="img_menu_remove_hover" x="84" y="28" height="28" width="28"/>
+		<SubBitmap id="img_menu_remove_active" x="84" y="56" height="28" width="28"/>
+	</Bitmap>
+	<Bitmap id="img_menu_hotkeys" file="files/menu_hotkeys.png" alphacolor="#FF00FF"/>
+	<Bitmap id="img_menu_hotkeys_adv" file="files/menu_hotkeys_adv.png" alphacolor="#FF00FF"/>
+	<Bitmap id="img_switch_all" file="files/onoff_switch_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_switch_off" x="0" y="0" height="15" width="40"/>
+		<SubBitmap id="img_switch_off_hover" x="40" y="0" height="15" width="40"/>
+	</Bitmap>
+	<Bitmap id="img_onoff_all" file="files/onoff_hint_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_hint_on" x="0" y="0" height="10" width="17"/>
+		<SubBitmap id="img_hint_off" x="0" y="12" height="10" width="17"/>
+	</Bitmap>
+	<Bitmap id="img_corner_all" file="files/bottom_corner_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_corner" x="0" y="0" height="9" width="9"/>
+		<SubBitmap id="img_corner_dark" x="9" y="0" height="9" width="9"/>
+		<SubBitmap id="img_corner_light" x="18" y="0" height="9" width="9"/>
+	</Bitmap>
+	<Bitmap id="img_bottom_all" file="files/bottom_background_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_bottombar" x="0" y="6" height="57" width="750"/>
+		<SubBitmap id="img_bottombar_resize_s" x="0" y="57" height="6" width="750"/>
+		<SubBitmap id="img_bottombar_resize_e" x="744" y="6" height="57" width="6"/>
+		<SubBitmap id="img_volbar" x="0" y="63" height="7" width="100"/>
+		<SubBitmap id="img_titlebar" x="0" y="16" height="30" width="750"/>
+		<SubBitmap id="img_posbg" x="0" y="0" height="5" width="750"/>
+		<SubBitmap id="img_bottom_vertical" x="450" y="6" height="57" width="150"/>
+		<SubBitmap id="img_bottombar_overlay" x="0" y="6" height="57" width="625"/>
+	</Bitmap>
+	<Bitmap id="img_bottom_icons_all" file="files/bottom_icons_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_showmenu_off" x="0" y="0" height="28" width="28"/>
+		<SubBitmap id="img_showmenu_off_hover" x="0" y="28" height="28" width="28"/>
+		<SubBitmap id="img_showmenu_off_active" x="0" y="56" height="28" width="28"/>
+		<SubBitmap id="img_showmenu_on" x="28" y="0" height="28" width="28"/>
+		<SubBitmap id="img_showmenu_on_hover" x="28" y="28" height="28" width="28"/>
+		<SubBitmap id="img_showmenu_on_active" x="28" y="56" height="28" width="28"/>
+		<SubBitmap id="img_close" x="112" y="0" height="28" width="28"/>
+		<SubBitmap id="img_close_hover" x="112" y="28" height="28" width="28"/>
+		<SubBitmap id="img_close_active" x="112" y="56" height="28" width="28"/>
+		<SubBitmap id="img_playlist_off" x="140" y="0" height="27" width="27"/>
+		<SubBitmap id="img_playlist_off_hover" x="140" y="28" height="27" width="27"/>
+		<SubBitmap id="img_playlist_active" x="140" y="56" height="27" width="27"/>
+		<SubBitmap id="img_playlist_on" x="168" y="0" height="27" width="27"/>
+		<SubBitmap id="img_playlist_on_hover" x="168" y="28" height="27" width="27"/>
+	</Bitmap>
+	<Bitmap id="img_bottom_control_all" file="files/bottom_control_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_prev" x="0" y="0" height="31" width="31"/>
+		<SubBitmap id="img_prev_hover" x="0" y="31" height="31" width="31"/>
+		<SubBitmap id="img_prev_active" x="0" y="62" height="31" width="31"/>
+		<SubBitmap id="img_next" x="31" y="0" height="31" width="31"/>
+		<SubBitmap id="img_next_hover" x="31" y="31" height="31" width="31"/>
+		<SubBitmap id="img_next_active" x="31" y="62" height="31" width="31"/>
+		<SubBitmap id="img_play" x="62" y="0" height="43" width="43"/>
+		<SubBitmap id="img_play_hover" x="62" y="43" height="43" width="43"/>
+		<SubBitmap id="img_play_active" x="62" y="86" height="43" width="43"/>
+		<SubBitmap id="img_pause" x="105" y="0" height="43" width="43"/>
+		<SubBitmap id="img_pause_hover" x="105" y="43" height="43" width="43"/>
+		<SubBitmap id="img_pause_active" x="105" y="86" height="43" width="43"/>
+	</Bitmap>
+	<Bitmap id="img_bottom_volume_all" file="files/bottom_volume2_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_volume_off" x="0" y="0" height="29" width="29"/>
+		<SubBitmap id="img_volume_off_hover" x="0" y="29" height="29" width="29"/>
+		<SubBitmap id="img_volume_off_active" x="0" y="58" height="29" width="29"/>
+		<SubBitmap id="img_volume_on" x="29" y="0" height="29" width="29"/>
+		<SubBitmap id="img_volume_on_hover" x="29" y="29" height="29" width="29"/>
+		<SubBitmap id="img_volume_on_active" x="29" y="58" height="29" width="29"/>
+	</Bitmap>
+	<Bitmap id="img_titlebar_all" file="files/titlebar_icons_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_titlebar_close" x="0" y="0" height="30" width="46"/>
+		<SubBitmap id="img_titlebar_close_hover" x="0" y="30" height="30" width="46"/>
+		<SubBitmap id="img_titlebar_close_active" x="0" y="60" height="30" width="46"/>
+		<SubBitmap id="img_titlebar_max" x="46" y="0" height="30" width="45"/>
+		<SubBitmap id="img_titlebar_max_hover" x="46" y="30" height="30" width="45"/>
+		<SubBitmap id="img_titlebar_max_active" x="46" y="60" height="30" width="45"/>
+		<SubBitmap id="img_titlebar_min" x="91" y="0" height="30" width="45"/>
+		<SubBitmap id="img_titlebar_min_hover" x="91" y="30" height="30" width="45"/>
+		<SubBitmap id="img_titlebar_min_active" x="91" y="60" height="30" width="45"/>
+		<SubBitmap id="img_titlebar_unmax" x="136" y="0" height="30" width="45"/>
+		<SubBitmap id="img_titlebar_unmax_hover" x="136" y="30" height="30" width="45"/>
+		<SubBitmap id="img_titlebar_unmax_active" x="136" y="60" height="30" width="45"/>
+		<SubBitmap id="img_titlebar_arrow" x="181" y="0" height="30" width="49"/>
+		<SubBitmap id="img_titlebar_arrow_hover" x="181" y="30" height="30" width="49"/>
+		<SubBitmap id="img_titlebar_arrow_active" x="181" y="60" height="30" width="49"/>
+	</Bitmap>
+	<Bitmap id="img_sliders_all" file="files/slider_handles_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_slider_10x10" x="7" y="0" height="7" width="10"/>
+		<SubBitmap id="img_slider_7x7" x="0" y="0" height="17" width="7"/>
+		<SubBitmap id="img_slider_7x17" x="7" y="0" height="17" width="7"/>
+	</Bitmap>
+	<Bitmap id="img_posbar_front_all" file="colors_aio/posbar2_front_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_posbar_front_hicolor_0" x="10" y="90" height="7" width="8200"/>
+		<SubBitmap id="img_posbar_front_hicolor_1" x="10" y="0" height="7" width="8200"/>
+		<SubBitmap id="img_posbar_front_hicolor_2" x="10" y="10" height="7" width="8200"/>
+		<SubBitmap id="img_posbar_front_hicolor_3" x="10" y="70" height="7" width="8200"/>
+		<SubBitmap id="img_posbar_front_hicolor_4" x="10" y="50" height="7" width="8200"/>
+		<SubBitmap id="img_posbar_front_hicolor_5" x="10" y="20" height="7" width="8200"/>
+		<SubBitmap id="img_posbar_front_hicolor_6" x="10" y="40" height="7" width="8200"/>
+		<SubBitmap id="img_posbar_front_hicolor_7" x="10" y="30" height="7" width="8200"/>
+		<SubBitmap id="img_posbar_front_hicolor_8" x="10" y="60" height="7" width="8200"/>
+		<SubBitmap id="img_posbar_front_hicolor_9" x="10" y="80" height="7" width="8200"/>
+		<SubBitmap id="img_posbar_slider_hicolor_0" x="10" y="90" height="7" width="10"/>
+		<SubBitmap id="img_posbar_slider_hicolor_1" x="10" y="0" height="7" width="10"/>
+		<SubBitmap id="img_posbar_slider_hicolor_2" x="10" y="10" height="7" width="10"/>
+		<SubBitmap id="img_posbar_slider_hicolor_3" x="10" y="70" height="7" width="10"/>
+		<SubBitmap id="img_posbar_slider_hicolor_4" x="10" y="50" height="7" width="10"/>
+		<SubBitmap id="img_posbar_slider_hicolor_5" x="10" y="20" height="7" width="10"/>
+		<SubBitmap id="img_posbar_slider_hicolor_6" x="10" y="40" height="7" width="10"/>
+		<SubBitmap id="img_posbar_slider_hicolor_7" x="10" y="30" height="7" width="10"/>
+		<SubBitmap id="img_posbar_slider_hicolor_8" x="10" y="60" height="7" width="10"/>
+		<SubBitmap id="img_posbar_slider_hicolor_9" x="10" y="80" height="7" width="10"/>
+		<SubBitmap id="img_posbar_hover_hicolor_0" x="0" y="90" height="7" width="10"/>
+		<SubBitmap id="img_posbar_hover_hicolor_1" x="0" y="0" height="7" width="10"/>
+		<SubBitmap id="img_posbar_hover_hicolor_2" x="0" y="10" height="7" width="10"/>
+		<SubBitmap id="img_posbar_hover_hicolor_3" x="0" y="70" height="7" width="10"/>
+		<SubBitmap id="img_posbar_hover_hicolor_4" x="0" y="50" height="7" width="10"/>
+		<SubBitmap id="img_posbar_hover_hicolor_5" x="0" y="20" height="7" width="10"/>
+		<SubBitmap id="img_posbar_hover_hicolor_6" x="0" y="40" height="7" width="10"/>
+		<SubBitmap id="img_posbar_hover_hicolor_7" x="0" y="30" height="7" width="10"/>
+		<SubBitmap id="img_posbar_hover_hicolor_8" x="0" y="60" height="7" width="10"/>
+		<SubBitmap id="img_posbar_hover_hicolor_9" x="0" y="80" height="7" width="10"/>
+		<SubBitmap id="img_volbar_hicolor_0" x="4010" y="90" height="7" width="200"/>
+		<SubBitmap id="img_volbar_hicolor_1" x="4010" y="0" height="7" width="200"/>
+		<SubBitmap id="img_volbar_hicolor_2" x="4010" y="10" height="7" width="200"/>
+		<SubBitmap id="img_volbar_hicolor_3" x="4010" y="70" height="7" width="200"/>
+		<SubBitmap id="img_volbar_hicolor_4" x="4010" y="50" height="7" width="200"/>
+		<SubBitmap id="img_volbar_hicolor_5" x="4010" y="20" height="7" width="200"/>
+		<SubBitmap id="img_volbar_hicolor_6" x="4010" y="40" height="7" width="200"/>
+		<SubBitmap id="img_volbar_hicolor_7" x="4010" y="30" height="7" width="200"/>
+		<SubBitmap id="img_volbar_hicolor_8" x="4010" y="60" height="7" width="200"/>
+		<SubBitmap id="img_volbar_hicolor_9" x="4010" y="80" height="7" width="200"/>
+	</Bitmap>
+	<Bitmap id="img_hicolor_0_all" file="colors_aio/color_white_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_hicolor_0_active" x="0" y="30" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_0_hover" x="0" y="57" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_0" x="0" y="84" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_0_current" x="0" y="111" height="27" width="27"/>
+		<SubBitmap id="img_switch_color0" x="0" y="0" height="15" width="40"/>
+		<SubBitmap id="img_switch_color0_hover" x="0" y="15" height="15" width="40"/>
+	</Bitmap>
+	<Bitmap id="img_hicolor_1_all" file="colors_aio/color_ayu_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_hicolor_1_active" x="0" y="30" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_1_hover" x="0" y="57" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_1" x="0" y="84" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_1_current" x="0" y="111" height="27" width="27"/>
+		<SubBitmap id="img_switch_color1" x="0" y="0" height="15" width="40"/>
+		<SubBitmap id="img_switch_color1_hover" x="0" y="15" height="15" width="40"/>
+	</Bitmap>
+	<Bitmap id="img_hicolor_2_all" file="colors_aio/color_red_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_hicolor_2_active" x="0" y="30" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_2_hover" x="0" y="57" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_2" x="0" y="84" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_2_current" x="0" y="111" height="27" width="27"/>
+		<SubBitmap id="img_switch_color2" x="0" y="0" height="15" width="40"/>
+		<SubBitmap id="img_switch_color2_hover" x="0" y="15" height="15" width="40"/>
+	</Bitmap>
+	<Bitmap id="img_hicolor_3_all" file="colors_aio/color_blue_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_hicolor_3_active" x="0" y="30" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_3_hover" x="0" y="57" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_3" x="0" y="84" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_3_current" x="0" y="111" height="27" width="27"/>
+		<SubBitmap id="img_switch_color3" x="0" y="0" height="15" width="40"/>
+		<SubBitmap id="img_switch_color3_hover" x="0" y="15" height="15" width="40"/>
+	</Bitmap>
+	<Bitmap id="img_hicolor_4_all" file="colors_aio/color_lime_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_hicolor_4_active" x="0" y="30" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_4_hover" x="0" y="57" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_4" x="0" y="84" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_4_current" x="0" y="111" height="27" width="27"/>
+		<SubBitmap id="img_switch_color4" x="0" y="0" height="15" width="40"/>
+		<SubBitmap id="img_switch_color4_hover" x="0" y="15" height="15" width="40"/>
+	</Bitmap>
+	<Bitmap id="img_hicolor_5_all" file="colors_aio/color_orange_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_hicolor_5_active" x="0" y="30" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_5_hover" x="0" y="57" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_5" x="0" y="84" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_5_current" x="0" y="111" height="27" width="27"/>
+		<SubBitmap id="img_switch_color5" x="0" y="0" height="15" width="40"/>
+		<SubBitmap id="img_switch_color5_hover" x="0" y="15" height="15" width="40"/>
+	</Bitmap>
+	<Bitmap id="img_hicolor_6_all" file="colors_aio/color_yellow_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_hicolor_6_active" x="0" y="30" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_6_hover" x="0" y="57" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_6" x="0" y="84" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_6_current" x="0" y="111" height="27" width="27"/>
+		<SubBitmap id="img_switch_color6" x="0" y="0" height="15" width="40"/>
+		<SubBitmap id="img_switch_color6_hover" x="0" y="15" height="15" width="40"/>
+	</Bitmap>
+	<Bitmap id="img_hicolor_7_all" file="colors_aio/color_gold_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_hicolor_7_active" x="0" y="30" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_7_hover" x="0" y="57" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_7" x="0" y="84" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_7_current" x="0" y="111" height="27" width="27"/>
+		<SubBitmap id="img_switch_color7" x="0" y="0" height="15" width="40"/>
+		<SubBitmap id="img_switch_color7_hover" x="0" y="15" height="15" width="40"/>
+	</Bitmap>
+	<Bitmap id="img_hicolor_8_all" file="colors_aio/color_mint_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_hicolor_8_active" x="0" y="30" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_8_hover" x="0" y="57" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_8" x="0" y="84" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_8_current" x="0" y="111" height="27" width="27"/>
+		<SubBitmap id="img_switch_color8" x="0" y="0" height="15" width="40"/>
+		<SubBitmap id="img_switch_color8_hover" x="0" y="15" height="15" width="40"/>
+	</Bitmap>
+	<Bitmap id="img_hicolor_9_all" file="colors_aio/color_blue2_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_hicolor_9_active" x="0" y="30" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_9_hover" x="0" y="57" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_9" x="0" y="84" height="27" width="27"/>
+		<SubBitmap id="img_hicolor_9_current" x="0" y="111" height="27" width="27"/>
+		<SubBitmap id="img_switch_color9" x="0" y="0" height="15" width="40"/>
+		<SubBitmap id="img_switch_color9_hover" x="0" y="15" height="15" width="40"/>
+	</Bitmap>
+	<Bitmap id="img_separator" file="files/menu_separator.png" alphacolor="FF00FF"/>
+	<Bitmap id="img_dropbox_current_all" file="files/dropbox_current_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_dropbox_current_dark" x="0" y="0" height="30" width="180"/>
+		<SubBitmap id="img_dropbox_current_dark_hover" x="180" y="0" height="30" width="180"/>
+		<SubBitmap id="img_dropbox_current_light" x="0" y="30" height="30" width="180"/>
+		<SubBitmap id="img_dropbox_current_light_hover" x="180" y="30" height="30" width="180"/>
+	</Bitmap>
+	<Bitmap id="img_dropbox_dark_all" file="files/dropbox_dark_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_dropbox_01_dark" x="0" y="0" height="56" width="180"/>
+		<SubBitmap id="img_dropbox_01_dark_hover" x="180" y="0" height="56" width="180"/>
+		<SubBitmap id="img_dropbox_01_dark_active" x="360" y="0" height="56" width="180"/>
+		<SubBitmap id="img_dropbox_02_dark" x="0" y="56" height="56" width="180"/>
+		<SubBitmap id="img_dropbox_02_dark_hover" x="180" y="56" height="56" width="180"/>
+		<SubBitmap id="img_dropbox_02_dark_active" x="360" y="56" height="56" width="180"/>
+	</Bitmap>
+	<Bitmap id="img_dropbox_light_all" file="files/dropbox_light_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_dropbox_01_light" x="0" y="0" height="56" width="180"/>
+		<SubBitmap id="img_dropbox_01_light_hover" x="180" y="0" height="56" width="180"/>
+		<SubBitmap id="img_dropbox_01_light_active" x="360" y="0" height="56" width="180"/>
+		<SubBitmap id="img_dropbox_02_light" x="0" y="56" height="56" width="180"/>
+		<SubBitmap id="img_dropbox_02_light_hover" x="180" y="56" height="56" width="180"/>
+		<SubBitmap id="img_dropbox_02_light_active" x="360" y="56" height="56" width="180"/>
+	</Bitmap>
+	<Bitmap id="img_dropbox_frame_all" file="files/dropbox_frame_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_dropbox_frame" x="0" y="0" height="56" width="180"/>
+		<SubBitmap id="img_dropbox_frame_hover" x="180" y="0" height="56" width="180"/>
+	</Bitmap>
+	<Bitmap id="img_border_all" file="files/border_all.png" alphacolor="FF00FF">
+		<SubBitmap id="img_border_main" x="1" y="0" height="1" width="1"/>
+		<SubBitmap id="img_border_posbar" x="2" y="0" height="1" width="1"/>
+		<SubBitmap id="img_border_menu" x="3" y="0" height="1" width="1"/>
+	</Bitmap>
+	<Bitmap id="img_border_cinema_all" file="files/border_cinema_all.png" alphacolor="FF00FF">
+		<SubBitmap id="img_cinemaH_dark" x="0" y="0" height="10" width="50"/>
+		<SubBitmap id="img_cinemaV_dark" x="0" y="0" height="50" width="10"/>
+		<SubBitmap id="img_cinemaH_light" x="50" y="0" height="10" width="50"/>
+		<SubBitmap id="img_cinemaV_light" x="50" y="0" height="50" width="10"/>
+	</Bitmap>
+	<Bitmap id="img_audio_all" file="files/cover_audio2_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_audio_cover" x="0" y="0" height="205" width="205"/>
+	</Bitmap>
+	<!-- <Bitmap id="img_audio_all" file="files/cover_audio_all.png" alphacolor="#FF00FF">
+	<SubBitmap id="img_audio_cover" x="0" y="0" height="205" width="205"/>
+	<SubBitmap id="img_audio_menu" x="0" y="205" height="205" width="205"/>
+	<SubBitmap id="img_audio_cinema" x="0" y="410" height="205" width="205"/>
+  </Bitmap>-->
+	<Bitmap id="img_cover_border" file="files/cover_border.png" alphacolor="#FF00FF"/>
+	<!-- <Bitmap id="img_vlc_tb_all" file="files/cover_vlc_tb_all.png" alphacolor="#FF00FF">
+	<SubBitmap id="img_vlc_tb_cover" x="0" y="0" height="75" width="360"/>
+	<SubBitmap id="img_vlc_tb_cover_menu" x="0" y="75" height="75" width="360"/>
+  </Bitmap>
+  <Bitmap id="img_vlc_all" file="files/cover_vlc_all.png" alphacolor="#FF00FF">
+	<SubBitmap id="img_vlc_cover" x="0" y="0" height="75" width="360"/>
+	<SubBitmap id="img_vlc_cover_menu" x="0" y="75" height="75" width="360"/>
+  </Bitmap>-->
+	<Bitmap id="img_vlc_cover" file="files/cover_vlc2_all.png" alphacolor="#FF00FF"/>
+	<Bitmap id="img_mute_overlay" file="files/mute_overlay.png" alphacolor="#FF00FF"/>
+	<Bitmap id="img_titlebar_title" file="files/titlebar_title_all.png" alphacolor="#FF00FF"/>
+	<Bitmap id="img_stream_anim" file="files/bottom_stream_all.png" width="41" height="120" alphacolor="#FF00FF" nbframes="10" loop="0" fps="15"/>
+	<Bitmap id="img_cinema_hint1_all" file="files/cinema_hint1_all.png" alphacolor="#FF00FF">
+		<SubBitmap id="img_hint1_bg" x="0" y="0" height="40" width="40"/>
+		<SubBitmap id="img_hint1_text" x="40" y="0" height="40" width="300"/>
+		<SubBitmap id="img_hint1_button" x="365" y="5" height="30" width="94"/>
+		<SubBitmap id="img_hint1_button_hover" x="459" y="5" height="30" width="94"/>
+		<SubBitmap id="img_hint1_button_press" x="553" y="5" height="30" width="94"/>
+	</Bitmap>
+	<!--WINDOW START-->
+
+
+	<Window id="MainWindow" position="Center">
+		<Layout id="mainframe" width="900" height="571" minwidth="600" maxwidth="4100" minheight="340" maxheight="2400">
+			<Video id="video_cinema" x="10" y="10" width="880" height="551" rightbottom="rightbottom" action="move" visible="cinema_on.isActive and hint1_off.isActive"/>
+			<Video id="video_cinema" x="10" y="10" width="880" height="511" rightbottom="rightbottom" action="move" visible="cinema_on.isActive and hint1_on.isActive"/>
+			<Video id="video_topoff_menu" x="300" y="1" width="599" height="507" autoresize="false" rightbottom="rightbottom" visible="cinema_off.isActive and xmenu_on.isActive and titlebar_off.isActive and posbar_sml.isActive"/>
+			<Video id="video_topoff_full" x="1" y="1" width="898" height="507" rightbottom="rightbottom" visible="cinema_off.isActive and xmenu_off.isActive and titlebar_off.isActive and posbar_sml.isActive"/>
+			<Video id="video_topon_menu" x="300" y="30" width="599" height="478" autoresize="false" rightbottom="rightbottom" visible="cinema_off.isActive and xmenu_on.isActive and titlebar_on.isActive and posbar_sml.isActive"/>
+			<Video id="video_topon_full" x="1" y="30" width="898" height="478" rightbottom="rightbottom" visible="cinema_off.isActive and xmenu_off.isActive and titlebar_on.isActive and posbar_sml.isActive"/>
+
+			<Video id="video_big_topoff_menu" x="300" y="1" width="599" height="505" autoresize="false" rightbottom="rightbottom" visible="cinema_off.isActive and xmenu_on.isActive and titlebar_off.isActive and posbar_big.isActive"/>
+			<Video id="video_big_topoff_full" x="1" y="1" width="898" height="505" rightbottom="rightbottom" visible="cinema_off.isActive and xmenu_off.isActive and titlebar_off.isActive and posbar_big.isActive"/>
+			<Video id="video_big_topon_menu" x="300" y="30" width="599" height="476" autoresize="false" rightbottom="rightbottom" visible="cinema_off.isActive and xmenu_on.isActive and titlebar_on.isActive and posbar_big.isActive"/>
+			<Video id="video_big_topon_full" x="1" y="30" width="898" height="476" rightbottom="rightbottom" visible="cinema_off.isActive and xmenu_off.isActive and titlebar_on.isActive and posbar_big.isActive"/>
+
+			<Panel id="background_panel" width="900" height="508" rightbottom="rightbottom">
+				<Panel id="background_panelX" x="350" y="155" width="200" height="200" xkeepratio="true" ykeepratio="true">
+					<Image id="bg_full-00" x="-2350" y="-1484" height="3000" image="img_pattern_all" rightbottom="rightbottom" visible="(not vlc.hasVout)"/>
+					<Image id="bg_full-01" x="-1700" y="-1163" height="3000" image="img_pattern_all" rightbottom="rightbottom" visible="(not vlc.hasVout)"/>
+					<Image id="bg_full-02" x="-1050" y="-1485" height="3000" image="img_pattern_all" rightbottom="rightbottom" visible="(not vlc.hasVout)"/>
+					<Image id="bg_full-03" x="-400" y="-1164" height="3000" image="img_pattern_all" rightbottom="rightbottom" visible="(not vlc.hasVout)"/>
+					<Image id="bg_full-04" x="250" y="-1486" height="3000" image="img_pattern_all" rightbottom="rightbottom" visible="(not vlc.hasVout)"/>
+					<Image id="bg_full-05" x="900" y="-1165" height="3000" image="img_pattern_all" rightbottom="rightbottom" visible="(not vlc.hasVout)"/>
+					<Image id="bg_full-06" x="1550" y="-1487" height="3000" image="img_pattern_all" rightbottom="rightbottom" visible="(not vlc.hasVout)"/>
+
+					<Image id="audio_nb_cover_menu" y="-3" x="150" art="true" resize="scale2" image="img_audio_cover" visible="titlebar_off.isActive and vlc.hasAudio and (not vlc.hasVout) and (xmenu_on.isActive)"/>
+					<Image id="audio_nb_border_menu" y="-3" x="150" resize="scale2" image="img_cover_border" visible="titlebar_off.isActive and vlc.hasAudio and (not vlc.hasVout) and (xmenu_on.isActive)"/>
+					<Image id="audio_nb_cover_full" y="-3" x="-2" art="true" resize="scale2" image="img_audio_cover" visible="titlebar_off.isActive and vlc.hasAudio and (not vlc.hasVout) and xmenu_off.isActive"/>
+					<Image id="audio_nb_border_full" y="-3" x="-2" resize="scale2" image="img_cover_border" visible="titlebar_off.isActive and vlc.hasAudio and (not vlc.hasVout) and xmenu_off.isActive"/>
+					<Image id="audio_tb_cover_menu" y="12" x="150" art="true" resize="scale2" image="img_audio_cover" visible="titlebar_on.isActive and vlc.hasAudio and (not vlc.hasVout) and (xmenu_on.isActive)"/>
+					<Image id="audio_tb_border_menu" y="12" x="150" resize="scale2" image="img_cover_border" visible="titlebar_on.isActive and vlc.hasAudio and (not vlc.hasVout) and (xmenu_on.isActive)"/>
+					<Image id="audio_tb_cover_full" y="12" x="-2" art="true" resize="scale2" image="img_audio_cover" visible="titlebar_on.isActive and vlc.hasAudio and (not vlc.hasVout) and xmenu_off.isActive"/>
+					<Image id="audio_tb_border_full" y="12" x="-2" resize="scale2" image="img_cover_border" visible="titlebar_on.isActive and vlc.hasAudio and (not vlc.hasVout) and xmenu_off.isActive"/>
+
+					<Image id="vlc_tb_full_cover" y="85" x="-80" image="img_vlc_cover" visible="titlebar_on.isActive and (not vlc.hasAudio) and (not vlc.hasVout) and xmenu_off.isActive"/>
+					<Image id="vlc_tb_menu_cover" y="85" x="72" image="img_vlc_cover" visible="titlebar_on.isActive and (not vlc.hasAudio) and (not vlc.hasVout) and xmenu_on.isActive"/>
+					<Image id="vlc_nb_full_cover" y="70" x="-80" image="img_vlc_cover" visible="titlebar_off.isActive and (not vlc.hasAudio) and (not vlc.hasVout) and xmenu_off.isActive"/>
+					<Image id="vlc_nb_menu_cover" y="70" x="72" image="img_vlc_cover" visible="titlebar_off.isActive and (not vlc.hasAudio) and (not vlc.hasVout) and xmenu_on.isActive"/>
+				</Panel>
+				<Text text="Now Playing:" font="segoeuil_title" color="#d5d5d5" id="text_nowplaying_full" x="20" y="15" width="350" visible="vlc.hasAudio and (not vlc.hasVout) and (xmenu_off.isActive) and titlebar_off.isActive"/>
+				<Text text="Now Playing:" font="segoeuil_title" color="#d5d5d5" id="text_nowplaying_menu" x="320" y="15" width="350" visible="vlc.hasAudio and (not vlc.hasVout) and (xmenu_on.isActive) and titlebar_off.isActive"/>
+				<Text text="$N" font="segoeuil_title" color="#FFFFFF" id="text_current_full" x="20" y="40" width="350" visible="vlc.hasAudio and (not vlc.hasVout) and (xmenu_off.isActive) and titlebar_off.isActive"/>
+				<Text text="$N" font="segoeuil_title" color="#FFFFFF" id="text_current_menu" x="320" y="40" width="350" visible="vlc.hasAudio and (not vlc.hasVout) and (xmenu_on.isActive) and titlebar_off.isActive"/>
+			</Panel>
+
+			<!--MENU-->
+
+
+			<Panel id="menu_main_panel" y="30" width="300" height="541" rightbottom="leftbottom">
+				<Image id="menu_bg" y="-30" image="img_menu_bg" width="300" height="100%" rightbottom="leftbottom" visible="xmenu_on.isActive"/>
+				<Image id="menu_title_bg_max" y="-30" width="300" height="100" image="img_menu_bg" action="move" action2="MainWindow.maximize()" rightbottom="lefttop" visible="xmenu_on.isActive and titlebar_off.isActive"/>
+				<Image id="menu_title_bg_umx" y="-30" width="300" height="100" image="img_menu_bg" action="move" action2="MainWindow.unmaximize()" rightbottom="lefttop" visible="xmenu_on.isActive and MainWindow.isMaximized() and titlebar_off.isActive"/>
+				<Image id="menu_title_topon" x="24" image="img_menu_title_02" visible="xmenu_on.isActive and menu_mainmenu.isActive and titlebar_on.isActive"/>
+				<Image id="menu_title_topoff_max" x="24" y="-15" image="img_menu_title" action="move" action2="MainWindow.maximize()" visible="xmenu_on.isActive and menu_mainmenu.isActive and titlebar_off.isActive"/>
+				<Image id="menu_title_topoff_umx" x="24" y="-15" image="img_menu_title" action="move" action2="MainWindow.unmaximize()" visible="xmenu_on.isActive and menu_mainmenu.isActive and titlebar_off.isActive and MainWindow.isMaximized()"/>
+				<Button up="img_menu_close" down="img_menu_close_active" over="img_menu_close_hover" action="xmenu.setLayout(xmenu_off)" id="menu_close_topoff" x="258" visible="xmenu_on.isActive and menu_mainmenu.isActive and titlebar_off.isActive" tooltiptext="Close menu"/>
+				<Button up="img_menu_close" down="img_menu_close_active" over="img_menu_close_hover" action="xmenu.setLayout(xmenu_off)" id="menu_close_topon" x="258" y="15" visible="xmenu_on.isActive and menu_mainmenu.isActive and titlebar_on.isActive" tooltiptext="Close menu"/>
+				<Button up="img_goto_settings" down="img_goto_settings_active" over="img_goto_settings_hover" action="menu.setLayout(menu_settings)" id="menu_goto_settings" y="56" visible="xmenu_on.isActive and menu_mainmenu.isActive"/>
+				<Button up="img_goto_pl" down="img_goto_pl_active" over="img_goto_pl_hover" action="dialogs.playlist()" id="menu_goto_pldefault" y="104" visible="xmenu_on.isActive and menu_mainmenu.isActive"/>
+				<Button up="img_goto_pl" down="img_goto_pl_active" over="img_goto_pl_hover" action="menu.setLayout(menu_pl)" id="menu_goto_plcustom" y="104" visible="xmenu_on.isActive and customplaylist_on.isActive and menu_mainmenu.isActive"/>
+				<Button up="img_goto_misc" down="img_goto_misc_active" over="img_goto_misc_hover" action="menu.setLayout(menu_misc)" id="menu_goto_misc" y="200" visible="xmenu_on.isActive and menu_mainmenu.isActive"/>
+				<Button up="img_goto_wizard" down="img_goto_wizard_active" over="img_goto_wizard_hover" action="dialogs.streamingWizard()" id="menu_goto_wizard" y="152" visible="xmenu_on.isActive and menu_mainmenu.isActive"/>
+				<Button up="img_goto_hotkeys" down="img_goto_hotkeys_active" over="img_goto_hotkeys_hover" action="menu.setLayout(menu_hotkeys)" id="menu_goto_hotkeys" y="248" visible="xmenu_on.isActive and menu_mainmenu.isActive"/>
+				<Button up="img_goto_cinema" down="img_goto_cinema_active" over="img_goto_cinema_hover" action="cinema.setLayout(cinema_on);" id="menu_goto_cinema" y="296" visible="xmenu_on.isActive and menu_mainmenu.isActive" tooltiptext="Double-click on border to return"/>
+			</Panel>
+			<Panel id="menu_settings_panel" y="30" width="300" height="400">
+				<Image id="settings_title_topoff_max" x="55" y="-15" action="move" action2="MainWindow.maximize()" image="img_settings_title" visible="xmenu_on.isActive and menu_settings.isActive and titlebar_off.isActive"/>
+				<Image id="settings_title_topoff_umx" x="55" y="-15" action="move" action2="MainWindow.unmaximize()" image="img_settings_title" visible="xmenu_on.isActive and menu_settings.isActive and titlebar_off.isActive and MainWindow.isMaximized()"/>
+				<Image id="settings_title_topon" x="55" image="img_settings_title_02" visible="xmenu_on.isActive and menu_settings.isActive and titlebar_on.isActive and arrow_off.isActive"/>
+				<Image id="settings_title_arrow" x="24" image="img_settings_title_02" visible="xmenu_on.isActive and menu_settings.isActive and titlebar_on.isActive and arrow_on.isActive"/>
+				<Button up="img_goto_settings_adv" down="img_goto_settings_adv_active" over="img_goto_settings_adv_hover" action="menu.setLayout(menu_settings_adv)" id="settings_goto_settings_adv" y="56" visible="xmenu_on.isActive and menu_settings.isActive"/>
+				<Button up="img_goto_color" down="img_goto_color_active" over="img_goto_color_hover" action="menu.setLayout(menu_settings_color); cinema_dropbox.setLayout(cinema_dropbox_off);" id="settings_goto_settings_adv" y="104" visible="xmenu_on.isActive and menu_settings.isActive"/>
+				<Button up="img_goback" down="img_goback_active" over="img_goback_hover" action="menu.setLayout(menu_mainmenu);menu.setLayout(menu_settings)" id="advsettings_goto_settings_topoff" x="15" visible="xmenu_on.isActive and menu_settings_adv.isActive and titlebar_off.isActive"/>
+				<Image id="settings_separator" y="152" image="img_separator" visible="xmenu_on.isActive and menu_settings.isActive"/>
+				<Image id="settings_alwaysontop" y="200" image="img_alwaysontop_text" visible="xmenu_on.isActive and menu_settings.isActive"/>
+				<Checkbox state="vlc.isOnTop" up1="img_switch_off" up2="img_switch_color1" down1="img_switch_off_hover" down2="img_switch_color1_hover" over1="img_switch_off_hover" over2="img_switch_color1_hover" action1="vlc.onTop()" action2="vlc.onTop()" id="settings_alwaysontop_hicolor1" x="150" y="240" visible="xmenu_on.isActive and menu_settings.isActive and hicolor_1.isActive"/>
+				<Checkbox state="vlc.isOnTop" up1="img_switch_off" up2="img_switch_color0" down1="img_switch_off_hover" down2="img_switch_color0_hover" over1="img_switch_off_hover" over2="img_switch_color0_hover" action1="vlc.onTop()" action2="vlc.onTop()" id="settings_alwaysontop_hicolor0" x="150" y="240" visible="xmenu_on.isActive and menu_settings.isActive and hicolor_0.isActive"/>
+				<Checkbox state="vlc.isOnTop" up1="img_switch_off" up2="img_switch_color2" down1="img_switch_off_hover" down2="img_switch_color2_hover" over1="img_switch_off_hover" over2="img_switch_color2_hover" action1="vlc.onTop()" action2="vlc.onTop()" id="settings_alwaysontop_hicolor2" x="150" y="240" visible="xmenu_on.isActive and menu_settings.isActive and hicolor_2.isActive"/>
+				<Checkbox state="vlc.isOnTop" up1="img_switch_off" up2="img_switch_color3" down1="img_switch_off_hover" down2="img_switch_color3_hover" over1="img_switch_off_hover" over2="img_switch_color3_hover" action1="vlc.onTop()" action2="vlc.onTop()" id="settings_alwaysontop_hicolor3" x="150" y="240" visible="xmenu_on.isActive and menu_settings.isActive and hicolor_3.isActive"/>
+				<Checkbox state="vlc.isOnTop" up1="img_switch_off" up2="img_switch_color4" down1="img_switch_off_hover" down2="img_switch_color4_hover" over1="img_switch_off_hover" over2="img_switch_color4_hover" action1="vlc.onTop()" action2="vlc.onTop()" id="settings_alwaysontop_hicolor4" x="150" y="240" visible="xmenu_on.isActive and menu_settings.isActive and hicolor_4.isActive"/>
+				<Checkbox state="vlc.isOnTop" up1="img_switch_off" up2="img_switch_color5" down1="img_switch_off_hover" down2="img_switch_color5_hover" over1="img_switch_off_hover" over2="img_switch_color5_hover" action1="vlc.onTop()" action2="vlc.onTop()" id="settings_alwaysontop_hicolor5" x="150" y="240" visible="xmenu_on.isActive and menu_settings.isActive and hicolor_5.isActive"/>
+				<Checkbox state="vlc.isOnTop" up1="img_switch_off" up2="img_switch_color6" down1="img_switch_off_hover" down2="img_switch_color6_hover" over1="img_switch_off_hover" over2="img_switch_color6_hover" action1="vlc.onTop()" action2="vlc.onTop()" id="settings_alwaysontop_hicolor6" x="150" y="240" visible="xmenu_on.isActive and menu_settings.isActive and hicolor_6.isActive"/>
+				<Checkbox state="vlc.isOnTop" up1="img_switch_off" up2="img_switch_color7" down1="img_switch_off_hover" down2="img_switch_color7_hover" over1="img_switch_off_hover" over2="img_switch_color7_hover" action1="vlc.onTop()" action2="vlc.onTop()" id="settings_alwaysontop_hicolor7" x="150" y="240" visible="xmenu_on.isActive and menu_settings.isActive and hicolor_7.isActive"/>
+				<Checkbox state="vlc.isOnTop" up1="img_switch_off" up2="img_switch_color8" down1="img_switch_off_hover" down2="img_switch_color8_hover" over1="img_switch_off_hover" over2="img_switch_color8_hover" action1="vlc.onTop()" action2="vlc.onTop()" id="settings_alwaysontop_hicolor8" x="150" y="240" visible="xmenu_on.isActive and menu_settings.isActive and hicolor_8.isActive"/>
+				<Checkbox state="vlc.isOnTop" up1="img_switch_off" up2="img_switch_color9" down1="img_switch_off_hover" down2="img_switch_color9_hover" over1="img_switch_off_hover" over2="img_switch_color9_hover" action1="vlc.onTop()" action2="vlc.onTop()" id="settings_alwaysontop_hicolor9" x="150" y="240" visible="xmenu_on.isActive and menu_settings.isActive and hicolor_9.isActive"/>
+				<Checkbox state="vlc.isOnTop" up1="img_hint_off" up2="img_hint_on" id="settings_alwaysontop_hint" x="35" y="242" visible="xmenu_on.isActive and menu_settings.isActive"/>
+				<Image id="settings_titlebar" y="272" image="img_showtitlebar_text" visible="xmenu_on.isActive and menu_settings.isActive"/>
+				<Checkbox state="titlebar_on.isActive" up1="img_switch_off" up2="img_switch_color0" down1="img_switch_off_hover" down2="img_switch_color0_hover" over1="img_switch_off_hover" over2="img_switch_color0_hover" action1="titlebar.setLayout(titlebar_on)" action2="titlebar.setLayout(titlebar_off); arrow.setLayout(arrow_off)" id="settings_titlebar_hicolor0" x="150" y="312" visible="xmenu_on.isActive and menu_settings.isActive and hicolor_0.isActive"/>
+				<Checkbox state="titlebar_on.isActive" up1="img_switch_off" up2="img_switch_color1" down1="img_switch_off_hover" down2="img_switch_color1_hover" over1="img_switch_off_hover" over2="img_switch_color1_hover" action1="titlebar.setLayout(titlebar_on)" action2="titlebar.setLayout(titlebar_off); arrow.setLayout(arrow_off)" id="settings_titlebar_hicolor1" x="150" y="312" visible="xmenu_on.isActive and menu_settings.isActive and hicolor_1.isActive"/>
+				<Checkbox state="titlebar_on.isActive" up1="img_switch_off" up2="img_switch_color2" down1="img_switch_off_hover" down2="img_switch_color2_hover" over1="img_switch_off_hover" over2="img_switch_color2_hover" action1="titlebar.setLayout(titlebar_on)" action2="titlebar.setLayout(titlebar_off); arrow.setLayout(arrow_off)" id="settings_titlebar_hicolor2" x="150" y="312" visible="xmenu_on.isActive and menu_settings.isActive and hicolor_2.isActive"/>
+				<Checkbox state="titlebar_on.isActive" up1="img_switch_off" up2="img_switch_color3" down1="img_switch_off_hover" down2="img_switch_color3_hover" over1="img_switch_off_hover" over2="img_switch_color3_hover" action1="titlebar.setLayout(titlebar_on)" action2="titlebar.setLayout(titlebar_off); arrow.setLayout(arrow_off)" id="settings_titlebar_hicolor3" x="150" y="312" visible="xmenu_on.isActive and menu_settings.isActive and hicolor_3.isActive"/>
+				<Checkbox state="titlebar_on.isActive" up1="img_switch_off" up2="img_switch_color4" down1="img_switch_off_hover" down2="img_switch_color4_hover" over1="img_switch_off_hover" over2="img_switch_color4_hover" action1="titlebar.setLayout(titlebar_on)" action2="titlebar.setLayout(titlebar_off); arrow.setLayout(arrow_off)" id="settings_titlebar_hicolor4" x="150" y="312" visible="xmenu_on.isActive and menu_settings.isActive and hicolor_4.isActive"/>
+				<Checkbox state="titlebar_on.isActive" up1="img_switch_off" up2="img_switch_color5" down1="img_switch_off_hover" down2="img_switch_color5_hover" over1="img_switch_off_hover" over2="img_switch_color5_hover" action1="titlebar.setLayout(titlebar_on)" action2="titlebar.setLayout(titlebar_off); arrow.setLayout(arrow_off)" id="settings_titlebar_hicolor5" x="150" y="312" visible="xmenu_on.isActive and menu_settings.isActive and hicolor_5.isActive"/>
+				<Checkbox state="titlebar_on.isActive" up1="img_switch_off" up2="img_switch_color6" down1="img_switch_off_hover" down2="img_switch_color6_hover" over1="img_switch_off_hover" over2="img_switch_color6_hover" action1="titlebar.setLayout(titlebar_on)" action2="titlebar.setLayout(titlebar_off); arrow.setLayout(arrow_off)" id="settings_titlebar_hicolor6" x="150" y="312" visible="xmenu_on.isActive and menu_settings.isActive and hicolor_6.isActive"/>
+				<Checkbox state="titlebar_on.isActive" up1="img_switch_off" up2="img_switch_color7" down1="img_switch_off_hover" down2="img_switch_color7_hover" over1="img_switch_off_hover" over2="img_switch_color7_hover" action1="titlebar.setLayout(titlebar_on)" action2="titlebar.setLayout(titlebar_off); arrow.setLayout(arrow_off)" id="settings_titlebar_hicolor7" x="150" y="312" visible="xmenu_on.isActive and menu_settings.isActive and hicolor_7.isActive"/>
+				<Checkbox state="titlebar_on.isActive" up1="img_switch_off" up2="img_switch_color8" down1="img_switch_off_hover" down2="img_switch_color8_hover" over1="img_switch_off_hover" over2="img_switch_color8_hover" action1="titlebar.setLayout(titlebar_on)" action2="titlebar.setLayout(titlebar_off); arrow.setLayout(arrow_off)" id="settings_titlebar_hicolor8" x="150" y="312" visible="xmenu_on.isActive and menu_settings.isActive and hicolor_8.isActive"/>
+				<Checkbox state="titlebar_on.isActive" up1="img_switch_off" up2="img_switch_color9" down1="img_switch_off_hover" down2="img_switch_color9_hover" over1="img_switch_off_hover" over2="img_switch_color9_hover" action1="titlebar.setLayout(titlebar_on)" action2="titlebar.setLayout(titlebar_off); arrow.setLayout(arrow_off)" id="settings_titlebar_hicolor9" x="150" y="312" visible="xmenu_on.isActive and menu_settings.isActive and hicolor_9.isActive"/>
+				<Checkbox state="titlebar_on.isActive" up1="img_hint_off" up2="img_hint_on" id="settings_titlebar_hint" x="35" y="314" visible="xmenu_on.isActive and menu_settings.isActive"/>
+			</Panel>
+			<Panel id="menu_settings_adv_panel" y="30" width="300" height="400">
+				<Button up="img_goback" down="img_goback_active" over="img_goback_hover" action="menu.setLayout(menu_mainmenu);menu.setLayout(menu_settings)" id="advsettings_goto_settings_topoff" x="15" visible="xmenu_on.isActive and (menu_settings_adv.isActive or menu_settings_color.isActive) and titlebar_off.isActive" tooltiptext="Back"/>
+				<Button up="img_goback" down="img_goback_active" over="img_goback_hover" action="menu.setLayout(menu_mainmenu);menu.setLayout(menu_settings)" id="advsettings_goto_settings_topon" x="15" y="15" visible="xmenu_on.isActive and (menu_settings_adv.isActive or menu_settings_color.isActive) and titlebar_on.isActive and arrow_off.isActive" tooltiptext="Back"/>
+				<Image id="advsettings_title_topoff_max" x="55" y="-15" action="move" action2="MainWindow.maximize()" image="img_settings_adv_title" visible="xmenu_on.isActive and menu_settings_adv.isActive and titlebar_off.isActive"/>
+				<Image id="advsettings_title_topoff_umx" x="55" y="-15" action="move" action2="MainWindow.unmaximize()" image="img_settings_adv_title" visible="xmenu_on.isActive and menu_settings_adv.isActive and titlebar_off.isActive and MainWindow.isMaximized()"/>
+				<Image id="advsettings_title_topon" x="55" image="img_settings_adv_title_02" visible="xmenu_on.isActive and menu_settings_adv.isActive and titlebar_on.isActive and arrow_off.isActive"/>
+				<Image id="advsettings_title_arrow" x="24" image="img_settings_adv_title_02" visible="xmenu_on.isActive and menu_settings_adv.isActive and titlebar_on.isActive and arrow_on.isActive"/>
+				<Image id="advsettings_customplaylist" y="56" image="img_custompl_text" visible="xmenu_on.isActive and menu_settings_adv.isActive"/>
+				<Checkbox state="customplaylist_on.isActive" up1="img_switch_off" up2="img_switch_color0" down1="img_switch_off_hover" down2="img_switch_color0_hover" over1="img_switch_off_hover" over2="img_switch_color0_hover" action1="customplaylist.setLayout(customplaylist_on)" action2="customplaylist.setLayout(customplaylist_off);" id="advsettings_customplaylist_hicolor0" x="150" y="96" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_0.isActive"/>
+				<Checkbox state="customplaylist_on.isActive" up1="img_switch_off" up2="img_switch_color1" down1="img_switch_off_hover" down2="img_switch_color1_hover" over1="img_switch_off_hover" over2="img_switch_color1_hover" action1="customplaylist.setLayout(customplaylist_on)" action2="customplaylist.setLayout(customplaylist_off);" id="advsettings_customplaylist_hicolor1" x="150" y="96" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_1.isActive"/>
+				<Checkbox state="customplaylist_on.isActive" up1="img_switch_off" up2="img_switch_color2" down1="img_switch_off_hover" down2="img_switch_color2_hover" over1="img_switch_off_hover" over2="img_switch_color2_hover" action1="customplaylist.setLayout(customplaylist_on)" action2="customplaylist.setLayout(customplaylist_off);" id="advsettings_customplaylist_hicolor2" x="150" y="96" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_2.isActive"/>
+				<Checkbox state="customplaylist_on.isActive" up1="img_switch_off" up2="img_switch_color3" down1="img_switch_off_hover" down2="img_switch_color3_hover" over1="img_switch_off_hover" over2="img_switch_color3_hover" action1="customplaylist.setLayout(customplaylist_on)" action2="customplaylist.setLayout(customplaylist_off);" id="advsettings_customplaylist_hicolor3" x="150" y="96" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_3.isActive"/>
+				<Checkbox state="customplaylist_on.isActive" up1="img_switch_off" up2="img_switch_color4" down1="img_switch_off_hover" down2="img_switch_color4_hover" over1="img_switch_off_hover" over2="img_switch_color4_hover" action1="customplaylist.setLayout(customplaylist_on)" action2="customplaylist.setLayout(customplaylist_off);" id="advsettings_customplaylist_hicolor4" x="150" y="96" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_4.isActive"/>
+				<Checkbox state="customplaylist_on.isActive" up1="img_switch_off" up2="img_switch_color5" down1="img_switch_off_hover" down2="img_switch_color5_hover" over1="img_switch_off_hover" over2="img_switch_color5_hover" action1="customplaylist.setLayout(customplaylist_on)" action2="customplaylist.setLayout(customplaylist_off);" id="advsettings_customplaylist_hicolor5" x="150" y="96" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_5.isActive"/>
+				<Checkbox state="customplaylist_on.isActive" up1="img_switch_off" up2="img_switch_color6" down1="img_switch_off_hover" down2="img_switch_color6_hover" over1="img_switch_off_hover" over2="img_switch_color6_hover" action1="customplaylist.setLayout(customplaylist_on)" action2="customplaylist.setLayout(customplaylist_off);" id="advsettings_customplaylist_hicolor6" x="150" y="96" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_6.isActive"/>
+				<Checkbox state="customplaylist_on.isActive" up1="img_switch_off" up2="img_switch_color7" down1="img_switch_off_hover" down2="img_switch_color7_hover" over1="img_switch_off_hover" over2="img_switch_color7_hover" action1="customplaylist.setLayout(customplaylist_on)" action2="customplaylist.setLayout(customplaylist_off);" id="advsettings_customplaylist_hicolor7" x="150" y="96" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_7.isActive"/>
+				<Checkbox state="customplaylist_on.isActive" up1="img_switch_off" up2="img_switch_color8" down1="img_switch_off_hover" down2="img_switch_color8_hover" over1="img_switch_off_hover" over2="img_switch_color8_hover" action1="customplaylist.setLayout(customplaylist_on)" action2="customplaylist.setLayout(customplaylist_off);" id="advsettings_customplaylist_hicolor8" x="150" y="96" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_8.isActive"/>
+				<Checkbox state="customplaylist_on.isActive" up1="img_switch_off" up2="img_switch_color9" down1="img_switch_off_hover" down2="img_switch_color9_hover" over1="img_switch_off_hover" over2="img_switch_color9_hover" action1="customplaylist.setLayout(customplaylist_on)" action2="customplaylist.setLayout(customplaylist_off);" id="advsettings_customplaylist_hicolor9" x="150" y="96" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_9.isActive"/>
+				<Checkbox state="customplaylist_on.isActive" up1="img_hint_off" up2="img_hint_on" id="advsettings_customplaylist_hint" x="35" y="98" visible="xmenu_on.isActive and menu_settings_adv.isActive"/>
+				<Image id="advsettings_posbar" y="128" image="img_posbar_text" visible="xmenu_on.isActive and menu_settings_adv.isActive"/>
+				<Checkbox state="posbar_big.isActive" up1="img_switch_off" up2="img_switch_color0" down1="img_switch_off_hover" down2="img_switch_color0_hover" over1="img_switch_off_hover" over2="img_switch_color0_hover" action2="posbar.setLayout(posbar_sml)" action1="posbar.setLayout(posbar_big)" id="advsettings_coverbg_hicolor0" x="150" y="168" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_0.isActive"/>
+				<Checkbox state="posbar_big.isActive" up1="img_switch_off" up2="img_switch_color1" down1="img_switch_off_hover" down2="img_switch_color1_hover" over1="img_switch_off_hover" over2="img_switch_color1_hover" action2="posbar.setLayout(posbar_sml)" action1="posbar.setLayout(posbar_big)" id="advsettings_coverbg_hicolor1" x="150" y="168" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_1.isActive"/>
+				<Checkbox state="posbar_big.isActive" up1="img_switch_off" up2="img_switch_color2" down1="img_switch_off_hover" down2="img_switch_color2_hover" over1="img_switch_off_hover" over2="img_switch_color2_hover" action2="posbar.setLayout(posbar_sml)" action1="posbar.setLayout(posbar_big)" id="advsettings_coverbg_hicolor2" x="150" y="168" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_2.isActive"/>
+				<Checkbox state="posbar_big.isActive" up1="img_switch_off" up2="img_switch_color3" down1="img_switch_off_hover" down2="img_switch_color3_hover" over1="img_switch_off_hover" over2="img_switch_color3_hover" action2="posbar.setLayout(posbar_sml)" action1="posbar.setLayout(posbar_big)" id="advsettings_coverbg_hicolor3" x="150" y="168" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_3.isActive"/>
+				<Checkbox state="posbar_big.isActive" up1="img_switch_off" up2="img_switch_color4" down1="img_switch_off_hover" down2="img_switch_color4_hover" over1="img_switch_off_hover" over2="img_switch_color4_hover" action2="posbar.setLayout(posbar_sml)" action1="posbar.setLayout(posbar_big)" id="advsettings_coverbg_hicolor4" x="150" y="168" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_4.isActive"/>
+				<Checkbox state="posbar_big.isActive" up1="img_switch_off" up2="img_switch_color5" down1="img_switch_off_hover" down2="img_switch_color5_hover" over1="img_switch_off_hover" over2="img_switch_color5_hover" action2="posbar.setLayout(posbar_sml)" action1="posbar.setLayout(posbar_big)" id="advsettings_coverbg_hicolor5" x="150" y="168" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_5.isActive"/>
+				<Checkbox state="posbar_big.isActive" up1="img_switch_off" up2="img_switch_color6" down1="img_switch_off_hover" down2="img_switch_color6_hover" over1="img_switch_off_hover" over2="img_switch_color6_hover" action2="posbar.setLayout(posbar_sml)" action1="posbar.setLayout(posbar_big)" id="advsettings_coverbg_hicolor6" x="150" y="168" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_6.isActive"/>
+				<Checkbox state="posbar_big.isActive" up1="img_switch_off" up2="img_switch_color7" down1="img_switch_off_hover" down2="img_switch_color7_hover" over1="img_switch_off_hover" over2="img_switch_color7_hover" action2="posbar.setLayout(posbar_sml)" action1="posbar.setLayout(posbar_big)" id="advsettings_coverbg_hicolor7" x="150" y="168" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_7.isActive"/>
+				<Checkbox state="posbar_big.isActive" up1="img_switch_off" up2="img_switch_color8" down1="img_switch_off_hover" down2="img_switch_color8_hover" over1="img_switch_off_hover" over2="img_switch_color8_hover" action2="posbar.setLayout(posbar_sml)" action1="posbar.setLayout(posbar_big)" id="advsettings_coverbg_hicolor8" x="150" y="168" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_8.isActive"/>
+				<Checkbox state="posbar_big.isActive" up1="img_switch_off" up2="img_switch_color9" down1="img_switch_off_hover" down2="img_switch_color9_hover" over1="img_switch_off_hover" over2="img_switch_color9_hover" action2="posbar.setLayout(posbar_sml)" action1="posbar.setLayout(posbar_big)" id="advsettings_coverbg_hicolor9" x="150" y="168" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_9.isActive"/>
+				<Checkbox state="posbar_big.isActive" up1="img_hint_off" up2="img_hint_on" id="advsettings_coverbg_hint" x="35" y="170" visible="xmenu_on.isActive and menu_settings_adv.isActive"/>
+				<Image id="advsettings_arrow" y="200" image="img_arrow_text" visible="xmenu_on.isActive and menu_settings_adv.isActive"/>
+				<Checkbox state="arrow_on.isActive" up1="img_switch_off" up2="img_switch_color0" down1="img_switch_off_hover" down2="img_switch_color0_hover" over1="img_switch_off_hover" over2="img_switch_color0_hover" action2="arrow.setLayout(arrow_off)" action1="arrow.setLayout(arrow_on)" id="advsettings_coverbg_hicolor0" x="150" y="240" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_0.isActive"/>
+				<Checkbox state="arrow_on.isActive" up1="img_switch_off" up2="img_switch_color1" down1="img_switch_off_hover" down2="img_switch_color1_hover" over1="img_switch_off_hover" over2="img_switch_color1_hover" action2="arrow.setLayout(arrow_off)" action1="arrow.setLayout(arrow_on)" id="advsettings_coverbg_hicolor1" x="150" y="240" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_1.isActive"/>
+				<Checkbox state="arrow_on.isActive" up1="img_switch_off" up2="img_switch_color2" down1="img_switch_off_hover" down2="img_switch_color2_hover" over1="img_switch_off_hover" over2="img_switch_color2_hover" action2="arrow.setLayout(arrow_off)" action1="arrow.setLayout(arrow_on)" id="advsettings_coverbg_hicolor2" x="150" y="240" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_2.isActive"/>
+				<Checkbox state="arrow_on.isActive" up1="img_switch_off" up2="img_switch_color3" down1="img_switch_off_hover" down2="img_switch_color3_hover" over1="img_switch_off_hover" over2="img_switch_color3_hover" action2="arrow.setLayout(arrow_off)" action1="arrow.setLayout(arrow_on)" id="advsettings_coverbg_hicolor3" x="150" y="240" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_3.isActive"/>
+				<Checkbox state="arrow_on.isActive" up1="img_switch_off" up2="img_switch_color4" down1="img_switch_off_hover" down2="img_switch_color4_hover" over1="img_switch_off_hover" over2="img_switch_color4_hover" action2="arrow.setLayout(arrow_off)" action1="arrow.setLayout(arrow_on)" id="advsettings_coverbg_hicolor4" x="150" y="240" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_4.isActive"/>
+				<Checkbox state="arrow_on.isActive" up1="img_switch_off" up2="img_switch_color5" down1="img_switch_off_hover" down2="img_switch_color5_hover" over1="img_switch_off_hover" over2="img_switch_color5_hover" action2="arrow.setLayout(arrow_off)" action1="arrow.setLayout(arrow_on)" id="advsettings_coverbg_hicolor5" x="150" y="240" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_5.isActive"/>
+				<Checkbox state="arrow_on.isActive" up1="img_switch_off" up2="img_switch_color6" down1="img_switch_off_hover" down2="img_switch_color6_hover" over1="img_switch_off_hover" over2="img_switch_color6_hover" action2="arrow.setLayout(arrow_off)" action1="arrow.setLayout(arrow_on)" id="advsettings_coverbg_hicolor6" x="150" y="240" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_6.isActive"/>
+				<Checkbox state="arrow_on.isActive" up1="img_switch_off" up2="img_switch_color7" down1="img_switch_off_hover" down2="img_switch_color7_hover" over1="img_switch_off_hover" over2="img_switch_color7_hover" action2="arrow.setLayout(arrow_off)" action1="arrow.setLayout(arrow_on)" id="advsettings_coverbg_hicolor7" x="150" y="240" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_7.isActive"/>
+				<Checkbox state="arrow_on.isActive" up1="img_switch_off" up2="img_switch_color8" down1="img_switch_off_hover" down2="img_switch_color8_hover" over1="img_switch_off_hover" over2="img_switch_color8_hover" action2="arrow.setLayout(arrow_off)" action1="arrow.setLayout(arrow_on)" id="advsettings_coverbg_hicolor8" x="150" y="240" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_8.isActive"/>
+				<Checkbox state="arrow_on.isActive" up1="img_switch_off" up2="img_switch_color9" down1="img_switch_off_hover" down2="img_switch_color9_hover" over1="img_switch_off_hover" over2="img_switch_color9_hover" action2="arrow.setLayout(arrow_off)" action1="arrow.setLayout(arrow_on)" id="advsettings_coverbg_hicolor9" x="150" y="240" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_9.isActive"/>
+				<Checkbox state="arrow_on.isActive" up1="img_hint_off" up2="img_hint_on" id="advsettings_coverbg_hint" x="35" y="242" visible="xmenu_on.isActive and menu_settings_adv.isActive"/>
+				<Image id="advsettings_arrow_inactive" x="35" y="218" image="img_menu_arrow_inactive" visible="xmenu_on.isActive and menu_settings_adv.isActive and titlebar_off.isActive"/>
+				<Image id="advsettings_fsdrag" y="272" image="img_drag_text" visible="xmenu_on.isActive and menu_settings_adv.isActive"/>
+				<Checkbox state="fsdrag_on.isActive" up1="img_switch_off" up2="img_switch_color0" down1="img_switch_off_hover" down2="img_switch_color0_hover" over1="img_switch_off_hover" over2="img_switch_color0_hover" action2="fsdrag.setLayout(fsdrag_off)" action1="fsdrag.setLayout(fsdrag_on)" id="advsettings_coverbg_hicolor0" x="150" y="312" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_0.isActive"/>
+				<Checkbox state="fsdrag_on.isActive" up1="img_switch_off" up2="img_switch_color1" down1="img_switch_off_hover" down2="img_switch_color1_hover" over1="img_switch_off_hover" over2="img_switch_color1_hover" action2="fsdrag.setLayout(fsdrag_off)" action1="fsdrag.setLayout(fsdrag_on)" id="advsettings_coverbg_hicolor1" x="150" y="312" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_1.isActive"/>
+				<Checkbox state="fsdrag_on.isActive" up1="img_switch_off" up2="img_switch_color2" down1="img_switch_off_hover" down2="img_switch_color2_hover" over1="img_switch_off_hover" over2="img_switch_color2_hover" action2="fsdrag.setLayout(fsdrag_off)" action1="fsdrag.setLayout(fsdrag_on)" id="advsettings_coverbg_hicolor2" x="150" y="312" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_2.isActive"/>
+				<Checkbox state="fsdrag_on.isActive" up1="img_switch_off" up2="img_switch_color3" down1="img_switch_off_hover" down2="img_switch_color3_hover" over1="img_switch_off_hover" over2="img_switch_color3_hover" action2="fsdrag.setLayout(fsdrag_off)" action1="fsdrag.setLayout(fsdrag_on)" id="advsettings_coverbg_hicolor3" x="150" y="312" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_3.isActive"/>
+				<Checkbox state="fsdrag_on.isActive" up1="img_switch_off" up2="img_switch_color4" down1="img_switch_off_hover" down2="img_switch_color4_hover" over1="img_switch_off_hover" over2="img_switch_color4_hover" action2="fsdrag.setLayout(fsdrag_off)" action1="fsdrag.setLayout(fsdrag_on)" id="advsettings_coverbg_hicolor4" x="150" y="312" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_4.isActive"/>
+				<Checkbox state="fsdrag_on.isActive" up1="img_switch_off" up2="img_switch_color5" down1="img_switch_off_hover" down2="img_switch_color5_hover" over1="img_switch_off_hover" over2="img_switch_color5_hover" action2="fsdrag.setLayout(fsdrag_off)" action1="fsdrag.setLayout(fsdrag_on)" id="advsettings_coverbg_hicolor5" x="150" y="312" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_5.isActive"/>
+				<Checkbox state="fsdrag_on.isActive" up1="img_switch_off" up2="img_switch_color6" down1="img_switch_off_hover" down2="img_switch_color6_hover" over1="img_switch_off_hover" over2="img_switch_color6_hover" action2="fsdrag.setLayout(fsdrag_off)" action1="fsdrag.setLayout(fsdrag_on)" id="advsettings_coverbg_hicolor6" x="150" y="312" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_6.isActive"/>
+				<Checkbox state="fsdrag_on.isActive" up1="img_switch_off" up2="img_switch_color7" down1="img_switch_off_hover" down2="img_switch_color7_hover" over1="img_switch_off_hover" over2="img_switch_color7_hover" action2="fsdrag.setLayout(fsdrag_off)" action1="fsdrag.setLayout(fsdrag_on)" id="advsettings_coverbg_hicolor7" x="150" y="312" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_7.isActive"/>
+				<Checkbox state="fsdrag_on.isActive" up1="img_switch_off" up2="img_switch_color8" down1="img_switch_off_hover" down2="img_switch_color8_hover" over1="img_switch_off_hover" over2="img_switch_color8_hover" action2="fsdrag.setLayout(fsdrag_off)" action1="fsdrag.setLayout(fsdrag_on)" id="advsettings_coverbg_hicolor8" x="150" y="312" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_8.isActive"/>
+				<Checkbox state="fsdrag_on.isActive" up1="img_switch_off" up2="img_switch_color9" down1="img_switch_off_hover" down2="img_switch_color9_hover" over1="img_switch_off_hover" over2="img_switch_color9_hover" action2="fsdrag.setLayout(fsdrag_off)" action1="fsdrag.setLayout(fsdrag_on)" id="advsettings_coverbg_hicolor9" x="150" y="312" visible="xmenu_on.isActive and menu_settings_adv.isActive and hicolor_9.isActive"/>
+				<Checkbox state="fsdrag_on.isActive" up1="img_hint_off" up2="img_hint_on" id="advsettings_fsdrag_hint" x="35" y="314" visible="xmenu_on.isActive and menu_settings_adv.isActive"/>
+			</Panel>
+			<Panel id="menu_color_panel" y="30" width="300" height="400">
+				<Image id="color_title_topoff_max" x="55" y="-15" action="move" action2="MainWindow.maximize()" image="img_colors_title" visible="xmenu_on.isActive and menu_settings_color.isActive and titlebar_off.isActive"/>
+				<Image id="color_title_topoff_umx" x="55" y="-15" action="move" action2="MainWindow.unmaximize()" image="img_colors_title" visible="xmenu_on.isActive and menu_settings_color.isActive and titlebar_off.isActive and MainWindow.isMaximized()"/>
+				<Image id="color_title_topon" x="55" image="img_colors_title_02" visible="xmenu_on.isActive and menu_settings_color.isActive and titlebar_on.isActive and arrow_off.isActive"/>
+				<Image id="color_title_arrow" x="24" image="img_colors_title_02" visible="xmenu_on.isActive and menu_settings_color.isActive and titlebar_on.isActive and arrow_on.isActive"/>
+				<Image id="color_hicolor" y="56" image="img_hicolor_text" visible="xmenu_on.isActive and menu_settings_color.isActive"/>
+				<Checkbox state="hicolor_0.isActive" up1="img_hicolor_0" up2="img_hicolor_0_current" down1="img_hicolor_0_active" over1="img_hicolor_0_hover" action1="hicolor.setLayout(hicolor_0);" id="color_hicolor_0" x="35" y="100" visible="xmenu_on.isActive and menu_settings_color.isActive" tooltiptext1="White-Grey" tooltiptext2="White-Grey"/>
+				<Checkbox state="hicolor_1.isActive" up1="img_hicolor_1" up2="img_hicolor_1_current" down1="img_hicolor_1_active" over1="img_hicolor_1_hover" action1="hicolor.setLayout(hicolor_1);" id="color_hicolor_1" x="77" y="100" visible="xmenu_on.isActive and menu_settings_color.isActive" tooltiptext1="Bright-Pink" tooltiptext2="Bright-Pink"/>
+				<Checkbox state="hicolor_2.isActive" up1="img_hicolor_2" up2="img_hicolor_2_current" down1="img_hicolor_2_active" over1="img_hicolor_2_hover" action1="hicolor.setLayout(hicolor_2);" id="color_hicolor_2" x="119" y="100" visible="xmenu_on.isActive and menu_settings_color.isActive" tooltiptext1="Medium-Red" tooltiptext2="Medium-Red"/>
+				<Checkbox state="hicolor_3.isActive" up1="img_hicolor_3" up2="img_hicolor_3_current" down1="img_hicolor_3_active" over1="img_hicolor_3_hover" action1="hicolor.setLayout(hicolor_3);" id="color_hicolor_3" x="161" y="142" visible="xmenu_on.isActive and menu_settings_color.isActive" tooltiptext1="Cyan-Blue" tooltiptext2="Cyan-Blue"/>
+				<Checkbox state="hicolor_4.isActive" up1="img_hicolor_4" up2="img_hicolor_4_current" down1="img_hicolor_4_active" over1="img_hicolor_4_hover" action1="hicolor.setLayout(hicolor_4);" id="color_hicolor_4" x="77" y="142" visible="xmenu_on.isActive and menu_settings_color.isActive" tooltiptext1="Toxic-Lime" tooltiptext2="Toxic-Lime"/>
+				<Checkbox state="hicolor_5.isActive" up1="img_hicolor_5" up2="img_hicolor_5_current" down1="img_hicolor_5_active" over1="img_hicolor_5_hover" action1="hicolor.setLayout(hicolor_5);" id="color_hicolor_5" x="161" y="100" visible="xmenu_on.isActive and menu_settings_color.isActive" tooltiptext1="VLC-Orange" tooltiptext2="VLC-Orange"/>
+				<Checkbox state="hicolor_6.isActive" up1="img_hicolor_6" up2="img_hicolor_6_current" down1="img_hicolor_6_active" over1="img_hicolor_6_hover" action1="hicolor.setLayout(hicolor_6);" id="color_hicolor_6" x="203" y="100" visible="xmenu_on.isActive and menu_settings_color.isActive" tooltiptext1="Bright-Yellow" tooltiptext2="Bright-Yellow"/>
+				<Checkbox state="hicolor_7.isActive" up1="img_hicolor_7" up2="img_hicolor_7_current" down1="img_hicolor_7_active" over1="img_hicolor_7_hover" action1="hicolor.setLayout(hicolor_7);" id="color_hicolor_7" x="35" y="142" visible="xmenu_on.isActive and menu_settings_color.isActive" tooltiptext1="Gold" tooltiptext2="Gold"/>
+				<Checkbox state="hicolor_8.isActive" up1="img_hicolor_8" up2="img_hicolor_8_current" down1="img_hicolor_8_active" over1="img_hicolor_8_hover" action1="hicolor.setLayout(hicolor_8);" id="color_hicolor_8" x="119" y="142" visible="xmenu_on.isActive and menu_settings_color.isActive" tooltiptext1="Bright-Green" tooltiptext2="Bright-Green"/>
+				<Checkbox state="hicolor_9.isActive" up1="img_hicolor_9" up2="img_hicolor_9_current" down1="img_hicolor_9_active" over1="img_hicolor_9_hover" action1="hicolor.setLayout(hicolor_9);" id="color_hicolor_9" x="203" y="142" visible="xmenu_on.isActive and menu_settings_color.isActive" tooltiptext1="Medium-Blue" tooltiptext2="Medium-Blue"/>
+				<Image id="color_cinema_dropbox" y="184" image="img_cinema_color_text" visible="xmenu_on.isActive and menu_settings_color.isActive"/>
+				<Panel id="color_cinema_dropbox_panel" x="35" y="228" width="180" height="200">
+					<Checkbox state="cinema_dropbox_on.isActive" up1="img_dropbox_current_dark" up2="img_dropbox_current_dark" down1="img_dropbox_current_dark_hover" down2="img_dropbox_current_dark_hover" over1="img_dropbox_current_dark_hover" over2="img_dropbox_current_dark_hover" action1="cinema_dropbox.setLayout(cinema_dropbox_on)" action2="cinema_dropbox.setLayout(cinema_dropbox_off)" id="color_cinema_current_black" visible="xmenu_on.isActive and menu_settings_color.isActive and cinema_bordercolor_dark.isActive and cinema_dropbox_off.isActive"/>
+					<Checkbox state="cinema_dropbox_on.isActive" up1="img_dropbox_current_light" up2="img_dropbox_current_light" down1="img_dropbox_current_light_hover" down2="img_dropbox_current_light_hover" over1="img_dropbox_current_light_hover" over2="img_dropbox_current_light_hover" action1="cinema_dropbox.setLayout(cinema_dropbox_on)" action2="cinema_dropbox.setLayout(cinema_dropbox_off)" id="color_cinema_current_white" visible="xmenu_on.isActive and menu_settings_color.isActive and cinema_bordercolor_light.isActive and cinema_dropbox_off.isActive"/>
+					<Button up="img_dropbox_frame" down="img_dropbox_frame_hover" over="img_dropbox_frame_hover" action="none" id="color_dropbox_frame" visible="xmenu_on.isActive and menu_settings_color.isActive and cinema_dropbox_on.isActive"/>
+					<Checkbox state="cinema_bordercolor_dark.isActive" up1="img_dropbox_01_light" up2="img_dropbox_02_light" down1="img_dropbox_01_light_active" down2="img_dropbox_02_light_active" over1="img_dropbox_01_light_hover" over2="img_dropbox_02_light_hover" action1="cinema_dropbox.setLayout(cinema_dropbox_off); cinema_bordercolor.setLayout(cinema_bordercolor_light)" action2="cinema_dropbox.setLayout(cinema_dropbox_off); cinema_bordercolor.setLayout(cinema_bordercolor_light)" visible="xmenu_on.isActive and menu_settings_color.isActive and cinema_dropbox_on.isActive"/>
+					<Checkbox state="cinema_bordercolor_light.isActive" up1="img_dropbox_01_dark" up2="img_dropbox_02_dark" down1="img_dropbox_01_dark_active" down2="img_dropbox_02_dark_active" over1="img_dropbox_01_dark_hover" over2="img_dropbox_02_dark_hover" action1="cinema_dropbox.setLayout(cinema_dropbox_off); cinema_bordercolor.setLayout(cinema_bordercolor_dark)" action2="cinema_dropbox.setLayout(cinema_dropbox_off); cinema_bordercolor.setLayout(cinema_bordercolor_dark)" visible="xmenu_on.isActive and menu_settings_color.isActive and cinema_dropbox_on.isActive"/>
+				</Panel>
+			</Panel>
+			<Panel id="menu_playlist_adv_panel" y="30" width="300" height="400" rightbottom="rightbottom">
+				<Image id="advplaylist_title_topoff_max" x="55" y="-15" action="move" action2="MainWindow.maximize()" image="img_playlist_opt_title" visible="xmenu_on.isActive and menu_pl_adv.isActive and titlebar_off.isActive"/>
+				<Image id="advplaylist_title_topoff_umx" x="55" y="-15" action="move" action2="MainWindow.unmaximize()" image="img_playlist_opt_title" visible="xmenu_on.isActive and menu_pl_adv.isActive and titlebar_off.isActive and MainWindow.isMaximized()"/>
+				<Image id="advplaylist_title_topon" x="55" image="img_playlist_opt_title_02" visible="xmenu_on.isActive and menu_pl_adv.isActive and titlebar_on.isActive and arrow_off.isActive"/>
+				<Image id="advplaylist_title_arrow" x="24" image="img_playlist_opt_title_02" visible="xmenu_on.isActive and menu_pl_adv.isActive and titlebar_on.isActive and arrow_on.isActive"/>
+				<Image id="advplaylist_cont_text" y="56" image="img_playlist_cont_text" visible="xmenu_on.isActive and menu_pl_adv.isActive"/>
+				<Image id="advplaylist_shuff_text" y="128" image="img_playlist_shuff_text" visible="xmenu_on.isActive and menu_pl_adv.isActive"/>
+				<Button up="img_goback" down="img_goback_active" over="img_goback_hover" action="menu.setLayout(menu_pl)" id="advplaylist_goto_playlist_topoff" x="15" visible="xmenu_on.isActive and menu_pl_adv.isActive and titlebar_off.isActive" tooltiptext="Back"/>
+				<Button up="img_goback" down="img_goback_active" over="img_goback_hover" action="menu.setLayout(menu_pl)" id="advplaylist_goto_playlist_topon" x="15" y="15" visible="xmenu_on.isActive and menu_pl_adv.isActive and titlebar_on.isActive and arrow_off.isActive" tooltiptext="Back"/>
+				<Checkbox state="playlist.isLoop" up1="img_switch_off" up2="img_switch_color0" down1="img_switch_off_hover" down2="img_switch_color0_hover" over1="img_switch_off_hover" over2="img_switch_color0_hover" action1="playlist.setLoop(true)" action2="playlist.setLoop(false)" id="advplaylist_contall_hicolor0" x="150" y="96" visible="xmenu_on.isActive and menu_pl_adv.isActive and hicolor_0.isActive"/>
+				<Checkbox state="playlist.isLoop" up1="img_switch_off" up2="img_switch_color1" down1="img_switch_off_hover" down2="img_switch_color1_hover" over1="img_switch_off_hover" over2="img_switch_color1_hover" action1="playlist.setLoop(true)" action2="playlist.setLoop(false)" id="advplaylist_contall_hicolor1" x="150" y="96" visible="xmenu_on.isActive and menu_pl_adv.isActive and hicolor_1.isActive"/>
+				<Checkbox state="playlist.isLoop" up1="img_switch_off" up2="img_switch_color2" down1="img_switch_off_hover" down2="img_switch_color2_hover" over1="img_switch_off_hover" over2="img_switch_color2_hover" action1="playlist.setLoop(true)" action2="playlist.setLoop(false)" id="advplaylist_contall_hicolor2" x="150" y="96" visible="xmenu_on.isActive and menu_pl_adv.isActive and hicolor_2.isActive"/>
+				<Checkbox state="playlist.isLoop" up1="img_switch_off" up2="img_switch_color3" down1="img_switch_off_hover" down2="img_switch_color3_hover" over1="img_switch_off_hover" over2="img_switch_color3_hover" action1="playlist.setLoop(true)" action2="playlist.setLoop(false)" id="advplaylist_contall_hicolor3" x="150" y="96" visible="xmenu_on.isActive and menu_pl_adv.isActive and hicolor_3.isActive"/>
+				<Checkbox state="playlist.isLoop" up1="img_switch_off" up2="img_switch_color4" down1="img_switch_off_hover" down2="img_switch_color4_hover" over1="img_switch_off_hover" over2="img_switch_color4_hover" action1="playlist.setLoop(true)" action2="playlist.setLoop(false)" id="advplaylist_contall_hicolor4" x="150" y="96" visible="xmenu_on.isActive and menu_pl_adv.isActive and hicolor_4.isActive"/>
+				<Checkbox state="playlist.isLoop" up1="img_switch_off" up2="img_switch_color5" down1="img_switch_off_hover" down2="img_switch_color5_hover" over1="img_switch_off_hover" over2="img_switch_color5_hover" action1="playlist.setLoop(true)" action2="playlist.setLoop(false)" id="advplaylist_contall_hicolor5" x="150" y="96" visible="xmenu_on.isActive and menu_pl_adv.isActive and hicolor_5.isActive"/>
+				<Checkbox state="playlist.isLoop" up1="img_switch_off" up2="img_switch_color6" down1="img_switch_off_hover" down2="img_switch_color6_hover" over1="img_switch_off_hover" over2="img_switch_color6_hover" action1="playlist.setLoop(true)" action2="playlist.setLoop(false)" id="advplaylist_contall_hicolor6" x="150" y="96" visible="xmenu_on.isActive and menu_pl_adv.isActive and hicolor_6.isActive"/>
+				<Checkbox state="playlist.isLoop" up1="img_switch_off" up2="img_switch_color7" down1="img_switch_off_hover" down2="img_switch_color7_hover" over1="img_switch_off_hover" over2="img_switch_color7_hover" action1="playlist.setLoop(true)" action2="playlist.setLoop(false)" id="advplaylist_contall_hicolor7" x="150" y="96" visible="xmenu_on.isActive and menu_pl_adv.isActive and hicolor_7.isActive"/>
+				<Checkbox state="playlist.isLoop" up1="img_switch_off" up2="img_switch_color8" down1="img_switch_off_hover" down2="img_switch_color8_hover" over1="img_switch_off_hover" over2="img_switch_color8_hover" action1="playlist.setLoop(true)" action2="playlist.setLoop(false)" id="advplaylist_contall_hicolor8" x="150" y="96" visible="xmenu_on.isActive and menu_pl_adv.isActive and hicolor_8.isActive"/>
+				<Checkbox state="playlist.isLoop" up1="img_switch_off" up2="img_switch_color9" down1="img_switch_off_hover" down2="img_switch_color9_hover" over1="img_switch_off_hover" over2="img_switch_color9_hover" action1="playlist.setLoop(true)" action2="playlist.setLoop(false)" id="advplaylist_contall_hicolor9" x="150" y="96" visible="xmenu_on.isActive and menu_pl_adv.isActive and hicolor_9.isActive"/>
+				<Checkbox state="playlist.isLoop" up1="img_hint_off" up2="img_hint_on" id="advplaylist_contall_hint" x="35" y="98" visible="xmenu_on.isActive and menu_pl_adv.isActive"/>
+				<Checkbox state="playlist.isRandom" up1="img_switch_off" up2="img_switch_color0" down1="img_switch_off_hover" down2="img_switch_color0_hover" over1="img_switch_off_hover" over2="img_switch_color0_hover" action1="playlist.setRandom(true)" action2="playlist.setRandom(false)" id="advplaylist_shuffle_hicolor0" x="150" y="168" visible="xmenu_on.isActive and menu_pl_adv.isActive and hicolor_0.isActive"/>
+				<Checkbox state="playlist.isRandom" up1="img_switch_off" up2="img_switch_color1" down1="img_switch_off_hover" down2="img_switch_color1_hover" over1="img_switch_off_hover" over2="img_switch_color1_hover" action1="playlist.setRandom(true)" action2="playlist.setRandom(false)" id="advplaylist_shuffle_hicolor1" x="150" y="168" visible="xmenu_on.isActive and menu_pl_adv.isActive and hicolor_1.isActive"/>
+				<Checkbox state="playlist.isRandom" up1="img_switch_off" up2="img_switch_color2" down1="img_switch_off_hover" down2="img_switch_color2_hover" over1="img_switch_off_hover" over2="img_switch_color2_hover" action1="playlist.setRandom(true)" action2="playlist.setRandom(false)" id="advplaylist_shuffle_hicolor2" x="150" y="168" visible="xmenu_on.isActive and menu_pl_adv.isActive and hicolor_2.isActive"/>
+				<Checkbox state="playlist.isRandom" up1="img_switch_off" up2="img_switch_color3" down1="img_switch_off_hover" down2="img_switch_color3_hover" over1="img_switch_off_hover" over2="img_switch_color3_hover" action1="playlist.setRandom(true)" action2="playlist.setRandom(false)" id="advplaylist_shuffle_hicolor3" x="150" y="168" visible="xmenu_on.isActive and menu_pl_adv.isActive and hicolor_3.isActive"/>
+				<Checkbox state="playlist.isRandom" up1="img_switch_off" up2="img_switch_color4" down1="img_switch_off_hover" down2="img_switch_color4_hover" over1="img_switch_off_hover" over2="img_switch_color4_hover" action1="playlist.setRandom(true)" action2="playlist.setRandom(false)" id="advplaylist_shuffle_hicolor4" x="150" y="168" visible="xmenu_on.isActive and menu_pl_adv.isActive and hicolor_4.isActive"/>
+				<Checkbox state="playlist.isRandom" up1="img_switch_off" up2="img_switch_color5" down1="img_switch_off_hover" down2="img_switch_color5_hover" over1="img_switch_off_hover" over2="img_switch_color5_hover" action1="playlist.setRandom(true)" action2="playlist.setRandom(false)" id="advplaylist_shuffle_hicolor5" x="150" y="168" visible="xmenu_on.isActive and menu_pl_adv.isActive and hicolor_5.isActive"/>
+				<Checkbox state="playlist.isRandom" up1="img_switch_off" up2="img_switch_color6" down1="img_switch_off_hover" down2="img_switch_color6_hover" over1="img_switch_off_hover" over2="img_switch_color6_hover" action1="playlist.setRandom(true)" action2="playlist.setRandom(false)" id="advplaylist_shuffle_hicolor6" x="150" y="168" visible="xmenu_on.isActive and menu_pl_adv.isActive and hicolor_6.isActive"/>
+				<Checkbox state="playlist.isRandom" up1="img_switch_off" up2="img_switch_color7" down1="img_switch_off_hover" down2="img_switch_color7_hover" over1="img_switch_off_hover" over2="img_switch_color7_hover" action1="playlist.setRandom(true)" action2="playlist.setRandom(false)" id="advplaylist_shuffle_hicolor7" x="150" y="168" visible="xmenu_on.isActive and menu_pl_adv.isActive and hicolor_7.isActive"/>
+				<Checkbox state="playlist.isRandom" up1="img_switch_off" up2="img_switch_color8" down1="img_switch_off_hover" down2="img_switch_color8_hover" over1="img_switch_off_hover" over2="img_switch_color8_hover" action1="playlist.setRandom(true)" action2="playlist.setRandom(false)" id="advplaylist_shuffle_hicolor8" x="150" y="168" visible="xmenu_on.isActive and menu_pl_adv.isActive and hicolor_8.isActive"/>
+				<Checkbox state="playlist.isRandom" up1="img_switch_off" up2="img_switch_color9" down1="img_switch_off_hover" down2="img_switch_color9_hover" over1="img_switch_off_hover" over2="img_switch_color9_hover" action1="playlist.setRandom(true)" action2="playlist.setRandom(false)" id="advplaylist_shuffle_hicolor9" x="150" y="168" visible="xmenu_on.isActive and menu_pl_adv.isActive and hicolor_9.isActive"/>
+				<Checkbox state="playlist.isRandom" up1="img_hint_off" up2="img_hint_on" id="advplaylist_shuffle_hint" x="35" y="170" visible="xmenu_on.isActive and menu_pl_adv.isActive"/>
+				<Button up="img_load" down="img_load_active" over="img_load_hover" action="playlist.load()" id="advplaylist_load" y="200" visible="xmenu_on.isActive and menu_pl_adv.isActive"/>
+				<Button up="img_save" down="img_save_active" over="img_save_hover" action="playlist.save()" id="advplaylist_save" y="248" visible="xmenu_on.isActive and menu_pl_adv.isActive"/>
+			</Panel>
+			<Panel id="menu_playlist_panel" y="30" width="300" height="400" rightbottom="rightbottom">
+				<Image id="playlist_title_topoff_max" x="55" y="-15" action="move" action2="MainWindow.maximize()" image="img_playlist_title" visible="xmenu_on.isActive and menu_pl.isActive and titlebar_off.isActive"/>
+				<Image id="playlist_title_topoff_unmax" x="55" y="-15" action="move" action2="MainWindow.unmaximize()" image="img_playlist_title" visible="xmenu_on.isActive and menu_pl.isActive and titlebar_off.isActive and MainWindow.isMaximized()"/>
+				<Image id="playlist_title_topon" x="55" image="img_playlist_title_02" visible="xmenu_on.isActive and menu_pl.isActive and titlebar_on.isActive and arrow_off.isActive"/>
+				<Image id="playlist_title_arrow" x="24" image="img_playlist_title_02" visible="xmenu_on.isActive and menu_pl.isActive and titlebar_on.isActive and arrow_on.isActive"/>
+				<Button up="img_menu_add" down="img_menu_add_active" over="img_menu_add_hover" action="playlist.add()" id="playlist_add_topoff" x="215" visible="xmenu_on.isActive and menu_pl.isActive and titlebar_off.isActive" tooltiptext="Add file"/>
+				<Button up="img_menu_add" down="img_menu_add_active" over="img_menu_add_hover" action="playlist.add()" id="playlist_add_topon" x="215" y="15" visible="xmenu_on.isActive and menu_pl.isActive and titlebar_on.isActive" tooltiptext="Add file"/>
+				<Button up="img_menu_remove" down="img_menu_remove_active" over="img_menu_remove_hover" action="playtree.del()" id="playlist_remove_topoff" x="258" visible="xmenu_on.isActive and menu_pl.isActive and titlebar_off.isActive" tooltiptext="Remove file"/>
+				<Button up="img_menu_remove" down="img_menu_remove_active" over="img_menu_remove_hover" action="playtree.del()" id="playlist_remove_topon" x="258" y="15" visible="xmenu_on.isActive and menu_pl.isActive and titlebar_on.isActive" tooltiptext="Remove file"/>
+				<Button up="img_goto_pladv" down="img_goto_pladv_active" over="img_goto_pladv_hover" action="menu.setLayout(menu_pl_adv)" id="playlist_goto_advplaylist" y="56" visible="xmenu_on.isActive and menu_pl.isActive"/>
+				<Playtree id="playlist_playtree" font="zegoeuil_14" bgcolor1="#e5e5e5" bgcolor2="#e5e5e5" selcolor="#cecece" playcolor="#808080" itemimage="img_playtree_blank" openimage="img_playtree_close" closedimage="img_playtree_close" y="126" width="300" height="291" rightbottom="leftbottom" visible="xmenu_on.isActive and menu_pl.isActive">
+					<Slider id="playtree_slider" x="294" y="166" points="(2,213),(2,0)" tooltiptext="" up="img_scroll" down="img_scroll_active" over="img_scroll_hover" rightbottom="leftbottom" visible="xmenu_on.isActive and menu_pl.isActive"/>
+				</Playtree>
+				<Image id="playlist_separator" y="104" image="img_separator" visible="xmenu_on.isActive and menu_pl.isActive"/>
+			</Panel>
+			<Panel id="menu_misc_panel" y="30" width="300" height="400">
+				<Image id="misc_title_topoff_max" x="55" y="-15" action="move" action2="MainWindow.maximize()" image="img_misc_title" visible="xmenu_on.isActive and menu_misc.isActive and titlebar_off.isActive"/>
+				<Image id="misc_title_topoff_umx" x="55" y="-15" action="move" action2="MainWindow.unmaximize()" image="img_misc_title" visible="xmenu_on.isActive and menu_misc.isActive and titlebar_off.isActive and MainWindow.isMaximized()"/>
+				<Image id="misc_title_topon" x="55" image="img_misc_title_02" visible="xmenu_on.isActive and menu_misc.isActive and titlebar_on.isActive and arrow_off.isActive"/>
+				<Image id="misc_title_arrow" x="24" image="img_misc_title_02" visible="xmenu_on.isActive and menu_misc.isActive and titlebar_on.isActive and arrow_on.isActive"/>
+				<Image id="misc_record" y="56" image="img_record_text" visible="xmenu_on.isActive and menu_misc.isActive"/>
+				<Checkbox state="vlc.isRecording" up1="img_switch_off" up2="img_switch_color0" down1="img_switch_off_hover" down2="img_switch_color0_hover" over1="img_switch_off_hover" over2="img_switch_color0_hover" action1="vlc.toggleRecord()" action2="vlc.toggleRecord()" id="misc_record_hicolor0" x="150" y="96" visible="xmenu_on.isActive and menu_misc.isActive and hicolor_0.isActive"/>
+				<Checkbox state="vlc.isRecording" up1="img_switch_off" up2="img_switch_color1" down1="img_switch_off_hover" down2="img_switch_color1_hover" over1="img_switch_off_hover" over2="img_switch_color1_hover" action1="vlc.toggleRecord()" action2="vlc.toggleRecord()" id="misc_record_hicolor1" x="150" y="96" visible="xmenu_on.isActive and menu_misc.isActive and hicolor_1.isActive"/>
+				<Checkbox state="vlc.isRecording" up1="img_switch_off" up2="img_switch_color2" down1="img_switch_off_hover" down2="img_switch_color2_hover" over1="img_switch_off_hover" over2="img_switch_color2_hover" action1="vlc.toggleRecord()" action2="vlc.toggleRecord()" id="misc_record_hicolor2" x="150" y="96" visible="xmenu_on.isActive and menu_misc.isActive and hicolor_2.isActive"/>
+				<Checkbox state="vlc.isRecording" up1="img_switch_off" up2="img_switch_color3" down1="img_switch_off_hover" down2="img_switch_color3_hover" over1="img_switch_off_hover" over2="img_switch_color3_hover" action1="vlc.toggleRecord()" action2="vlc.toggleRecord()" id="misc_record_hicolor3" x="150" y="96" visible="xmenu_on.isActive and menu_misc.isActive and hicolor_3.isActive"/>
+				<Checkbox state="vlc.isRecording" up1="img_switch_off" up2="img_switch_color4" down1="img_switch_off_hover" down2="img_switch_color4_hover" over1="img_switch_off_hover" over2="img_switch_color4_hover" action1="vlc.toggleRecord()" action2="vlc.toggleRecord()" id="misc_record_hicolor4" x="150" y="96" visible="xmenu_on.isActive and menu_misc.isActive and hicolor_4.isActive"/>
+				<Checkbox state="vlc.isRecording" up1="img_switch_off" up2="img_switch_color5" down1="img_switch_off_hover" down2="img_switch_color5_hover" over1="img_switch_off_hover" over2="img_switch_color5_hover" action1="vlc.toggleRecord()" action2="vlc.toggleRecord()" id="misc_record_hicolor5" x="150" y="96" visible="xmenu_on.isActive and menu_misc.isActive and hicolor_5.isActive"/>
+				<Checkbox state="vlc.isRecording" up1="img_switch_off" up2="img_switch_color6" down1="img_switch_off_hover" down2="img_switch_color6_hover" over1="img_switch_off_hover" over2="img_switch_color6_hover" action1="vlc.toggleRecord()" action2="vlc.toggleRecord()" id="misc_record_hicolor6" x="150" y="96" visible="xmenu_on.isActive and menu_misc.isActive and hicolor_6.isActive"/>
+				<Checkbox state="vlc.isRecording" up1="img_switch_off" up2="img_switch_color7" down1="img_switch_off_hover" down2="img_switch_color7_hover" over1="img_switch_off_hover" over2="img_switch_color7_hover" action1="vlc.toggleRecord()" action2="vlc.toggleRecord()" id="misc_record_hicolor7" x="150" y="96" visible="xmenu_on.isActive and menu_misc.isActive and hicolor_7.isActive"/>
+				<Checkbox state="vlc.isRecording" up1="img_switch_off" up2="img_switch_color8" down1="img_switch_off_hover" down2="img_switch_color8_hover" over1="img_switch_off_hover" over2="img_switch_color8_hover" action1="vlc.toggleRecord()" action2="vlc.toggleRecord()" id="misc_record_hicolor8" x="150" y="96" visible="xmenu_on.isActive and menu_misc.isActive and hicolor_8.isActive"/>
+				<Checkbox state="vlc.isRecording" up1="img_switch_off" up2="img_switch_color9" down1="img_switch_off_hover" down2="img_switch_color9_hover" over1="img_switch_off_hover" over2="img_switch_color9_hover" action1="vlc.toggleRecord()" action2="vlc.toggleRecord()" id="misc_record_hicolor9" x="150" y="96" visible="xmenu_on.isActive and menu_misc.isActive and hicolor_9.isActive"/>
+				<Checkbox state="vlc.isRecording" up1="img_hint_off" up2="img_hint_on" id="misc_record_hint" x="35" y="98" visible="xmenu_on.isActive and menu_misc.isActive"/>
+				<Button up="img_take_screen" down="img_take_screen_active" over="img_take_screen_hover" action="vlc.snapshot()" id="misc_take_screen" y="128" visible="xmenu_on.isActive and menu_misc.isActive"/>
+				<Button up="img_goto_info" down="img_goto_info_active" over="img_goto_info_hover" action="dialogs.fileInfo()" id="misc_goto_info" y="176" visible="xmenu_on.isActive and menu_misc.isActive"/>
+				<Button up="img_goto_log" down="img_goto_log_active" over="img_goto_log_hover" action="dialogs.messages()" id="misc_goto_log" y="224" visible="xmenu_on.isActive and menu_misc.isActive"/>
+				<Button up="img_goto_pref" down="img_goto_pref_active" over="img_goto_pref_hover" action="dialogs.prefs()" id="misc_goto_pref" y="272" visible="xmenu_on.isActive and menu_misc.isActive"/>
+			</Panel>
+			<Panel id="menu_hotkeys_panel" y="30" width="300" height="400">
+				<Image id="hotkeys_adv_bg" y="60" image="img_menu_hotkeys_adv" visible="xmenu_on.isActive and menu_hotkeys_adv.isActive"/>
+				<Image id="hotkeys_adv_title_topoff_max" x="55" y="-15" action="move" action2="MainWindow.maximize()" image="img_hotkeys_adv_title" visible="xmenu_on.isActive and menu_hotkeys_adv.isActive and titlebar_off.isActive"/>
+				<Image id="hotkeys_adv_title_topoff_umx" x="55" y="-15" action="move" action2="MainWindow.unmaximize()" image="img_hotkeys_adv_title" visible="xmenu_on.isActive and menu_hotkeys_adv.isActive and titlebar_off.isActive and MainWindow.isMaximized()"/>
+				<Image id="hotkeys_adv_title_topon" x="55" image="img_hotkeys_adv_title_02" visible="xmenu_on.isActive and menu_hotkeys_adv.isActive and titlebar_on.isActive and arrow_off.isActive"/>
+				<Image id="hotkeys_adv_title_arrow" x="24" image="img_hotkeys_adv_title_02" visible="xmenu_on.isActive and menu_hotkeys_adv.isActive and titlebar_on.isActive and arrow_on.isActive"/>
+				<Image id="hotkeys_back" y="158" image="img_menu_hotkeys" visible="xmenu_on.isActive and menu_hotkeys.isActive"/>
+				<Image id="hotkeys_separator" y="104" image="img_separator" visible="xmenu_on.isActive and menu_hotkeys.isActive"/>
+				<Image id="hotkeys_title_topoff_max" x="55" y="-15" action="move" action2="MainWindow.maximize()" image="img_hotkeys_title" visible="xmenu_on.isActive and menu_hotkeys.isActive and titlebar_off.isActive"/>
+				<Image id="hotkeys_title_topoff_umx" x="55" y="-15" action="move" action2="MainWindow.unmaximize()" image="img_hotkeys_title" visible="xmenu_on.isActive and menu_hotkeys.isActive and titlebar_off.isActive and MainWindow.isMaximized()"/>
+				<Image id="hotkeys_title_topon" x="55" image="img_hotkeys_title_02" visible="xmenu_on.isActive and menu_hotkeys.isActive and titlebar_on.isActive and arrow_off.isActive"/>
+				<Image id="hotkeys_title_arrow" x="24" image="img_hotkeys_title_02" visible="xmenu_on.isActive and menu_hotkeys.isActive and titlebar_on.isActive and arrow_on.isActive"/>
+				<Button up="img_goto_hotkeysadv" down="img_goto_hotkeysadv_active" over="img_goto_hotkeysadv_hover" action="menu.setLayout(menu_hotkeys_adv)" id="hotkeys_goto_advhotkeys" y="56" visible="xmenu_on.isActive and menu_hotkeys.isActive"/>
+				<Button up="img_goback" down="img_goback_active" over="img_goback_hover" action="menu.setLayout(menu_mainmenu);menu.setLayout(menu_hotkeys)" id="hotkeys_goto_hotkeys_topoff" x="15" visible="xmenu_on.isActive and menu_hotkeys_adv.isActive and titlebar_off.isActive" tooltiptext="Back"/>
+				<Button up="img_goback" down="img_goback_active" over="img_goback_hover" action="menu.setLayout(menu_mainmenu);menu.setLayout(menu_hotkeys)" id="hotkeys_goto_hotkeys_topon" x="15" y="15" visible="xmenu_on.isActive and menu_hotkeys_adv.isActive and titlebar_on.isActive and arrow_off.isActive" tooltiptext="Back"/>
+			</Panel>
+			<Button up="img_goback" down="img_goback_active" over="img_goback_hover" action="menu.setLayout(menu_mainmenu);menu.setLayout(menu_mainmenu)" id="menu_goback_topoff" x="15" y="30" visible="xmenu_on.isActive and (menu_settings.isActive or menu_pl.isActive or menu_hotkeys.isActive or menu_misc.isActive) and titlebar_off.isActive and arrow_off.isActive" tooltiptext="Back"/>
+			<Button up="img_goback" down="img_goback_active" over="img_goback_hover" action="menu.setLayout(menu_mainmenu);menu.setLayout(menu_mainmenu)" id="menu_goback_topon" x="15" y="45" visible="xmenu_on.isActive and (menu_settings.isActive or menu_pl.isActive or menu_hotkeys.isActive or menu_misc.isActive) and titlebar_on.isActive and arrow_off.isActive" tooltiptext="Back"/>
+
+			<!--BOTTOMBAR-->
+
+			<Panel id="bottom_panel" y="508" width="900" height="62" lefttop="leftbottom" rightbottom="rightbottom">
+				<Image id="bottombar_posbg" width="100%" image="img_posbg" action="move" resize="scale" lefttop="leftbottom" rightbottom="rightbottom"/>
+				<Slider id="bottombar_pos_hicolor0" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_0" down="img_posbar_front_hicolor_0" over="img_posbar_front_hicolor_0" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_0.isActive"/>
+				<Slider id="bottombar_pos_hicolor0_slider" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_0" down="img_slider_10x10" over="img_posbar_hover_hicolor_0" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_0.isActive"/>
+				<Slider id="bottombar_pos_hicolor1" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_1" down="img_posbar_front_hicolor_0" over="img_posbar_front_hicolor_1" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_1.isActive"/>
+				<Slider id="bottombar_pos_hicolor1_slider" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_1" down="img_slider_10x10" over="img_posbar_hover_hicolor_1" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_1.isActive"/>
+				<Slider id="bottombar_pos_hicolor2" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_2" down="img_posbar_front_hicolor_2" over="img_posbar_front_hicolor_2" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_2.isActive"/>
+				<Slider id="bottombar_pos_hicolor2_slider" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_2" down="img_slider_10x10" over="img_posbar_hover_hicolor_2" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_2.isActive"/>
+				<Slider id="bottombar_pos_hicolor3" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_3" down="img_posbar_front_hicolor_3" over="img_posbar_front_hicolor_3" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_3.isActive"/>
+				<Slider id="bottombar_pos_hicolor3_slider" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_3" down="img_slider_10x10" over="img_posbar_hover_hicolor_3" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_3.isActive"/>
+				<Slider id="bottombar_pos_hicolor4" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_4" down="img_posbar_front_hicolor_4" over="img_posbar_front_hicolor_4" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_4.isActive"/>
+				<Slider id="bottombar_pos_hicolor4_slider" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_4" down="img_slider_10x10" over="img_posbar_hover_hicolor_4" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_4.isActive"/>
+				<Slider id="bottombar_pos_hicolor5" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_5" down="img_posbar_front_hicolor_5" over="img_posbar_front_hicolor_5" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_5.isActive"/>
+				<Slider id="bottombar_pos_hicolor5_slider" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_5" down="img_slider_10x10" over="img_posbar_hover_hicolor_5" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_5.isActive"/>
+				<Slider id="bottombar_pos_hicolor6" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_6" down="img_posbar_front_hicolor_6" over="img_posbar_front_hicolor_6" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_6.isActive"/>
+				<Slider id="bottombar_pos_hicolor6_slider" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_6" down="img_slider_10x10" over="img_posbar_hover_hicolor_6" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_6.isActive"/>
+				<Slider id="bottombar_pos_hicolor7" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_7" down="img_posbar_front_hicolor_7" over="img_posbar_front_hicolor_7" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_7.isActive"/>
+				<Slider id="bottombar_pos_hicolor7_slider" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_7" down="img_slider_10x10" over="img_posbar_hover_hicolor_7" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_7.isActive"/>
+				<Slider id="bottombar_pos_hicolor8" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_8" down="img_posbar_front_hicolor_8" over="img_posbar_front_hicolor_8" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_8.isActive"/>
+				<Slider id="bottombar_pos_hicolor8_slider" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_8" down="img_slider_10x10" over="img_posbar_hover_hicolor_8" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_8.isActive"/>
+				<Slider id="bottombar_pos_hicolor9" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_9" down="img_posbar_front_hicolor_9" over="img_posbar_front_hicolor_9" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_9.isActive"/>
+				<Slider id="bottombar_pos_hicolor9_slider" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_9" down="img_slider_10x10" over="img_posbar_hover_hicolor_9" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_9.isActive"/>
+			</Panel>
+			<Panel id="bottom_pos_big" y="506" width="900" height="7" lefttop="leftbottom" rightbottom="rightbottom">
+				<Image id="bottombar_posbg_big" width="100%" height="7" image="img_posbg" action="move" resize="scale" lefttop="leftbottom" rightbottom="rightbottom" visible="posbar_big.isActive"/>
+				<Slider id="bottombar_pos_big_hicolor0" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_0" down="img_posbar_front_hicolor_0" over="img_posbar_front_hicolor_0" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_0.isActive and posbar_big.isActive"/>
+				<Slider id="bottombar_pos_big_hicolor0_slider" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_0" down="img_slider_10x10" over="img_posbar_hover_hicolor_0" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_0.isActive and posbar_big.isActive"/>
+				<Slider id="bottombar_pos_big_hicolor1" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_1" down="img_posbar_front_hicolor_0" over="img_posbar_front_hicolor_1" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_1.isActive and posbar_big.isActive"/>
+				<Slider id="bottombar_pos_big_hicolor1_slider" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_1" down="img_slider_10x10" over="img_posbar_hover_hicolor_1" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_1.isActive and posbar_big.isActive"/>
+				<Slider id="bottombar_pos_big_hicolor2" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_2" down="img_posbar_front_hicolor_2" over="img_posbar_front_hicolor_2" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_2.isActive and posbar_big.isActive"/>
+				<Slider id="bottombar_pos_big_hicolor2_slider" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_2" down="img_slider_10x10" over="img_posbar_hover_hicolor_2" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_2.isActive and posbar_big.isActive"/>
+				<Slider id="bottombar_pos_big_hicolor3" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_3" down="img_posbar_front_hicolor_3" over="img_posbar_front_hicolor_3" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_3.isActive and posbar_big.isActive"/>
+				<Slider id="bottombar_pos_big_hicolor3_slider" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_3" down="img_slider_10x10" over="img_posbar_hover_hicolor_3" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_3.isActive and posbar_big.isActive"/>
+				<Slider id="bottombar_pos_big_hicolor4" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_4" down="img_posbar_front_hicolor_4" over="img_posbar_front_hicolor_4" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_4.isActive and posbar_big.isActive"/>
+				<Slider id="bottombar_pos_big_hicolor4_slider" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_4" down="img_slider_10x10" over="img_posbar_hover_hicolor_4" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_4.isActive and posbar_big.isActive"/>
+				<Slider id="bottombar_pos_big_hicolor5" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_5" down="img_posbar_front_hicolor_5" over="img_posbar_front_hicolor_5" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_5.isActive and posbar_big.isActive"/>
+				<Slider id="bottombar_pos_big_hicolor5_slider" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_5" down="img_slider_10x10" over="img_posbar_hover_hicolor_5" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_5.isActive and posbar_big.isActive"/>
+				<Slider id="bottombar_pos_big_hicolor6" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_6" down="img_posbar_front_hicolor_6" over="img_posbar_front_hicolor_6" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_6.isActive and posbar_big.isActive"/>
+				<Slider id="bottombar_pos_big_hicolor6_slider" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_6" down="img_slider_10x10" over="img_posbar_hover_hicolor_6" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_6.isActive and posbar_big.isActive"/>
+				<Slider id="bottombar_pos_big_hicolor7" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_7" down="img_posbar_front_hicolor_7" over="img_posbar_front_hicolor_7" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_7.isActive and posbar_big.isActive"/>
+				<Slider id="bottombar_pos_big_hicolor7_slider" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_7" down="img_slider_10x10" over="img_posbar_hover_hicolor_7" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_7.isActive and posbar_big.isActive"/>
+				<Slider id="bottombar_pos_big_hicolor8" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_8" down="img_posbar_front_hicolor_8" over="img_posbar_front_hicolor_8" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_8.isActive and posbar_big.isActive"/>
+				<Slider id="bottombar_pos_big_hicolor8_slider" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_8" down="img_slider_10x10" over="img_posbar_hover_hicolor_8" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_8.isActive and posbar_big.isActive"/>
+				<Slider id="bottombar_pos_big_hicolor9" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_9" down="img_posbar_front_hicolor_9" over="img_posbar_front_hicolor_9" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_9.isActive and posbar_big.isActive"/>
+				<Slider id="bottombar_pos_big_hicolor9_slider" points="(0,3),(900,3)" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_9" down="img_slider_10x10" over="img_posbar_hover_hicolor_9" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_9.isActive and posbar_big.isActive"/>
+				<Image id="bottombar_max" y="7" width="100%" image="img_bottombar" action="move" action2="MainWindow.maximize()" resize="scale" lefttop="leftbottom" rightbottom="rightbottom"/>
+				<Image id="bottombar_unmax" y="7" width="100%" image="img_bottombar" action="move" action2="MainWindow.unmaximize()" resize="scale" lefttop="leftbottom" rightbottom="rightbottom" visible="MainWindow.isMaximized()"/>
+			</Panel>
+			<Panel id="bottom_volumebar_panel" x="730" y="528" width="160" height="30" lefttop="rightbottom" rightbottom="rightbottom">
+				<Image id="volumebar_back" x="45" y="10" image="img_volbar" lefttop="rightbottom" rightbottom="rightbottom"/>
+				<Slider id="volumebar_hicolor_0" x="45" y="10" points="(3,3),(96,3)" value="volume" tooltiptext="" up="img_volbar_hicolor_0" down="img_volbar_hicolor_0" over="img_volbar_hicolor_0" lefttop="rightbottom" rightbottom="rightbottom" visible="hicolor_0.isActive and (not vlc.isMute)"/>
+				<Slider id="volumebar_hicolor_1" x="45" y="10" points="(3,3),(96,3)" value="volume" tooltiptext="" up="img_volbar_hicolor_1" down="img_volbar_hicolor_1" over="img_volbar_hicolor_1" lefttop="rightbottom" rightbottom="rightbottom" visible="hicolor_1.isActive and (not vlc.isMute)"/>
+				<Slider id="volumebar_hicolor_2" x="45" y="10" points="(3,3),(96,3)" value="volume" tooltiptext="" up="img_volbar_hicolor_2" down="img_volbar_hicolor_2" over="img_volbar_hicolor_2" lefttop="rightbottom" rightbottom="rightbottom" visible="hicolor_2.isActive and (not vlc.isMute)"/>
+				<Slider id="volumebar_hicolor_3" x="45" y="10" points="(3,3),(96,3)" value="volume" tooltiptext="" up="img_volbar_hicolor_3" down="img_volbar_hicolor_3" over="img_volbar_hicolor_3" lefttop="rightbottom" rightbottom="rightbottom" visible="hicolor_3.isActive and (not vlc.isMute)"/>
+				<Slider id="volumebar_hicolor_4" x="45" y="10" points="(3,3),(96,3)" value="volume" tooltiptext="" up="img_volbar_hicolor_4" down="img_volbar_hicolor_4" over="img_volbar_hicolor_4" lefttop="rightbottom" rightbottom="rightbottom" visible="hicolor_4.isActive and (not vlc.isMute)"/>
+				<Slider id="volumebar_hicolor_5" x="45" y="10" points="(3,3),(96,3)" value="volume" tooltiptext="" up="img_volbar_hicolor_5" down="img_volbar_hicolor_5" over="img_volbar_hicolor_5" lefttop="rightbottom" rightbottom="rightbottom" visible="hicolor_5.isActive and (not vlc.isMute)"/>
+				<Slider id="volumebar_hicolor_6" x="45" y="10" points="(3,3),(96,3)" value="volume" tooltiptext="" up="img_volbar_hicolor_6" down="img_volbar_hicolor_6" over="img_volbar_hicolor_6" lefttop="rightbottom" rightbottom="rightbottom" visible="hicolor_6.isActive and (not vlc.isMute)"/>
+				<Slider id="volumebar_hicolor_7" x="45" y="10" points="(3,3),(96,3)" value="volume" tooltiptext="" up="img_volbar_hicolor_7" down="img_volbar_hicolor_7" over="img_volbar_hicolor_7" lefttop="rightbottom" rightbottom="rightbottom" visible="hicolor_7.isActive and (not vlc.isMute)"/>
+				<Slider id="volumebar_hicolor_8" x="45" y="10" points="(3,3),(96,3)" value="volume" tooltiptext="" up="img_volbar_hicolor_8" down="img_volbar_hicolor_8" over="img_volbar_hicolor_8" lefttop="rightbottom" rightbottom="rightbottom" visible="hicolor_8.isActive and (not vlc.isMute)"/>
+				<Slider id="volumebar_hicolor_9" x="45" y="10" points="(3,3),(96,3)" value="volume" tooltiptext="" up="img_volbar_hicolor_9" down="img_volbar_hicolor_9" over="img_volbar_hicolor_9" lefttop="rightbottom" rightbottom="rightbottom" visible="hicolor_9.isActive and (not vlc.isMute)"/>
+				<Slider id="volumebar_slider" x="45" y="10" points="(3,3),(96,3)" value="volume" tooltiptext="$V" up="img_slider_7x7" down="img_slider_7x17" over="img_slider_7x7" lefttop="rightbottom" rightbottom="rightbottom" visible="not vlc.isMute"/>
+			</Panel>
+			<Panel id="bottom_overlay_panel" y="508" width="900" height="62" lefttop="leftbottom" rightbottom="rightbottom">
+				<Image id="bottombar_overlay_max" x="150" y="5" image="img_bottombar_overlay" action="move" action2="MainWindow.maximize()" resize="scale" lefttop="leftbottom" rightbottom="rightbottom"/>
+				<Image id="bottombar_overlay_unmax" x="150" y="5" image="img_bottombar_overlay" action="move" action2="MainWindow.unmaximize()" resize="scale" lefttop="leftbottom" rightbottom="rightbottom" visible="MainWindow.isMaximized()"/>
+				<Checkbox state="vlc.isMute" up1="img_volume_on" up2="img_volume_off" down1="img_volume_on_active" down2="img_volume_off_active" over1="img_volume_on_hover" over2="img_volume_off_hover" action1="vlc.mute()" action2="vlc.mute()" id="bottombar_mute" x="739" y="19" lefttop="rightbottom" rightbottom="rightbottom" tooltiptext1="Mute" tooltiptext2="Unmute"/>
+				<Image id="bottombar_resize_e" x="894" y="6" image="img_bottombar_resize_e" action="resizeE" action2="MainWindow.maximize()" resize="scale" lefttop="rightbottom" rightbottom="rightbottom" visible="not MainWindow.isMaximized()"/>
+				<Image id="bottombar_resize_s" y="57" image="img_bottombar_resize_s" action="resizeS" action2="MainWindow.maximize()" resize="scale" lefttop="leftbottom" rightbottom="rightbottom" visible="not MainWindow.isMaximized()"/>
+				<Image id="bottombar_corner_border" x="890" y="53" image="img_corner" action="resizeSE" lefttop="rightbottom" rightbottom="rightbottom" visible="(not MainWindow.isMaximized())"/>
+				<Button id="bottombar_mute_overlay" x="775" y="30" up="img_mute_overlay" over="img_mute_overlay" down="img_mute_overlay" action="vlc.mute()" lefttop="rightbottom" rightbottom="rightbottom" visible="vlc.isMute" tooltiptext="Unmute"/>
+			</Panel>
+			<Panel id="bottom_left_topoff_panel" y="513" width="200" height="57" lefttop="leftbottom" rightbottom="leftbottom">
+				<Button id="bottom_close" up="img_close" down="img_close_active" over="img_close_hover" action="vlc.quit();" x="15" y="15" lefttop="leftbottom" rightbottom="leftbottom" visible="titlebar_off.isActive" tooltiptext="Close VLC"/>
+				<Button id="bottom_close_unmax" up="img_close" down="img_close_active" over="img_close_hover" action="MainWindow.unmaximize(); vlc.quit();" x="15" y="15" lefttop="leftbottom" rightbottom="leftbottom" visible="titlebar_off.isActive and MainWindow.isMaximized" tooltiptext="Close VLC"/>
+				<Checkbox id="bottom_open_menu" state="xmenu_on.isActive" up1="img_showmenu_off" up2="img_showmenu_on" down1="img_showmenu_off_active" down2="img_showmenu_on_active" over1="img_showmenu_off_hover" over2="img_showmenu_on_hover" action1="xmenu.setLayout(xmenu_on)" action2="xmenu.setLayout(xmenu_off)" x="167" y="15" lefttop="leftbottom" rightbottom="leftbottom" visible="titlebar_off.isActive" tooltiptext1="Show menu" tooltiptext2="Close menu"/>
+				<Checkbox id="bottom_open_main" state="xmenu_on.isActive" up1="img_showmenu_off" up2="img_showmenu_on" down1="img_showmenu_off_active" down2="img_showmenu_on_active" over1="img_showmenu_off_hover" over2="img_showmenu_on_hover" action1="menu.setLayout(menu_mainmenu); xmenu.setLayout(xmenu_on)" action2="xmenu.setLayout(xmenu_off);" x="167" y="15" lefttop="leftbottom" rightbottom="leftbottom" visible="(menu_mainmenu.isActive) and titlebar_off.isActive" tooltiptext1="Show menu" tooltiptext2="Close menu"/>
+				<Text focus="false" id="bottom_time_1_notime" text="0:00:00" font="zegoeuil_14" color="#d2d2d2" x="54" y="18" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="titlebar_off.isActive and (not vlc.hasAudio) and (not vlc.hasVout)"/>
+				<Text focus="false" id="bottom_time_1_stream" text="0:00:00" font="zegoeuil_14" color="#d2d2d2" x="54" y="18" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="titlebar_off.isActive and (vlc.hasAudio or vlc.hasVout) and (not vlc.isSeekable)"/>
+				<Text focus="false" id="bottom_time_1" text="$T" font="zegoeuil_14" color="#d2d2d2" x="54" y="18" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="titlebar_off.isActive and (vlc.hasAudio or vlc.hasVout) and vlc.isSeekable"/>
+				<Text focus="false" id="bottom_time_slash" text="/" font="segoeui_17" color="#555555" x="103" y="15" width="20" lefttop="leftbottom" rightbottom="leftbottom" visible="titlebar_off.isActive"/>
+				<Text focus="false" id="bottom_time_2" text="$D" font="zegoeuil_13" color="#454545" x="115" y="19" width="50" lefttop="leftbottom" rightbottom="leftbottom" visible="titlebar_off.isActive and (vlc.hasAudio or vlc.hasVout)"/>
+				<Text focus="false" id="bottom_time_2_notime" text="-:--:--" font="zegoeuil_13" color="#454545" x="115" y="19" width="50" lefttop="leftbottom" rightbottom="leftbottom" visible="titlebar_off.isActive and (not vlc.hasAudio) and (not vlc.hasVout)"/>
+				<Button id="bottom_stream" up="img_stream_anim" x="115" y="23" lefttop="leftbottom" rightbottom="leftbottom" visible="titlebar_off.isActive and (vlc.hasAudio or vlc.hasVout) and (not vlc.isSeekable)"/>
+			</Panel>
+			<Panel id="bottom_left_topon_panel" y="513" width="200" height="57" lefttop="leftbottom" rightbottom="leftbottom">
+				<Checkbox id="bottom_topon_open_menu" state="xmenu_on.isActive" up1="img_showmenu_off" up2="img_showmenu_on" down1="img_showmenu_off_active" down2="img_showmenu_on_active" over1="img_showmenu_off_hover" over2="img_showmenu_on_hover" action1="xmenu.setLayout(xmenu_on)" action2="xmenu.setLayout(xmenu_off)" x="137" y="15" lefttop="leftbottom" rightbottom="leftbottom" visible="titlebar_on.isActive" tooltiptext1="Show menu" tooltiptext2="Close menu"/>
+				<Checkbox id="bottom_topon_open_main" state="xmenu_on.isActive" up1="img_showmenu_off" up2="img_showmenu_on" down1="img_showmenu_off_active" down2="img_showmenu_on_active" over1="img_showmenu_off_hover" over2="img_showmenu_on_hover" action1="menu.setLayout(menu_mainmenu); xmenu.setLayout(xmenu_on)" action2="xmenu.setLayout(xmenu_off);" x="137" y="15" lefttop="leftbottom" rightbottom="leftbottom" visible="(menu_mainmenu.isActive) and titlebar_on.isActive" tooltiptext1="Show menu" tooltiptext2="Close menu"/>
+				<Text focus="false" id="bottom_topon_time_1_notime" text="0:00:00" font="zegoeuil_14" color="#d2d2d2" x="24" y="18" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="titlebar_on.isActive and (not vlc.hasAudio) and (not vlc.hasVout)"/>
+				<Text focus="false" id="bottom_topon_time_1_stream" text="0:00:00" font="zegoeuil_14" color="#d2d2d2" x="24" y="18" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="titlebar_on.isActive and (vlc.hasAudio or vlc.hasVout) and (not vlc.isSeekable)"/>
+				<Text focus="false" id="bottom_topon_time_1" text="$T" font="zegoeuil_14" color="#d2d2d2" x="24" y="18" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="titlebar_on.isActive and (vlc.hasAudio or vlc.hasVout) and vlc.isSeekable"/>
+				<Text focus="false" id="bottom_topon_time_slash" text="/" font="segoeui_17" color="#555555" x="73" y="15" width="20" lefttop="leftbottom" rightbottom="leftbottom" visible="titlebar_on.isActive"/>
+				<Text focus="false" id="bottom_topon_time_2" text="$D" font="zegoeuil_13" color="#454545" x="85" y="19" width="50" lefttop="leftbottom" rightbottom="leftbottom" visible="titlebar_on.isActive and (vlc.hasAudio or vlc.hasVout)"/>
+				<Text focus="false" id="bottom_topon_time_2_notime" text="-:--:--" font="zegoeuil_13" color="#454545" x="85" y="19" width="50" lefttop="leftbottom" rightbottom="leftbottom" visible="titlebar_on.isActive and (not vlc.hasAudio) and (not vlc.hasVout)"/>
+				<Button id="bottom_topon_stream" up="img_stream_anim" x="85" y="23" lefttop="leftbottom" rightbottom="leftbottom" visible="titlebar_on.isActive and (vlc.hasAudio or vlc.hasVout) and (not vlc.isSeekable)"/>
+			</Panel>
+			<Panel id="bottom_control_panel" x="350" y="515" width="200" height="50" lefttop="leftbottom" rightbottom="rightbottom" xkeepratio="true">
+				<Checkbox state="vlc.isPlaying" up1="img_play" up2="img_pause" down1="img_play_active" down2="img_pause_active" over1="img_play_hover" over2="img_pause_hover" action1="vlc.play()" action2="vlc.pause()" id="bottombar_play" x="79" y="5" lefttop="leftbottom" rightbottom="leftbottom" tooltiptext1="Play" tooltiptext2="Pause"/>
+				<Button up="img_next" down="img_next_active" over="img_next_hover" action="playlist.next()" id="bottombar_next" x="134" y="11" lefttop="rightbottom" rightbottom="rightbottom" tooltiptext="Next"/>
+				<Button up="img_prev" down="img_prev_active" over="img_prev_hover" action="playlist.previous()" id="bottombar_prev" x="36" y="11" lefttop="leftbottom" rightbottom="leftbottom" tooltiptext="Previous"/>
+			</Panel>
+
+			<!--TITLEBAR-->
+
+			<Panel id="titlebar_panel" width="900" height="30" rightbottom="righttop">
+				<Image id="titlebar_bg_max" width="900" image="img_titlebar" action="move" action2="MainWindow.maximize()" resize="scale" rightbottom="righttop" visible="titlebar_on.isActive"/>
+				<Image id="titlebar_bg_unmax" width="900" image="img_titlebar" action="move" action2="MainWindow.unmaximize()" resize="scale" rightbottom="righttop" visible="titlebar_on.isActive and MainWindow.isMaximized()"/>
+				<Text id="titlebar_text_title" text="$N" font="zegoeuil_14" alignment="left" color="#ffffff" x="12" y="5" width="590" rightbottom="righttop" visible="((titlebar_on.isActive and arrow_off.isActive) or (titlebar_on.isActive and arrow_on.isActive and menu_mainmenu.isActive) or (titlebar_on.isActive and xmenu_off.isActive)) and (vlc.hasAudio or vlc.hasVout)" focus="false"/>
+				<Text id="titlebar_text_arrow" text="$N" font="zegoeuil_14" alignment="left" color="#ffffff" x="60" y="5" width="542" rightbottom="righttop" visible="titlebar_on.isActive and (vlc.hasAudio or vlc.hasVout) and arrow_on.isActive and (not menu_mainmenu.isActive) and (xmenu_on.isActive)" focus="false"/>
+				<Image id="titlebar_overlay_max" width="900" image="img_titlebar" action="move" action2="MainWindow.maximize()" resize="scale" rightbottom="righttop" visible="titlebar_on.isActive and ((not vlc.hasAudio) and (not vlc.hasVout))"/>
+				<Image id="titlebar_overlay_unmax" width="900" image="img_titlebar" action="move" action2="MainWindow.unmaximize()" resize="scale" rightbottom="righttop" visible="titlebar_on.isActive and ((not vlc.hasAudio) and (not vlc.hasVout)) and MainWindow.isMaximized()"/>
+				<Image id="titlebar_title_max" y="1" x="1" image="img_titlebar_title" action="move" action2="MainWindow.maximize()" rightbottom="lefttop" visible="((not vlc.hasAudio) and (not vlc.hasVout)) and (titlebar_on.isActive)"/>
+				<Image id="titlebar_title_unmax" y="1" x="1" image="img_titlebar_title" action="move" action2="MainWindow.unmaximize()" rightbottom="lefttop" visible="((not vlc.hasAudio) and (not vlc.hasVout)) and MainWindow.isMaximized() and (titlebar_on.isActive)"/>
+				<Image id="titlebar_title_arrow_max" y="1" x="49" image="img_titlebar_title" action="move" action2="MainWindow.maximize()" rightbottom="lefttop" visible="titlebar_on.isActive and ((not vlc.hasAudio) and (not vlc.hasVout)) and arrow_on.isActive and (not menu_mainmenu.isActive) and (xmenu_on.isActive)"/>
+				<Image id="titlebar_title_arrow_unmax" y="1" x="49" image="img_titlebar_title" action="move" action2="MainWindow.unmaximize()" rightbottom="lefttop" visible="titlebar_on.isActive and ((not vlc.hasAudio) and (not vlc.hasVout)) and MainWindow.isMaximized() and arrow_on.isActive and (xmenu_on.isActive)"/>
+			</Panel>
+
+			<!--CINEMA-->
+
+			<Panel id="cinema_background_panel" width="900" height="508" rightbottom="rightbottom">
+				<Panel id="cinema_background_panelX" x="350" y="155" width="200" height="200" xkeepratio="true" ykeepratio="true">
+					<Image id="cinema_bg_full-00" x="-2350" y="-1484" height="3000" image="img_pattern_all" rightbottom="rightbottom" visible="cinema_on.isActive and (not vlc.hasVout)"/>
+					<Image id="cinema_bg_full-01" x="-1700" y="-1163" height="3000" image="img_pattern_all" rightbottom="rightbottom" visible="cinema_on.isActive and (not vlc.hasVout)"/>
+					<Image id="cinema_bg_full-02" x="-1050" y="-1485" height="3000" image="img_pattern_all" rightbottom="rightbottom" visible="cinema_on.isActive and (not vlc.hasVout)"/>
+					<Image id="cinema_bg_full-03" x="-400" y="-1164" height="3000" image="img_pattern_all" rightbottom="rightbottom" visible="cinema_on.isActive and (not vlc.hasVout)"/>
+					<Image id="cinema_bg_full-04" x="250" y="-1486" height="3000" image="img_pattern_all" rightbottom="rightbottom" visible="cinema_on.isActive and (not vlc.hasVout)"/>
+					<Image id="cinema_bg_full-05" x="900" y="-1165" height="3000" image="img_pattern_all" rightbottom="rightbottom" visible="cinema_on.isActive and (not vlc.hasVout)"/>
+					<Image id="cinema_bg_full-06" x="1550" y="-1487" height="3000" image="img_pattern_all" rightbottom="rightbottom" visible="cinema_on.isActive and (not vlc.hasVout)"/>
+					<Image id="cinema_audio_cover" y="28" x="-2" art="true" image="img_audio_cover" resize="scale2" visible="cinema_on.isActive and vlc.hasAudio and (not vlc.hasVout)"/>
+					<Image id="cinema_audio_border" y="28" x="-2" image="img_cover_border" resize="scale2" visible="cinema_on.isActive and vlc.hasAudio and (not vlc.hasVout)"/>
+					<Image id="cinema_vlc_cover" y="96" x="-80" image="img_vlc_cover" action2="cinema.setLayout(cinema_off)" resize="scale2" visible="cinema_on.isActive and (not vlc.hasAudio) and (not vlc.hasVout)"/>
+				</Panel>
+			</Panel>
+
+			<Panel id="cinema_panel" width="900" height="571" rightbottom="rightbottom">
+				<Text text="Now Playing:" font="segoeuil_title" color="#d5d5d5" id="cinema_text_nowplaying" x="30" y="25" width="350" visible="cinema_on.isActive and vlc.hasAudio and (not vlc.hasVout)"/>
+				<Text text="$N" font="segoeuil_title" color="#FFFFFF" id="cinema_text_current" x="30" y="50" width="350" visible="cinema_on.isActive and vlc.hasAudio and (not vlc.hasVout)"/>
+				<Image id="cinema_hint1_bg" y="521" image="img_hint1_bg" width="100%" height="40" lefttop="leftbottom" rightbottom="rightbottom" visible="cinema_on.isActive and hint1_on.isActive"/>
+				<Panel id="cinema_hint1_panel" y="521" x="278" width="344" height="40" xkeepratio="true" rightbottom="rightbottom">
+					<Image id="cinema_hint1_text" x="-35" image="img_hint1_text" lefttop="leftbottom" rightbottom="leftbottom" visible="cinema_on.isActive and hint1_on.isActive"/>
+					<Button id="cinema_hint1_close" up="img_hint1_button" down="img_hint1_button_press" over="img_hint1_button_hover" y="5" x="283" action="hint1.setLayout(hint1_off)" lefttop="leftbottom" rightbottom="leftbottom" visible="cinema_on.isActive and hint1_on.isActive"/>
+				</Panel>
+				<Image id="cinema_dark_top" image="img_cinemaH_dark" width="100%" height="10" action="move" action2="cinema.setLayout(cinema_off); hint1.setLayout(hint1_off)" rightbottom="righttop" visible="cinema_on.isActive"/>
+				<Image id="cinema_dark_left" y="10" image="img_cinemaV_dark" width="10" height="100%" action="move" action2="cinema.setLayout(cinema_off); hint1.setLayout(hint1_off)" rightbottom="leftbottom" visible="cinema_on.isActive"/>
+				<Image id="cinema_dark_right" y="10" x="890" image="img_cinemaV_dark" width="10" height="100%" action="move" action2="cinema.setLayout(cinema_off); hint1.setLayout(hint1_off)" lefttop="righttop" rightbottom="rightbottom" visible="cinema_on.isActive"/>
+				<Image id="cinema_dark_bottom" y="561" image="img_cinemaH_dark" width="100%" height="10" action="move" action2="cinema.setLayout(cinema_off); hint1.setLayout(hint1_off)" lefttop="leftbottom" rightbottom="rightbottom" visible="cinema_on.isActive"/>
+				<Image id="cinema_light_top" image="img_cinemaH_light" width="100%" height="10" action="move" action2="cinema.setLayout(cinema_off); hint1.setLayout(hint1_off)" rightbottom="righttop" visible="cinema_on.isActive and cinema_bordercolor_light.isActive"/>
+				<Image id="cinema_light_bottom" y="561" image="img_cinemaH_light" width="100%" height="10" action="move" action2="cinema.setLayout(cinema_off); hint1.setLayout(hint1_off)" lefttop="leftbottom" rightbottom="rightbottom" visible="cinema_on.isActive and cinema_bordercolor_light.isActive"/>
+				<Image id="cinema_light_left" image="img_cinemaV_light" width="10" height="100%" action="move" action2="cinema.setLayout(cinema_off); hint1.setLayout(hint1_off)" rightbottom="leftbottom" visible="cinema_on.isActive and cinema_bordercolor_light.isActive"/>
+				<Image id="cinema_light_right" x="890" image="img_cinemaV_light" width="10" height="100%" action="move" action2="cinema.setLayout(cinema_off); hint1.setLayout(hint1_off)" lefttop="righttop" rightbottom="rightbottom" visible="cinema_on.isActive and cinema_bordercolor_light.isActive"/>
+				<Image id="cinema_corner_dark" x="890" y="561" image="img_corner_dark" action="resizeSE" action2="cinema.setLayout(cinema_off); hint1.setLayout(hint1_off)" lefttop="rightbottom" rightbottom="rightbottom" visible="cinema_on.isActive and cinema_bordercolor_dark.isActive and (not MainWindow.isMaximized())"/>
+				<Image id="cinema_corner_light" x="890" y="561" image="img_corner_light" action="resizeSE" action2="cinema.setLayout(cinema_off); hint1.setLayout(hint1_off)" lefttop="rightbottom" rightbottom="rightbottom" visible="cinema_on.isActive and cinema_bordercolor_light.isActive and (not MainWindow.isMaximized())"/>
+			</Panel>
+
+			<!--BORDER-->
+
+			<Panel id="border_panel" width="900" height="571" rightbottom="rightbottom">
+				<Image id="border_left" image="img_border_main" height="100%" rightbottom="leftbottom" visible="cinema_off.isActive"/>
+				<Image id="border_right" x="899" image="img_border_main" height="100%" action="resizeE" lefttop="righttop" rightbottom="rightbottom" visible="cinema_off.isActive"/>
+				<Image id="border_right_unmax" x="899" image="img_border_main" height="100%" lefttop="righttop" rightbottom="rightbottom" visible="cinema_off.isActive and MainWindow.isMaximized"/>
+				<Image id="border_top" image="img_border_main" width="100%" action="move" resize="scale" rightbottom="righttop" visible="(cinema_off.isActive) or (cinema_off.isActive and titlebar_on.isActive)"/>
+				<Image id="border_top_unmax" image="img_border_main" width="100%" action="move" action2="MainWindow.unmaximize()" resize="scale" rightbottom="righttop" visible="((cinema_off.isActive) or (cinema_off.isActive and titlebar_on.isActive)) and MainWindow.isMaximized()"/>
+				<Image id="border_bottom" y="570" image="img_border_main" width="100%" action="resizeS" action2="MainWindow.maximize()" resize="scale" lefttop="leftbottom" rightbottom="rightbottom" visible="cinema_off.isActive"/>
+				<Image id="border_bottom_unmax" y="570" image="img_border_main" width="100%" action="move" action2="MainWindow.unmaximize()" resize="scale" lefttop="leftbottom" rightbottom="rightbottom" visible="cinema_off.isActive and MainWindow.isMaximized()"/>
+				<Image id="border_menu_top" image="img_border_menu" width="300" visible="cinema_off.isActive and (xmenu_on.isActive) and titlebar_off.isActive"/>
+				<Image id="border_menu_left" image="img_border_menu" height="100%" resize="scale" rightbottom="leftbottom" visible="cinema_off.isActive and (xmenu_on.isActive)"/>
+				<Image id="border_left_overlay" y="508" image="img_border_main" height="63" lefttop="leftbottom" rightbottom="leftbottom" visible="cinema_off.isActive and (xmenu_on.isActive)"/>
+				<Image id="border_left_posbar_sml" y="508" image="img_border_posbar" height="5" lefttop="leftbottom" rightbottom="leftbottom" visible="cinema_off.isActive and (xmenu_on.isActive)"/>
+				<Image id="border_left_posbar_big" y="506" image="img_border_posbar" height="7" lefttop="leftbottom" rightbottom="leftbottom" visible="cinema_off.isActive and (xmenu_on.isActive) and posbar_big.isActive"/>
+				<Image id="border_titlebar_side" image="img_border_main" height="30" rightbottom="lefttop" visible="cinema_off.isActive and titlebar_on.isActive"/>
+			</Panel>
+
+			<!--TITLEBAR BUTTON-->
+
+			<Panel id="titlebar_button_panel" width="900" height="30" rightbottom="righttop">
+				<Button id="titlebar_arrow" up="img_titlebar_arrow" down="img_titlebar_arrow_active" over="img_titlebar_arrow_hover" action="menu.setLayout(menu_mainmenu);" y="0" x="0" lefttop="lefttop" rightbottom="lefttop" visible="cinema_off.isActive and titlebar_on.isActive and arrow_on.isActive and xmenu_on.isActive and (menu_settings.isActive or menu_pl.isActive or menu_hotkeys.isActive or menu_misc.isActive)"/>
+				<Button id="titlebar_arrow_settings" up="img_titlebar_arrow" down="img_titlebar_arrow_active" over="img_titlebar_arrow_hover" action="menu.setLayout(menu_mainmenu); menu.setLayout(menu_settings);" y="0" x="0" lefttop="lefttop" rightbottom="lefttop" visible="cinema_off.isActive and titlebar_on.isActive and arrow_on.isActive and (menu_settings_adv.isActive or menu_settings_color.isActive) and xmenu_on.isActive"/>
+				<Button id="titlebar_arrow_playlist" up="img_titlebar_arrow" down="img_titlebar_arrow_active" over="img_titlebar_arrow_hover" action="menu.setLayout(menu_mainmenu); menu.setLayout(menu_pl);" y="0" x="0" lefttop="lefttop" rightbottom="lefttop" visible="cinema_off.isActive and titlebar_on.isActive and arrow_on.isActive and (menu_pl_adv.isActive) and xmenu_on.isActive"/>
+				<Button id="titlebar_arrow_hotkeys" up="img_titlebar_arrow" down="img_titlebar_arrow_active" over="img_titlebar_arrow_hover" action="menu.setLayout(menu_mainmenu); menu.setLayout(menu_hotkeys);" y="0" x="0" lefttop="lefttop" rightbottom="lefttop" visible="cinema_off.isActive and titlebar_on.isActive and arrow_on.isActive and (menu_hotkeys_adv.isActive) and xmenu_on.isActive"/>
+				<Button id="titlebar_close" up="img_titlebar_close" down="img_titlebar_close_active" over="img_titlebar_close_hover" action="vlc.quit();" y="0" x="854" lefttop="righttop" rightbottom="righttop" visible="cinema_off.isActive and titlebar_on.isActive"/>
+				<Button id="titlebar_close_unmax" up="img_titlebar_close" down="img_titlebar_close_active" over="img_titlebar_close_hover" action="MainWindow.unmaximize(); vlc.quit();" y="0" x="854" lefttop="righttop" rightbottom="righttop" visible="cinema_off.isActive and titlebar_on.isActive and MainWindow.isMaximized()"/>
+				<Button id="titlebar_max" up="img_titlebar_max" down="img_titlebar_max_active" over="img_titlebar_max_hover" action="MainWindow.maximize()" y="0" x="808" lefttop="righttop" rightbottom="righttop" visible="cinema_off.isActive and titlebar_on.isActive"/>
+				<Button id="titlebar_unmax" up="img_titlebar_unmax" down="img_titlebar_unmax_active" over="img_titlebar_unmax_hover" action="MainWindow.unmaximize()" y="0" x="808" lefttop="righttop" rightbottom="righttop" visible="cinema_off.isActive and titlebar_on.isActive and MainWindow.isMaximized()"/>
+				<Button id="titlebar_min" up="img_titlebar_min" down="img_titlebar_min_active" over="img_titlebar_min_hover" action="vlc.minimize()" y="0" x="762" lefttop="righttop" rightbottom="righttop" visible="cinema_off.isActive and titlebar_on.isActive"/>
+			</Panel>
+		</Layout>
+	</Window>
+
+
+	<!--FULLSCREEN-->
+
+
+	<Window id="fullscreenController" position="South" ymargin="0">
+		<Layout id="fswindow" width="100%" height="100%" minwidth="600" maxwidth="2560" minheight="64" maxheight="5000">
+			<Panel id="fs_bottom_panel" width="100%" height="64" position="South" lefttop="leftbottom" rightbottom="rightbottom">
+				<Image id="fs_pos_bg" y="2" image="img_posbg" width="100%" height="5" resize="scale" lefttop="leftbottom" rightbottom="rightbottom"/>
+				<Slider id="fs_pos_hicolor0" y="2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_0" down="img_posbar_front_hicolor_0" over="img_posbar_front_hicolor_0" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_0.isActive"/>
+				<Slider id="fs_pos_hicolor0_slider" y="2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_0" down="img_slider_10x10" over="img_posbar_hover_hicolor_0" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_0.isActive"/>
+				<Slider id="fs_pos_hicolor1" y="2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_1" down="img_posbar_front_hicolor_0" over="img_posbar_front_hicolor_1" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_1.isActive"/>
+				<Slider id="fs_pos_hicolor1_slider" y="2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_1" down="img_slider_10x10" over="img_posbar_hover_hicolor_1" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_1.isActive"/>
+				<Slider id="fs_pos_hicolor2" y="2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_2" down="img_posbar_front_hicolor_2" over="img_posbar_front_hicolor_2" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_2.isActive"/>
+				<Slider id="fs_pos_hicolor2_slider" y="2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_2" down="img_slider_10x10" over="img_posbar_hover_hicolor_2" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_2.isActive"/>
+				<Slider id="fs_pos_hicolor3" y="2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_3" down="img_posbar_front_hicolor_3" over="img_posbar_front_hicolor_3" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_3.isActive"/>
+				<Slider id="fs_pos_hicolor3_slider" y="2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_3" down="img_slider_10x10" over="img_posbar_hover_hicolor_3" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_3.isActive"/>
+				<Slider id="fs_pos_hicolor4" y="2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_4" down="img_posbar_front_hicolor_4" over="img_posbar_front_hicolor_4" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_4.isActive"/>
+				<Slider id="fs_pos_hicolor4_slider" y="2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_4" down="img_slider_10x10" over="img_posbar_hover_hicolor_4" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_4.isActive"/>
+				<Slider id="fs_pos_hicolor5" y="2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_5" down="img_posbar_front_hicolor_5" over="img_posbar_front_hicolor_5" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_5.isActive"/>
+				<Slider id="fs_pos_hicolor5_slider" y="2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_5" down="img_slider_10x10" over="img_posbar_hover_hicolor_5" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_5.isActive"/>
+				<Slider id="fs_pos_hicolor6" y="2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_6" down="img_posbar_front_hicolor_6" over="img_posbar_front_hicolor_6" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_6.isActive"/>
+				<Slider id="fs_pos_hicolor6_slider" y="2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_6" down="img_slider_10x10" over="img_posbar_hover_hicolor_6" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_6.isActive"/>
+				<Slider id="fs_pos_hicolor7" y="2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_7" down="img_posbar_front_hicolor_7" over="img_posbar_front_hicolor_7" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_7.isActive"/>
+				<Slider id="fs_pos_hicolor7_slider" y="2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_7" down="img_slider_10x10" over="img_posbar_hover_hicolor_7" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_7.isActive"/>
+				<Slider id="fs_pos_hicolor8" y="2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_8" down="img_posbar_front_hicolor_8" over="img_posbar_front_hicolor_8" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_8.isActive"/>
+				<Slider id="fs_pos_hicolor8_slider" y="2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_8" down="img_slider_10x10" over="img_posbar_hover_hicolor_8" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_8.isActive"/>
+				<Slider id="fs_pos_hicolor9" y="2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_9" down="img_posbar_front_hicolor_9" over="img_posbar_front_hicolor_9" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_9.isActive"/>
+				<Slider id="fs_pos_hicolor9_slider" y="2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_9" down="img_slider_10x10" over="img_posbar_hover_hicolor_9" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_9.isActive"/>
+				<Image id="fs_pos_big_bg" image="img_posbg" width="100%" height="7" resize="scale" lefttop="leftbottom" rightbottom="rightbottom" visible="posbar_big.isActive"/>
+				<Slider id="fs_pos_big_hicolor0" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_0" down="img_posbar_front_hicolor_0" over="img_posbar_front_hicolor_0" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_0.isActive and posbar_big.isActive"/>
+				<Slider id="fs_pos_big_hicolor0_slider" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_0" down="img_slider_10x10" over="img_posbar_hover_hicolor_0" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_0.isActive and posbar_big.isActive"/>
+				<Slider id="fs_pos_big_hicolor1" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_1" down="img_posbar_front_hicolor_0" over="img_posbar_front_hicolor_1" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_1.isActive and posbar_big.isActive"/>
+				<Slider id="fs_pos_big_hicolor1_slider" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_1" down="img_slider_10x10" over="img_posbar_hover_hicolor_1" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_1.isActive and posbar_big.isActive"/>
+				<Slider id="fs_pos_big_hicolor2" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_2" down="img_posbar_front_hicolor_2" over="img_posbar_front_hicolor_2" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_2.isActive and posbar_big.isActive"/>
+				<Slider id="fs_pos_big_hicolor2_slider" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_2" down="img_slider_10x10" over="img_posbar_hover_hicolor_2" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_2.isActive and posbar_big.isActive"/>
+				<Slider id="fs_pos_big_hicolor3" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_3" down="img_posbar_front_hicolor_3" over="img_posbar_front_hicolor_3" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_3.isActive and posbar_big.isActive"/>
+				<Slider id="fs_pos_big_hicolor3_slider" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_3" down="img_slider_10x10" over="img_posbar_hover_hicolor_3" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_3.isActive and posbar_big.isActive"/>
+				<Slider id="fs_pos_big_hicolor4" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_4" down="img_posbar_front_hicolor_4" over="img_posbar_front_hicolor_4" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_4.isActive and posbar_big.isActive"/>
+				<Slider id="fs_pos_big_hicolor4_slider" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_4" down="img_slider_10x10" over="img_posbar_hover_hicolor_4" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_4.isActive and posbar_big.isActive"/>
+				<Slider id="fs_pos_big_hicolor5" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_5" down="img_posbar_front_hicolor_5" over="img_posbar_front_hicolor_5" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_5.isActive and posbar_big.isActive"/>
+				<Slider id="fs_pos_big_hicolor5_slider" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_5" down="img_slider_10x10" over="img_posbar_hover_hicolor_5" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_5.isActive and posbar_big.isActive"/>
+				<Slider id="fs_pos_big_hicolor6" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_6" down="img_posbar_front_hicolor_6" over="img_posbar_front_hicolor_6" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_6.isActive and posbar_big.isActive"/>
+				<Slider id="fs_pos_big_hicolor6_slider" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_6" down="img_slider_10x10" over="img_posbar_hover_hicolor_6" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_6.isActive and posbar_big.isActive"/>
+				<Slider id="fs_pos_big_hicolor7" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_7" down="img_posbar_front_hicolor_7" over="img_posbar_front_hicolor_7" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_7.isActive and posbar_big.isActive"/>
+				<Slider id="fs_pos_big_hicolor7_slider" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_7" down="img_slider_10x10" over="img_posbar_hover_hicolor_7" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_7.isActive and posbar_big.isActive"/>
+				<Slider id="fs_pos_big_hicolor8" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_8" down="img_posbar_front_hicolor_8" over="img_posbar_front_hicolor_8" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_8.isActive and posbar_big.isActive"/>
+				<Slider id="fs_pos_big_hicolor8_slider" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_8" down="img_slider_10x10" over="img_posbar_hover_hicolor_8" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_8.isActive and posbar_big.isActive"/>
+				<Slider id="fs_pos_big_hicolor9" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_front_hicolor_9" down="img_posbar_front_hicolor_9" over="img_posbar_front_hicolor_9" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_9.isActive and posbar_big.isActive"/>
+				<Slider id="fs_pos_big_hicolor9_slider" points="(0,3),(900,3)" width="100%" thickness="7" value="time" tooltiptext="" up="img_posbar_slider_hicolor_9" down="img_slider_10x10" over="img_posbar_hover_hicolor_9" lefttop="leftbottom" rightbottom="rightbottom" visible="hicolor_9.isActive and posbar_big.isActive"/>
+				<Image id="fs_bottombar" y="7" width="100%" height="57" image="img_bottombar" action2="vlc.fullscreen()" resize="scale" lefttop="leftbottom" rightbottom="rightbottom"/>
+				<Image id="fs_bottombar_drag" y="7" width="100%" height="57" image="img_bottombar" action="move" action2="vlc.fullscreen()" resize="scale" lefttop="leftbottom" rightbottom="rightbottom" visible="fsdrag_on.isActive"/>
+				<Panel id="fs_volumebar_panel" position="SouthEast" width="160" height="30" xmargin="10" lefttop="rightbottom" rightbottom="rightbottom">
+					<Image id="fs_volume_back" x="45" y="-2" image="img_volbar" lefttop="rightbottom" rightbottom="rightbottom"/>
+					<Slider id="fs_volume_hicolor_0" x="45" y="-2" points="(3,3),(96,3)" value="volume" tooltiptext="" up="img_volbar_hicolor_0" down="img_volbar_hicolor_0" over="img_volbar_hicolor_0" lefttop="rightbottom" rightbottom="rightbottom" visible="hicolor_0.isActive and (not vlc.isMute)"/>
+					<Slider id="fs_volume_hicolor_1" x="45" y="-2" points="(3,3),(96,3)" value="volume" tooltiptext="" up="img_volbar_hicolor_1" down="img_volbar_hicolor_1" over="img_volbar_hicolor_1" lefttop="rightbottom" rightbottom="rightbottom" visible="hicolor_1.isActive and (not vlc.isMute)"/>
+					<Slider id="fs_volume_hicolor_2" x="45" y="-2" points="(3,3),(96,3)" value="volume" tooltiptext="" up="img_volbar_hicolor_2" down="img_volbar_hicolor_2" over="img_volbar_hicolor_2" lefttop="rightbottom" rightbottom="rightbottom" visible="hicolor_2.isActive and (not vlc.isMute)"/>
+					<Slider id="fs_volume_hicolor_3" x="45" y="-2" points="(3,3),(96,3)" value="volume" tooltiptext="" up="img_volbar_hicolor_3" down="img_volbar_hicolor_3" over="img_volbar_hicolor_3" lefttop="rightbottom" rightbottom="rightbottom" visible="hicolor_3.isActive and (not vlc.isMute)"/>
+					<Slider id="fs_volume_hicolor_4" x="45" y="-2" points="(3,3),(96,3)" value="volume" tooltiptext="" up="img_volbar_hicolor_4" down="img_volbar_hicolor_4" over="img_volbar_hicolor_4" lefttop="rightbottom" rightbottom="rightbottom" visible="hicolor_4.isActive and (not vlc.isMute)"/>
+					<Slider id="fs_volume_hicolor_5" x="45" y="-2" points="(3,3),(96,3)" value="volume" tooltiptext="" up="img_volbar_hicolor_5" down="img_volbar_hicolor_5" over="img_volbar_hicolor_5" lefttop="rightbottom" rightbottom="rightbottom" visible="hicolor_5.isActive and (not vlc.isMute)"/>
+					<Slider id="fs_volume_hicolor_6" x="45" y="-2" points="(3,3),(96,3)" value="volume" tooltiptext="" up="img_volbar_hicolor_6" down="img_volbar_hicolor_6" over="img_volbar_hicolor_6" lefttop="rightbottom" rightbottom="rightbottom" visible="hicolor_6.isActive and (not vlc.isMute)"/>
+					<Slider id="fs_volume_hicolor_7" x="45" y="-2" points="(3,3),(96,3)" value="volume" tooltiptext="" up="img_volbar_hicolor_7" down="img_volbar_hicolor_7" over="img_volbar_hicolor_7" lefttop="rightbottom" rightbottom="rightbottom" visible="hicolor_7.isActive and (not vlc.isMute)"/>
+					<Slider id="fs_volume_hicolor_8" x="45" y="-2" points="(3,3),(96,3)" value="volume" tooltiptext="" up="img_volbar_hicolor_8" down="img_volbar_hicolor_8" over="img_volbar_hicolor_8" lefttop="rightbottom" rightbottom="rightbottom" visible="hicolor_8.isActive and (not vlc.isMute)"/>
+					<Slider id="fs_volume_hicolor_9" x="45" y="-2" points="(3,3),(96,3)" value="volume" tooltiptext="" up="img_volbar_hicolor_9" down="img_volbar_hicolor_9" over="img_volbar_hicolor_9" lefttop="rightbottom" rightbottom="rightbottom" visible="hicolor_9.isActive and (not vlc.isMute)"/>
+					<Slider id="fs_volume_slider_" x="45" y="-2" points="(3,3),(96,3)" value="volume" tooltiptext="$V" up="img_slider_7x7" down="img_slider_7x17" over="img_slider_7x7" lefttop="rightbottom" rightbottom="rightbottom" visible="not vlc.isMute"/>
+					<Button id="fs_mute_overlay" x="45" y="-2" up="img_mute_overlay" over="img_mute_overlay" down="img_mute_overlay" action="vlc.mute()" lefttop="rightbottom" rightbottom="rightbottom" visible="vlc.isMute" tooltiptext="Unmute"/>
+				</Panel>
+				<Panel id="fs_overlay_panel" width="100%" height="64" position="South" lefttop="leftbottom" rightbottom="rightbottom">
+					<Image id="fs_overlay_bottombar" x="-125" y="7" width="100%" height="57" image="img_bottombar" action2="vlc.fullscreen()" resize="scale" lefttop="leftbottom" rightbottom="rightbottom"/>
+					<Image id="fs_overlay_bottombar_drag" x="-125" y="7" width="100%" height="57" image="img_bottombar" action="move" action2="vlc.fullscreen()" resize="scale" lefttop="leftbottom" rightbottom="rightbottom" visible="fsdrag_on.isActive"/>
+				</Panel>
+				<Panel id="fs_resize_panel" position="SouthEast" width="7" height="64" lefttop="rightbottom" rightbottom="rightbottom">
+					<Image id="fs_bottombar_resize_e" x="0" y="7" image="img_bottombar_resize_e" action="resizeE" action2="vlc.fullscreen()" lefttop="rightbottom" rightbottom="rightbottom" visible="fsdrag_on.isActive"/>
+				</Panel>
+				<Panel id="fs_mute_panel" position="SouthEast" width="160" height="30" xmargin="10" lefttop="rightbottom" rightbottom="rightbottom">
+					<Checkbox state="vlc.isMute" up1="img_volume_on" up2="img_volume_off" down1="img_volume_on_active" down2="img_volume_off_active" over1="img_volume_on_hover" over2="img_volume_off_hover" action1="vlc.mute()" action2="vlc.mute()" id="fs_mute" x="9" y="-13" tooltiptext1="Mute" tooltiptext2="Unmute"/>
+				</Panel>
+				<Panel id="fs_left_panel" y="7" width="200" height="57" lefttop="leftbottom" rightbottom="leftbottom">
+					<Text focus="false" id="fs_time_1_notime" text="0:00:00" font="zegoeuil_14" color="#d2d2d2" x="24" y="18" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="(not vlc.hasAudio) and (not vlc.hasVout)"/>
+					<Text focus="false" id="fs_time_1_stream" text="0:00:00" font="zegoeuil_14" color="#d2d2d2" x="24" y="18" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="(vlc.hasAudio or vlc.hasVout) and (not vlc.isSeekable)"/>
+					<Text focus="false" id="fs_time_1" text="$T" font="zegoeuil_14" color="#d2d2d2" x="24" y="18" width="60" lefttop="leftbottom" rightbottom="leftbottom" visible="(vlc.hasAudio or vlc.hasVout) and vlc.isSeekable"/>
+					<Text focus="false" id="fs_time_slash" text="/" font="segoeui_17" color="#555555" x="73" y="15" width="20" lefttop="leftbottom" rightbottom="leftbottom"/>
+					<Text focus="false" id="fs_time_2" text="$D" font="zegoeuil_13" color="#454545" x="85" y="19" width="50" lefttop="leftbottom" rightbottom="leftbottom" visible="(vlc.hasAudio or vlc.hasVout)"/>
+					<Text focus="false" id="fs_time_2_notime" text="-:--:--" font="zegoeuil_13" color="#454545" x="85" y="19" width="50" lefttop="leftbottom" rightbottom="leftbottom" visible="(not vlc.hasAudio) and (not vlc.hasVout)"/>
+					<Button id="fs_stream" up="img_stream_anim" x="85" y="23" lefttop="leftbottom" rightbottom="leftbottom" visible="(vlc.hasAudio or vlc.hasVout) and (not vlc.isSeekable)"/>
+					<Button id="fs_goto_menu" up="img_showmenu_off" down="img_showmenu_off_active" over="img_showmenu_off_hover" action="cinema.setLayout(cinema_off); vlc.fullscreen(); xmenu.setLayout(xmenu_on)" x="137" y="15" tooltiptext="Show menu"/>
+					<Button id="fs_goto_main" up="img_showmenu_off" down="img_showmenu_off_active" over="img_showmenu_off_hover" action="cinema.setLayout(cinema_off); vlc.fullscreen(); menu.setLayout(menu_mainmenu); xmenu.setLayout(xmenu_on)" x="137" y="15" visible="(menu_mainmenu.isActive)" tooltiptext="Show menu"/>
+				</Panel>
+				<Panel id="fs_control_panel" y="19" width="100%" height="50" lefttop="leftbottom" rightbottom="rightbottom">
+					<Panel id="fs_control_panelX" y="0" width="200" height="50" xkeepratio="true" position="South">
+						<Checkbox state="vlc.isPlaying" up1="img_play" up2="img_pause" down1="img_play_active" down2="img_pause_active" over1="img_play_hover" over2="img_pause_hover" action1="vlc.play()" action2="vlc.pause()" id="fs_bottombar_play" x="79" y="-5" lefttop="leftbottom" rightbottom="leftbottom" tooltiptext1="Play" tooltiptext2="Pause"/>
+						<Button up="img_next" down="img_next_active" over="img_next_hover" action="playlist.next()" id="fs_bottombar_next" x="134" y="1" lefttop="rightbottom" rightbottom="rightbottom" tooltiptext="Next"/>
+						<Button up="img_prev" down="img_prev_active" over="img_prev_hover" action="playlist.previous()" id="fs_bottombar_prev" x="36" y="1" lefttop="leftbottom" rightbottom="leftbottom" tooltiptext="Previous"/>
+					</Panel>
+				</Panel>
+			</Panel>
+		</Layout>
+	</Window>
+	<Window id="customplaylist" visible="false" dragdrop="false" playondrop="false">
+		<Layout id="customplaylist_off" width="1" height="1">
+		</Layout>
+		<Layout id="customplaylist_on" width="1" height="1">
+		</Layout>
+	</Window>
+	<Window id="cinema" visible="false" dragdrop="false" playondrop="false">
+		<Layout id="cinema_on" width="1" height="1">
+		</Layout>
+		<Layout id="cinema_off" width="1" height="1">
+		</Layout>
+	</Window>
+	<Window id="arrow" visible="false" dragdrop="false" playondrop="false">
+		<Layout id="arrow_on" width="1" height="1">
+		</Layout>
+		<Layout id="arrow_off" width="1" height="1">
+		</Layout>
+	</Window>
+	<Window id="coverbg" visible="false" dragdrop="false" playondrop="false">
+		<Layout id="coverbg_off" width="1" height="1">
+		</Layout>
+		<Layout id="coverbg_on" width="1" height="1">
+		</Layout>
+	</Window>
+	<Window id="hint1" visible="false" dragdrop="false" playondrop="false">
+		<Layout id="hint1_off" width="1" height="1">
+		</Layout>
+		<Layout id="hint1_on" width="1" height="1">
+		</Layout>
+	</Window>
+	<Window id="cinema_bordercolor" visible="false" dragdrop="false" playondrop="false">
+		<Layout id="cinema_bordercolor_light" width="1" height="1">
+		</Layout>
+		<Layout id="cinema_bordercolor_dark" width="1" height="1">
+		</Layout>
+	</Window>
+	<Window id="cinema_dropbox" visible="false" dragdrop="false" playondrop="false">
+		<Layout id="cinema_dropbox_on" width="1" height="1">
+		</Layout>
+		<Layout id="cinema_dropbox_off" width="1" height="1">
+		</Layout>
+	</Window>
+	<Window id="titlebar" visible="false" dragdrop="false" playondrop="false">
+		<Layout id="titlebar_on" width="568" height="382" minwidth="568" maxwidth="10000" minheight="64" maxheight="10000">
+		</Layout>
+		<Layout id="titlebar_off" width="568" height="382" minwidth="568" maxwidth="10000" minheight="64" maxheight="10000">
+		</Layout>
+	</Window>
+	<Window id="posbar" visible="false" dragdrop="false" playondrop="false">
+		<Layout id="posbar_sml" width="568" height="382" minwidth="568" maxwidth="10000" minheight="64" maxheight="10000">
+		</Layout>
+		<Layout id="posbar_big" width="568" height="382" minwidth="568" maxwidth="10000" minheight="64" maxheight="10000">
+		</Layout>
+	</Window>
+	<Window id="menu" visible="false" dragdrop="false" playondrop="false">
+		<Layout id="menu_settings" width="1" height="1">
+		</Layout>
+		<Layout id="menu_settings_adv" width="1" height="1">
+		</Layout>
+		<Layout id="menu_settings_color" width="1" height="1">
+		</Layout>
+		<Layout id="menu_pl" width="1" height="1">
+		</Layout>
+		<Layout id="menu_pl_adv" width="1" height="1">
+		</Layout>
+		<Layout id="menu_hotkeys" width="1" height="1">
+		</Layout>
+		<Layout id="menu_hotkeys_adv" width="1" height="1">
+		</Layout>
+		<Layout id="menu_misc" width="1" height="1">
+		</Layout>
+		<Layout id="menu_mainmenu" width="1" height="1">
+		</Layout>
+	</Window>
+	<Window id="xmenu" visible="false" dragdrop="false" playondrop="false">
+		<Layout id="xmenu_on" width="1" height="1">
+		</Layout>
+		<Layout id="xmenu_off" width="1" height="1">
+		</Layout>
+	</Window>
+	<Window id="fsdrag" visible="false" dragdrop="false" playondrop="false">
+		<Layout id="fsdrag_on" width="1" height="1">
+		</Layout>
+		<Layout id="fsdrag_off" width="1" height="1">
+		</Layout>
+	</Window>
+	<Window id="hicolor" visible="false" dragdrop="false" playondrop="false">
+		<Layout id="hicolor_0" width="568" height="382" minwidth="568" maxwidth="10000" minheight="64" maxheight="10000">
+		</Layout>
+		<Layout id="hicolor_2" width="568" height="382" minwidth="568" maxwidth="10000" minheight="64" maxheight="10000">
+		</Layout>
+		<Layout id="hicolor_3" width="568" height="382" minwidth="568" maxwidth="10000" minheight="64" maxheight="10000">
+		</Layout>
+		<Layout id="hicolor_4" width="568" height="382" minwidth="568" maxwidth="10000" minheight="64" maxheight="10000">
+		</Layout>
+		<Layout id="hicolor_5" width="568" height="382" minwidth="568" maxwidth="10000" minheight="64" maxheight="10000">
+		</Layout>
+		<Layout id="hicolor_6" width="568" height="382" minwidth="568" maxwidth="10000" minheight="64" maxheight="10000">
+		</Layout>
+		<Layout id="hicolor_7" width="568" height="382" minwidth="568" maxwidth="10000" minheight="64" maxheight="10000">
+		</Layout>
+		<Layout id="hicolor_8" width="568" height="382" minwidth="568" maxwidth="10000" minheight="64" maxheight="10000">
+		</Layout>
+		<Layout id="hicolor_9" width="568" height="382" minwidth="568" maxwidth="10000" minheight="64" maxheight="10000">
+		</Layout>
+		<Layout id="hicolor_1" width="568" height="382" minwidth="568" maxwidth="10000" minheight="64" maxheight="10000">
+		</Layout>
+	</Window>
+</Theme>

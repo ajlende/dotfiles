@@ -1,0 +1,9 @@
+nitrogen --restore &
+compton --config ~/.config/compton.conf -b &
+update-menus &
+unclutter --ignore-scrolling -b &
+keychain &
+clipit -d &
+tint2 &
+lxpolkit &
+x11vnc &

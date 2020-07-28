@@ -1,0 +1,865 @@
+! rofi - A window switcher, run launcher, ssh dialog and dmenu replacement
+
+
+! --------------------------------------
+! CONFIGURATION
+! --------------------------------------
+
+! Enable highlighting in Vim: :setfiletype xdefaults
+
+! Find changed settings in Vim: /^[^!]
+
+! Generate config file: rofi -dump-xresources > rofi-example.config
+
+! --------------------------------------
+! General
+! --------------------------------------
+
+! Specify the number of threads rofi should use:
+!
+!     0: Autodetect the number of supported hardware threads.
+!     1: Disable threading
+!     2..N: Specify the maximum number of threads to use in the thread pool.
+!
+! Default:
+! rofi.threads: 0
+!
+
+! Specify a ordered, comma separated list of modes to enable. Enabled modes can be changed at runtime. Default key is Ctrl+Tab. If no modes are specified all modes will be enabled. To only show the run and ssh launcher:
+!
+! Custom modes can be added using the internal 'script' mode. Each mode has two parameters:
+!
+! <name>:<script>
+!
+! Example: Have a mode 'Workspaces' using the i3_switch_workspaces.sh script
+! rofi.modi: window,run,ssh,Workspaces:i3_switch_workspaces.sh
+!
+! Default:
+! rofi.modi: window,run,ssh
+!
+rofi.modi: combi,calc,keys,ssh
+
+! The modi to combine in combi mode. For syntax to see -modi. To get one merge view, of window,run,ssh:
+!
+! Default:
+! rofi.combi-modi: window,run
+!
+rofi.combi-modi: window,drun,run
+
+! Start in case sensitive mode. This option can be changed at run-time using the -kb-toggle-case-sensitivity key binding.
+!
+! Default:
+! rofi.case-sensitive: false
+!
+
+! Cycle through the results list.
+!
+! Default:
+! rofi.cycle: true
+!
+
+! Filter the list by setting text in input bar to filter
+!
+! Default:
+! rofi.filter:
+!
+
+! Select the scrolling method. 0: Per page, 1: continuous.
+!
+! Default:
+! rofi.scroll-method: 0
+!
+
+! Whether to load and show icons
+!
+! Default:
+! rofi.show-icons: false
+!
+
+! Theme to use to look for icons
+!
+! Default:
+! rofi.drun-icon-theme:
+!
+
+! New style theme file
+!
+! Default:
+! rofi.theme:
+!
+
+! Desktop entry fields to match in drun
+!
+! Default:
+! rofi.drun-match-fields: name,generic,exec,categories
+!
+
+! Window fields to match in window mode
+!
+! Default:
+! rofi.window-match-fields: all
+!
+
+! Max history size (WARNING: can cause slowdowns when set to high).
+!
+! Default:
+! rofi.max-history-size: 25
+!
+
+! Hide the prefix mode prefix on the combi view.
+!
+! Default:
+! rofi.combi-hide-mode-prefix: false
+!
+rofi.combi-hide-mode-prefix: true
+
+
+! --------------------------------------
+! Theming
+! --------------------------------------
+
+! All colors are either hex #rrggbb, #aarrggbb or argb:aarrggbbvalues or X11 color names.
+
+! Set border width in pixels.
+!
+! Default:
+! rofi.bw: 1
+!
+
+! Specify a font. Pango syntax is used.
+!
+! Default:
+! rofi.font: mono 12
+!
+rofi.font: Roboto 12
+
+! The height of a field in lines.
+!
+! Default:
+! rofi.eh: 1
+!
+
+! Set window background, border and separator color.
+!
+! Argument order: background border color separator color
+!
+! Default:
+! rofi.color-window:
+!
+
+! Specify the colors used in a row per state (normal, active, urgent).
+!
+! Argument order: background, foreground, background alt, highlight background, highlight foreground
+!
+! Default:
+! rofi.color-normal:
+!
+
+! Specify the colors used in a row per state (normal, active, urgent).
+!
+! Argument order: background, foreground, background alt, highlight background, highlight foreground
+!
+! Default:
+! rofi.color-urgent:
+!
+
+! Specify the colors used in a row per state (normal, active, urgent).
+!
+! Argument order: background, foreground, background alt, highlight background, highlight foreground
+!
+! Default:
+! rofi.color-active:
+!
+
+! Specify the matching algorithm used. Current the following methods are supported.
+!
+!     normal: Match the int string.
+!     regex: Match a regex input.
+!     glob: Match a glob pattern. (Might be slow for larger lists.)
+!     fuzzy: Do a fuzzy match.
+!
+! Default:
+! rofi.matching: normal
+!
+
+! Tokenize the input.
+!
+! Default:
+! rofi.tokenize: true
+!
+
+
+! --------------------------------------
+! Layout
+! --------------------------------------
+
+! Maximum number of lines to show before scrolling.
+!
+! Default:
+! rofi.lines: 15
+!
+
+! Number of columns to show before scrolling.
+!
+! Default:
+! rofi.columns: 1
+!
+
+! Set width of menu. Value is specified in percentage.
+!
+! If value is larger then 100, size is set in pixels.
+!
+! If value is negative, it tries to estimates a character width.
+!
+! Character width is a rough estimation, and might not be correct, but should work for most monospaced fonts.
+!
+! Default:
+! rofi.width: 50
+!
+
+! Specify where the window should be located. The numbers map to the following locations on screen:
+!
+!   1 2 3
+!   8 0 4
+!   7 6 5
+!
+! Default:
+! rofi.location: 0
+!
+
+! Y-offset relative to location
+!
+! Default:
+! rofi.yoffset: 0
+!
+
+! X-offset relative to location
+!
+! Default:
+! rofi.xoffset: 0
+!
+
+! Keep a fixed number of visible lines (See lines)
+!
+! Default:
+! rofi.fixed-num-lines: true
+!
+
+! Define the inner margin of the window.
+!
+! Default:
+! rofi.padding: 5
+!
+
+! Use the full screen height and width.
+!
+! Default:
+! rofi.fullscreen: false
+!
+
+! Open in sidebar-mode. In this mode a list of all enabled modes is shown at the bottom. (See modi)
+!
+! Default:
+! rofi.sidebar-mode: false
+!
+
+! When one entry is left, automatically select it.
+!
+! Default:
+! rofi.auto-select: false
+!
+
+! Indicate how it match by underlining it.
+!
+! Default:
+! rofi.show-match: true
+!
+
+! Select monitor to display rofi on. As input it accepts: primary (if primary output is set), the xrandr output name or integer number (in order of detection). Negative numbers are handled differently:
+!
+!     -1: the currently focused monitor.
+!     -2: the currently focused window (i.e. rofi will be displayed on top of the focused window).
+!     -3: Position at mouse (overrides the location setting to get normal context menu behaviour.)
+!     -4: the monitor with the focused window.
+!     -5: the monitor that shows the mouse pointer.
+!
+! See rofi -h output for the detected monitors, their position and size.
+!
+! Default:
+! rofi.monitor: -5
+!
+rofi.monitor: 1
+
+! DPI
+!
+! Default:
+! rofi.dpi: 1
+!
+
+! --------------------------------------
+! PATTERN setting
+! --------------------------------------
+
+! Specify what terminal to start.
+!
+! Pattern: {terminal}
+!
+! Default:
+! rofi.terminal: rofi-sensible-terminal
+
+! Override the used ssh client.
+!
+! Pattern: {ssh-client}
+!
+! Default:
+! rofi.ssh-client: ssh
+!
+
+
+! --------------------------------------
+! SSH settings
+! --------------------------------------
+
+! Set the command to execute when starting a ssh session. The pattern {host} is replaced by the selected ssh entry.
+!
+! Pattern: {ssh-client}
+!
+! Default:
+! rofi.ssh-command: {terminal} -e {ssh-client} {host}
+!
+
+! Parse the /etc/hosts file for entries.
+!
+! Default:
+! rofi.parse-hosts: false
+!
+
+! Parse the ~/.ssh/known_hosts file for entries.
+!
+! Default:
+! rofi.parse-known-hosts: true
+!
+
+
+! --------------------------------------
+! Run settings
+! --------------------------------------
+
+! Set command ({cmd}) to execute when running an application.
+!
+! Pattern: {cmd}
+!
+! Default:
+! rofi.run-command: {cmd}
+!
+
+! Set command to execute when running an application in a shell.
+!
+! Default:
+! rofi.run-shell-command: {terminal} -e {cmd}
+!
+
+! If set, use an external tool to generate list of executable commands. Uses 'run-command'
+!
+! Default:
+! rofi.run-list-command:
+!
+
+! Set command to execute on selected window for custom action. See PATTERN.
+!
+! Default:
+! rofi.window-command: "xkill -id {window}"
+!
+
+
+! --------------------------------------
+! History and Sorting
+! --------------------------------------
+
+! Disable history
+!
+! Default:
+! rofi.disable-history: false
+!
+
+! Use sorting
+!
+! Default:
+! rofi.sort: false
+!
+
+! When searching sort the result based on levenshtein distance. This setting can be changed at runtime, see -kb-toggle-sort.
+!
+! Default:
+! rofi.levenshtein-sort: false
+!
+
+
+! --------------------------------------
+! Keybindings
+! --------------------------------------
+
+! Paste primary selection
+!
+! Default:
+! rofi.kb-primary-paste: Control+V,Shift+Insert
+!
+
+! Paste clipboard
+!
+! Default:
+! rofi.kb-secondary-paste: Control+v,Insert
+!
+
+! Clear input line
+!
+! Default:
+! rofi.kb-clear-line: Control+w
+!
+
+! Beginning of line
+!
+! Default:
+! rofi.kb-move-front: Control+a
+!
+
+! End of line
+!
+! Default:
+! rofi.kb-move-end: Control+e
+!
+
+! Move back one word
+!
+! Default:
+! rofi.kb-move-word-back: Alt+b
+!
+
+! Move forward one word
+!
+! Default:
+! rofi.kb-move-word-forward: Alt+f
+!
+
+! Move back one char
+!
+! Default:
+! rofi.kb-move-char-back: Left,Control+b
+!
+
+! Move forward one char
+!
+! Default:
+! rofi.kb-move-char-forward: Right,Control+f
+!
+
+! Delete previous word
+!
+! Default:
+! rofi.kb-remove-word-back: Control+Alt+h,Control+BackSpace
+!
+
+! Delete next word
+!
+! Default:
+! rofi.kb-remove-word-forward: Control+Alt+d
+!
+
+! Delete next char
+!
+! Default:
+! rofi.kb-remove-char-forward: Delete,Control+d
+!
+
+! Delete previous char
+!
+! Default:
+! rofi.kb-remove-char-back: BackSpace,Control+h
+!
+
+! Delete till the end of line
+!
+! Default:
+! rofi.kb-remove-to-eol: Control+k
+!
+
+! Delete till the start of line
+!
+! Default:
+! rofi.kb-remove-to-sol: Control+u
+!
+
+! Accept entry
+!
+! Default:
+! rofi.kb-accept-entry: Control+j,Control+m,Return,KP_Enter
+!
+
+! Use entered text as command (in ssh/run modi)
+!
+! Default:
+! rofi.kb-accept-custom: Control+Return
+!
+
+! Use alternate accept command.
+!
+! Default:
+! rofi.kb-accept-alt: Shift+Return
+!
+
+! Delete entry from history
+!
+! Default:
+! rofi.kb-delete-entry: Shift+Delete
+!
+
+! Switch to the next mode.
+!
+! Default:
+! rofi.kb-mode-next: Shift+Right,Control+Tab
+!
+
+! Switch to the previous mode.
+!
+! Default:
+! rofi.kb-mode-previous: Shift+Left,Control+ISO_Left_Tab
+!
+
+! Go to the previous column
+!
+! Default:
+! rofi.kb-row-left: Control+Page_Up
+!
+
+! Go to the next column
+!
+! Default:
+! rofi.kb-row-right: Control+Page_Down
+!
+
+! Select previous entry
+!
+! Default:
+! rofi.kb-row-up: Up,Control+p,ISO_Left_Tab
+!
+
+! Select next entry
+!
+! Default:
+! rofi.kb-row-down: Down,Control+n
+!
+
+! Go to next row, if one left, accept it, if no left next mode.
+!
+! Default:
+! rofi.kb-row-tab: Tab
+!
+
+! Go to the previous page
+!
+! Default:
+! rofi.kb-page-prev: Page_Up
+!
+
+! Go to the next page
+!
+! Default:
+! rofi.kb-page-next: Page_Down
+!
+
+! Go to the first entry
+!
+! Default:
+! rofi.kb-row-first: Home,KP_Home
+!
+
+! Go to the last entry
+!
+! Default:
+! rofi.kb-row-last: End,KP_End
+!
+
+! Set selected item as input text
+!
+! Default:
+! rofi.kb-row-select: Control+space
+!
+
+! Take a screenshot of the rofi window
+!
+! Default:
+! rofi.kb-screenshot: Alt+S
+!
+
+! Toggle case sensitivity
+!
+! Default:
+! rofi.kb-toggle-case-sensitivity: grave,dead_grave
+!
+
+! Toggle sort
+!
+! Default:
+! rofi.kb-toggle-sort: Alt+grave
+!
+
+! Quit rofi
+!
+! Default:
+! rofi.kb-cancel: Escape,Control+g,Control+bracketleft
+!
+
+! Custom keybinding 1
+!
+! Default:
+! rofi.kb-custom-1: Alt+1
+!
+
+! Custom keybinding 2
+!
+! Default:
+! rofi.kb-custom-2: Alt+2
+!
+
+! Custom keybinding 3
+!
+! Default:
+! rofi.kb-custom-3: Alt+3
+!
+
+! Custom keybinding 4
+!
+! Default:
+! rofi.kb-custom-4: Alt+4
+!
+
+! Custom Keybinding 5
+!
+! Default:
+! rofi.kb-custom-5: Alt+5
+!
+
+! Custom keybinding 6
+!
+! Default:
+! rofi.kb-custom-6: Alt+6
+!
+
+! Custom Keybinding 7
+!
+! Default:
+! rofi.kb-custom-7: Alt+7
+!
+
+! Custom keybinding 8
+!
+! Default:
+! rofi.kb-custom-8: Alt+8
+!
+
+! Custom keybinding 9
+!
+! Default:
+! rofi.kb-custom-9: Alt+9
+!
+
+! Custom keybinding 10
+!
+! Default:
+! rofi.kb-custom-10: Alt+0
+!
+
+! Custom keybinding 11
+!
+! Default:
+! rofi.kb-custom-11: Alt+exclam
+!
+
+! Custom keybinding 12
+!
+! Default:
+! rofi.kb-custom-12: Alt+at
+!
+
+! Csutom keybinding 13
+!
+! Default:
+! rofi.kb-custom-13: Alt+numbersign
+!
+
+! Custom keybinding 14
+!
+! Default:
+! rofi.kb-custom-14: Alt+dollar
+!
+
+! Custom keybinding 15
+!
+! Default:
+! rofi.kb-custom-15: Alt+percent
+!
+
+! Custom keybinding 16
+!
+! Default:
+! rofi.kb-custom-16: Alt+dead_circumflex
+!
+
+! Custom keybinding 17
+!
+! Default:
+! rofi.kb-custom-17: Alt+ampersand
+!
+
+! Custom keybinding 18
+!
+! Default:
+! rofi.kb-custom-18: Alt+asterisk
+!
+
+! Custom Keybinding 19
+!
+! Default:
+! rofi.kb-custom-19: Alt+parenleft
+!
+
+! Select row 1
+!
+! Default:
+! rofi.kb-select-1: Super+1
+!
+
+! Select row 2
+!
+! Default:
+! rofi.kb-select-2: Super+2
+!
+
+! Select row 3
+!
+! Default:
+! rofi.kb-select-3: Super+3
+!
+
+! Select row 4
+!
+! Default:
+! rofi.kb-select-4: Super+4
+!
+
+! Select row 5
+!
+! Default:
+! rofi.kb-select-5: Super+5
+!
+
+! Select row 6
+!
+! Default:
+! rofi.kb-select-6: Super+6
+!
+
+! Select row 7
+!
+! Default:
+! rofi.kb-select-7: Super+7
+!
+
+! Select row 8
+!
+! Default:
+! rofi.kb-select-8: Super+8
+!
+
+! Select row 9
+!
+! Default:
+! rofi.kb-select-9: Super+9
+!
+
+! Select row 10
+!
+! Default:
+! rofi.kb-select-10: Super+0
+!
+
+! Go to the previous column
+!
+! Default:
+! rofi.ml-row-left: ScrollLeft
+!
+
+! Go to the next column
+!
+! Default:
+! rofi.ml-row-right: ScrollRight
+!
+
+! Select previous entry
+!
+! Default:
+! rofi.ml-row-up: ScrollUp
+!
+
+! Select next entry
+!
+! Default:
+! rofi.ml-row-down: ScrollDown
+!
+
+! Select hovered row
+!
+! Default:
+! rofi.me-select-entry: MousePrimary
+!
+
+! Accept hovered row
+!
+! Default:
+! rofi.me-accept-entry: MouseDPrimary
+!
+
+! Accept hovered row with custom action
+!
+! Default:
+! rofi.me-accept-custom: Control+MouseDPrimary
+!
+
+
+! --------------------------------------
+! Other
+! --------------------------------------
+
+! Make rofi create a pid file and check this on startup. Avoiding multiple copies running simultaneously. This is useful when running rofi from a keybinding daemon.
+!
+! Default
+! rofi.pid: /run/user/1000/rofi.pid
+!
+
+! Select what to use as background for fake transparency. This can be 'background', 'screenshot' or a path to an image file (currently only supports png).
+!
+! Default:
+! rofi.fake-background: screenshot
+!
+
+! Set the name to use for mode. This is used as prompt and in combi-browser.
+!
+! Available {mode}s:
+!
+!     window: All windows.
+!     windowcd: Windows on the current desktop.
+!     run: Executables in $PATH.
+!     drun: Installed desktop files.
+!     ssh: SSH targets based on your ssh config file.
+!     keys: Searchable list of key bindings.
+!
+! Default (all):
+! rofi.display-{mode}:
+!
+
+! Click the mouse outside of the rofi window to exit.
+!
+! Default:
+! rofi.click-to-exit: true
+!
+rofi.theme: /home/ajlende/.config/rofi/themes/base16.rasi
