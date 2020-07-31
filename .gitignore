@@ -6,6 +6,10 @@
 !LICENSE
 !README.md
 !screenshot.png
+!docs/colors.css
+!docs/index.css
+!docs/index.html
+!docs/index.js
 
 !alacritty/.config/alacritty/alacritty.yml
 
@@ -32,10 +36,7 @@
 
 !spotify/.config/spotifyd/spotifyd.conf
 
-!startpage/.config/startpage/colors.css
-!startpage/.config/startpage/index.css
-!startpage/.config/startpage/index.html
-!startpage/.config/startpage/index.js
+!startpage/.config/startpage
 
 !vim/.vim/colors/base16-ngeva.vim
 !vim/.vimrc
