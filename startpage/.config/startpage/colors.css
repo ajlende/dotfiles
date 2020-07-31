@@ -1,0 +1,24 @@
+/*
+ * Base16 Base16 NGEva - userChrome.css color config
+ * Alex Lende ajlende@gmail.com
+ */
+
+:root {
+  --base00: #0F0F11;
+  --base01: #22264B;
+  --base02: #2e3261;
+  --base03: #6A134A;
+  --base04: #782E69;
+  --base05: #EF1174;
+  --base06: #E86489;
+  --base07: #E67F92;
+  --base08: #A32D67;
+  --base09: #E70847;
+  --base0A: #C05B51;
+  --base0B: #b67476;
+  --base0C: #74B7BF;
+  --base0D: #2A6A85;
+  --base0E: #C362b1;
+  --base0F: #6b5d98;
+} 
+

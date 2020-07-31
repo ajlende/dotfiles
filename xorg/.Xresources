@@ -1,0 +1,107 @@
+! ------------------------------------------------------------------------------
+! Colors
+! ------------------------------------------------------------------------------
+
+! {{{ Base16
+
+! Base16 Base16 NGEva
+! Scheme: Alex Lende ajlende@gmail.com
+
+#define base00 #0F0F11
+#define base01 #22264B
+#define base02 #2e3261
+#define base03 #6A134A
+#define base04 #782E69
+#define base05 #EF1174
+#define base06 #E86489
+#define base07 #E67F92
+#define base08 #A32D67
+#define base09 #E70847
+#define base0A #C05B51
+#define base0B #b67476
+#define base0C #74B7BF
+#define base0D #2A6A85
+#define base0E #C362b1
+#define base0F #6b5d98
+
+*foreground:   base05
+*background:   base00
+*cursorColor:  base05
+
+*color0:       base00
+*color1:       base08
+*color2:       base0B
+*color3:       base0A
+*color4:       base0D
+*color5:       base0E
+*color6:       base0C
+*color7:       base05
+
+*color8:       base03
+*color9:       base09
+*color10:      base01
+*color11:      base02
+*color12:      base04
+*color13:      base06
+*color14:      base0F
+*color15:      base07
+
+! Base16 }}}
+
+
+! ------------------------------------------------------------------------------
+! Fonts
+! ------------------------------------------------------------------------------
+
+! URxvt.font:     xft:Fira\ Code:style=Regular,xft:Noto\ Color\ Emoji:style=Regular,xft:Noto\ Sans\ Symbols2:style=Regular
+URxvt.font: xft:Dank Mono,xft:Fira Code,xft:Noto Mono,xft:Noto Color Emoji:Unifont,9x15
+! URxvt.boldFont: xft:Fira Code:style=Bold
+URxvt*letterSpace: 4
+
+! ------------------------------------------------------------------------------
+! URxvt configs
+! ------------------------------------------------------------------------------
+
+URxvt.geometry:         128x32
+URxvt.letterSpace:      0
+URxvt.lineSpace:        0
+URxvt.internalBorder:   24
+URxvt.externalBorder:   0
+URxvt.depth:            32
+URxvt.saveline:         4096
+URxvt.termName:         rxvt-256color
+URxvt.iso14755:         false
+URxvt.iso14755_52:      false
+URxvt.scrollBar:        false
+URxvt.scrollBar_right:  false
+
+URxvt.perl-ext-common:  default,xclip,url-select,keyboard-select,fullscreen,resize-font,tabbedex
+URxvt.copyCommand:      xclip -i -selection clipboard
+URxvt.pasteCommand:     xclip -o -selection clipboard
+URxvt.urlLauncher:      firefox
+URxvt.underlineURLs:    true
+URxvt.urlButton:        1
+URxvt.buffered:         false
+URxvt.urgentOnBell:     true
+
+URxvt.keysym.Shift-Up:    command:\033]720;1\007
+URxvt.keysym.Shift-Down:  command:\033]721;1\007
+URxvt.keysym.Meta-c:      perl:xclip:copy
+URxvt.keysym.Meta-v:      perl:xclip:paste
+URxvt.keysym.Meta-C-v:    perl:xclip:paste_escaped
+URxvt.keysym.Meta-Escape: perl:keyboard-select:activate
+URxvt.keysym.Meta-s:      perl:keyboard-select:search
+URxvt.keysym.Meta-u:      perl:url-select:select_next
+URxvt.keysym.Meta-f:      perl:fullscreen:switch
+
+! ------------------------------------------------------------------------------
+! Xft Font Configuration
+! ------------------------------------------------------------------------------
+
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+

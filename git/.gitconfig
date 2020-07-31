@@ -1,0 +1,46 @@
+[user]
+	email = ajlende@gmail.com
+	name = Alex Lende
+[core]
+	excludesfile = /home/ajlende/.gitignore
+[help]
+	autocorrect = 20
+[alias]
+	git = !exec git
+	alias = "!f() { git config --get-regexp alias | sed 's/^alias\\.\\([^[:space:]]*\\)/git \\1 = git/g' | sed 's/git !/!/g' | sed 's/!git/git/g' | sed 's/!f() { \\(.*\\) }; f$/\\1/g' | sort; }; f"
+	c = commit --no-verify
+	amend = commit --no-verify --amend
+	cached = diff --cached
+	undo = "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
+	unstage = reset HEAD --
+	s = status --short
+	st = status -sb
+	stat = status -sb
+	last = log -1 --stat
+	adog = log --all --decorate --oneline --graph
+	l = log --abbrev-commit --format=format:'%C(bold blue)%h%C(reset) %C(white)%s%C(reset) %C(bold green)- %an%C(reset) %C(dim white)(%ar)%C(reset)%C(auto)%d%C(reset)' --all
+	g = !git graph
+	gl = !git graph long
+	gs = !git graph short
+	graph = "!f() { case $1 in long) git log --graph --color --pretty=format:'%C(yellow)%H%C(green)%d%C(reset)%n%x20%cd%n%x20%cn%x20(%ce)%n%x20%s%n';; short) git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all;; *) git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all;; esac; }; f"
+	up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+	wip = !git add -A && git commit -nm 'WIP'
+	wipe = !git add -A && git commit -nqm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
+	bclean = "!f() { git checkout ${1-develop} && git branch --merged ${1-develop} | grep -Ev " ${1-develop}$" | xargs git branch -d; }; f"
+	bdone = "!f() { git checkout ${1-develop} && git up && git bclean ${1-develop}; }; f"
+	visual = !gitkracken
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[mergetool]
+	prompt = false
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
