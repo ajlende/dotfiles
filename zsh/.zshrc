@@ -45,8 +45,8 @@ alias htop="btm"
 # Provide a way to call the old ones in case
 alias __cat="/usr/bin/cat"
 alias __ls="/usr/bin/ls"
-alias __pacman="pacman"
-alias __grep="grep"
+alias __pacman="/usr/bin/pacman"
+alias __grep="/usr/bin/grep"
 alias __htop="/usr/bin/htop"
 
 # Brought over from grml-zsh-config
