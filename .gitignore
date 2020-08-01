@@ -22,10 +22,6 @@
 !bat/.config/bat/config
 !bat/.config/bat/themes/base16-ngeva.tmTheme
 
-!firefox/.config/firefox/chrome/color.css
-!firefox/.config/firefox/chrome/userChrome.css
-!firefox/.config/firefox/chrome/userContent.css
-
 !git/.gitconfig
 !git/.gitignore
 
