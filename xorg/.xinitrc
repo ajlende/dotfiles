@@ -1,2 +1,3 @@
+unclutter &
 exec spectrwm
 
