@@ -138,14 +138,6 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-
-###########
-# VS Code #
-###########
-
-.vscode
-
-
 ############
 # Excludes #
 ############
