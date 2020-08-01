@@ -1,39 +1,3 @@
-########################################
-# Aliases & Funcitons                  #
-########################################
-
-alias open="xdg-open"
-alias cat="bat"
-alias ls="exa"
-alias tree="exa --tree"
-alias pacman="yay"
-alias hbot="btm -b"
-
-quiet() {
-  $* > /dev/null 2>&1
-}
-
-########################################
-# Interactive Environment Variables    #
-########################################
-
-export EDITOR=vim
-export KEYTIMEOUT=1
-export LESS="$LESS -FRXK --raw-control-chars"
-export HISTFILE=$HOME/.zsh_history
-export SAVEHIST=922337203685477508
-export HISTSIZE=32767
-
-########################################
-# Terminal configuration and Prompt    #
-########################################
-
-setopt EXTENDED_HISTORY
-setopt INC_APPEND_HISTORY
-setopt HIST_FIND_NO_DUPS
-
-eval "$(starship init zsh)"
-
 # +------------------------------------------------------------------------------------------------+
 # |                                                                                                |
 # |                                     ZSH Configuration Files                                    |
@@ -64,4 +28,130 @@ eval "$(starship init zsh)"
 # +----------------+-----------+-----------+------+                                                |
 # |/etc/zlogout    |    J      |           |      |                                                |
 # +----------------+-----------+-----------+------+------------------------------------------------+
+
+########################################
+# Aliases & Funcitons                  #
+########################################
+
+# Overcomming the muscle memory of old commands in favor of new ones is too hard
+alias open="xdg-open"
+alias cat="bat"
+alias ls="exa"
+alias tree="exa --tree"
+alias pacman="yay"
+alias grep="rg"
+alias htop="btm"
+
+# Provide a way to call the old ones in case
+alias __cat="/usr/bin/cat"
+alias __ls="/usr/bin/ls"
+alias __pacman="pacman"
+alias __grep="grep"
+alias __htop="/usr/bin/htop"
+
+# Brought over from grml-zsh-config
+alias ll="exa -lg --git"
+alias la="exa -lga --git"
+
+# Search DuckDuckGo and open the result in the command line
+ddg() {
+	echo "$@"
+	local cmd='php -r "'"echo urlencode('$@');"'"'
+	local terms=`eval $cmd`
+	xdg-open "https://duckduckgo.com/?q=$terms"
+}
+
+# Shhhh!
+quiet() {
+  $* > /dev/null 2>&1
+}
+
+# Just restart the whole shell instead of sourcing files
+reload() {
+	exec "$SHELL" "$@"
+}
+
+# Add confirmations to commands I don't want to accidentally run
+confirm() {
+    local answer
+    echo -ne "zsh: sure you want to run '${YELLOW}$*${NC}' [yN]? "
+    read -q answer
+        echo
+    if [[ "${answer}" =~ ^[Yy]$ ]]; then
+        command "${@}"
+    else
+        return 1
+    fi
+}
+
+# 'Cause sometimes you miss the 'g' when typing 'ddg'
+dd() { confirm $0 $@; }
+
+########################################
+# Interactive Environment Variables    #
+########################################
+
+# Who would ever use anything else?
+export EDITOR=vim
+
+# Color man pages with bat
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
+# Just cat if it fits on one screen
+export LESS="$LESS --quit-if-one-screen"
+
+# Allow ANSI color escape seqences to be colors instead of text (not to be confused with --raw-control-chars)
+export LESS="$LESS --RAW-CONTROL-CHARS"
+
+# Always make ^C exit
+export LESS="$LESS --quit-on-intr"
+
+# Save history to a file
+export HISTFILE=$HOME/.zsh_history
+
+# Max value for history file is 2^63-1 since unlimited isn't an option
+export SAVEHIST=922337203685477508
+
+# Use a smaller amount for the stuff stored in memory (2^15-1 since we're working in powers of 2)
+export HISTSIZE=32767
+
+########################################
+# Terminal configuration and Prompt    #
+########################################
+
+# Save durations and timestamps
+setopt EXTENDED_HISTORY
+
+# Write history file as commands are run
+setopt INC_APPEND_HISTORY
+
+# Ignore dupes in line editor, doesn't apply to file
+setopt HIST_FIND_NO_DUPS
+
+# Manually load plugins without needing a plugin manager
+. /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+. /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+. /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+# Override up and down arrow keys to substring search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
+
+# Color of the autosuggestions
+export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=4"
+
+# Color of a matching string or not found string when searching history
+export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND="fg=0,bg=6,bold"
+export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND="fg=0,bg=1,bold"
+
+# Enable fuzzy searching in 
+export HISTORY_SUBSTRING_SEARCH_FUZZY=1
+
+# Start completions
+autoload -Uz compinit; compinit
+
+# Start prompt
+eval "$(starship init zsh)"
 
