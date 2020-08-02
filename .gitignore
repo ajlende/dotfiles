@@ -27,6 +27,9 @@
 
 !npm/.npmrc
 
+!neofetch/.config/neofetch/config.conf
+!neofetch/.config/neofetch/ascii.txt
+
 !spectrwm/.spectrwm.conf
 !spectrwm/.spectrwm_us.conf
 
