@@ -50,7 +50,6 @@
 !vscode/.config/Code\ -\ OSS/User/settings.json
 
 !xorg/.Xmodmap
-!xorg/.Xresources
 !xorg/.xinitrc
 
 !zsh/.zshenv
