@@ -30,6 +30,7 @@
 !neofetch/.config/neofetch/config.conf
 !neofetch/.config/neofetch/ascii.txt
 
+!spectrwm/.local/bin/spectrwm_cmd
 !spectrwm/.spectrwm.conf
 !spectrwm/.spectrwm_us.conf
 
