@@ -43,6 +43,7 @@
 !vscode/.config/Code\ -\ OSS/User/keybindings.json
 !vscode/.config/Code\ -\ OSS/User/settings.json
 
+!xorg/.Xmodmap
 !xorg/.Xresources
 !xorg/.xinitrc
 
