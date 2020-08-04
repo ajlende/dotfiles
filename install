@@ -1,0 +1,30 @@
+#!/bin/zsh
+
+install() {
+	case $1 in
+		all)
+			stow --no-folding \
+				alacritty \
+				base16 \
+				bat \
+				bin \
+				git \
+				mime \
+				neofetch \
+				npm \
+				spectrwm \
+				spotify \
+				startpage \
+				vim \
+				vscode \
+				xorg \
+				zsh
+			;;
+		*)
+			stow --no-folding "$@"
+			;;
+	esac
+}
+
+install "$@"
+

@@ -2,14 +2,19 @@
 
 *
 !*/
+
 !.gitignore
+
 !LICENSE
 !README.md
 !screenshot.png
+
 !docs/colors.css
 !docs/index.css
 !docs/index.html
 !docs/index.js
+
+!install
 
 !alacritty/.config/alacritty/alacritty.yml
 
