@@ -1,6 +1,5 @@
 [[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
-
-$HOME/.fehbg &
+[[ -f ~/.fehbg ]] && ~/.fehbg &
 unclutter &
 exec spectrwm
 
