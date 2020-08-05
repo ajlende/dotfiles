@@ -33,29 +33,33 @@
 # Aliases & Funcitons                  #
 ########################################
 
-# Overcomming the muscle memory of old commands in favor of new ones is too hard
-alias open="xdg-open"
+# Overcoming the muscle memory of old commands in favor of new ones is too hard
 alias cat="bat"
-alias ls="exa"
-alias tree="exa --tree"
-alias pacman="yay"
 alias grep="rg"
 alias htop="btm"
+alias ls="exa"
+alias open="xdg-open"
+alias pacman="yay"
+alias tree="exa --tree"
 
 # Provide a way to call the old ones in case
 alias __cat="/usr/bin/cat"
-alias __ls="/usr/bin/ls"
-alias __pacman="/usr/bin/pacman"
 alias __grep="/usr/bin/grep"
 alias __htop="/usr/bin/htop"
+alias __ls="/usr/bin/ls"
+alias __pacman="/usr/bin/pacman"
 
 # Brought over from grml-zsh-config
 alias ll="exa -lg --git"
 alias la="exa -lga --git"
 
+# Search file contents in the current directory
+skrg() {
+	sk --ansi -i -c 'rg --color=always --line-number "{}"'
+}
+
 # Search DuckDuckGo and open the result in the command line
 ddg() {
-	echo "$@"
 	local cmd='php -r "'"echo urlencode('$@');"'"'
 	local terms=`eval $cmd`
 	xdg-open "https://duckduckgo.com/?q=$terms"
@@ -63,7 +67,7 @@ ddg() {
 
 # Shhhh!
 quiet() {
-  $* > /dev/null 2>&1
+	$* > /dev/null 2>&1
 }
 
 # Just restart the whole shell instead of sourcing files
@@ -92,7 +96,8 @@ dd() { confirm $0 $@; }
 ########################################
 
 # Who would ever use anything else?
-export EDITOR=vim
+export VISUAL=vim
+export EDITOR="$VISUAL"
 
 # Color man pages with bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
