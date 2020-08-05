@@ -12,10 +12,10 @@ install() {
 				mime \
 				neofetch \
 				npm \
+				nvim \
 				spectrwm \
 				spotify \
 				startpage \
-				vim \
 				vscode \
 				xorg \
 				zsh

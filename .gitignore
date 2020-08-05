@@ -43,8 +43,7 @@
 
 !startpage/.config/startpage
 
-!vim/.vim/colors/base16-ngeva.vim
-!vim/.vimrc
+!nvim/.config/nvim/init.vim
 
 !vscode/.config/Code\ -\ OSS/User/keybindings.json
 !vscode/.config/Code\ -\ OSS/User/settings.json
