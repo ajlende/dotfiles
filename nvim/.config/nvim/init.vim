@@ -9,6 +9,9 @@ set mouse=a
 set spell spelllang=en_us
 set background=dark
 
+" Disable auto formatting options for all files
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o formatoptions-=t
+
 " Force to use underline for spell check results
 augroup SpellUnderline
   autocmd!
