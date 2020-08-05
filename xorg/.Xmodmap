@@ -228,7 +228,8 @@ keycode 104 = KP_Enter NoSymbol KP_Enter
 
 ! Make Caps Lock an additional Esc, but Shift + Caps Lock is the regular Caps Lock
 ! Run `localectl set-x11-keymap us pc104 "" "caps:escape_shifted_capslock"`
-
+clear lock
+keycode 66 = Escape Caps_Lock Escape Caps_Lock
 
 ! --------------------------------------
 ! Unknown
