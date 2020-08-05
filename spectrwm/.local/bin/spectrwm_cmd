@@ -2,8 +2,6 @@
 
 cmd=$1; shift
 
-echo "$cmd" "$@" >> /home/ajlende/tmp.txt
-
 case "$cmd" in
 	screenshot)
 		shotgun - | xclip -t 'image/png' -selection clipboard
