@@ -3,12 +3,14 @@
 	name = Alex Lende
 [core]
 	excludesfile = /home/ajlende/.gitignore
+	pager = less -x4
 [help]
 	autocorrect = 20
 [alias]
 	git = !exec git
 	alias = "!f() { git config --get-regexp alias | sed 's/^alias\\.\\([^[:space:]]*\\)/git \\1 = git/g' | sed 's/git !/!/g' | sed 's/!git/git/g' | sed 's/!f() { \\(.*\\) }; f$/\\1/g' | sort; }; f"
 	c = commit --no-verify
+	co = !git checkout $(git branch --all | sk)
 	amend = commit --no-verify --amend
 	cached = diff --cached
 	undo = "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
@@ -16,10 +18,14 @@
 	s = status --short
 	st = status -sb
 	stat = status -sb
+	sync = "!f() { git checkout --quiet --detach; git fetch upstream ${1-master}:${1-master}; git push origin ${1-master}:${1-master}; git checkout --quiet -; }; f"
 	last = log -1 --stat
 	adog = log --all --decorate --oneline --graph
-	l = log --abbrev-commit --format=format:'%C(bold blue)%h%C(reset) %C(white)%s%C(reset) %C(bold green)- %an%C(reset) %C(dim white)(%ar)%C(reset)%C(auto)%d%C(reset)' --all
-	g = !git graph
+	ls = log --abbrev-commit --format=format:'%C(bold blue)%h%C(reset) %C(white)%s%C(reset) %C(bold green)- %an%C(reset) %C(dim white)(%ar)%C(reset)%C(auto)%d%C(reset)' --all
+	l = log --oneline
+	ll = log
+	g = !git graph short
+	gg = !git graph
 	gl = !git graph long
 	gs = !git graph short
 	graph = "!f() { case $1 in long) git log --graph --color --pretty=format:'%C(yellow)%H%C(green)%d%C(reset)%n%x20%cd%n%x20%cn%x20(%ce)%n%x20%s%n';; short) git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all;; *) git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all;; esac; }; f"
@@ -29,6 +35,8 @@
 	bclean = "!f() { git checkout ${1-develop} && git branch --merged ${1-develop} | grep -Ev " ${1-develop}$" | xargs git branch -d; }; f"
 	bdone = "!f() { git checkout ${1-develop} && git up && git bclean ${1-develop}; }; f"
 	visual = !gitkracken
+	root = rev-parse --show-toplevel
+	squash = "!f() { git reset --hard ${1-master} && git merge --squash HEAD@{1}; }; f"
 [diff]
 	tool = vimdiff
 [difftool]
@@ -44,3 +52,5 @@
 	process = git-lfs filter-process
 	required = true
 
+[pull]
+	ff = only

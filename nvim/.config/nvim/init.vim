@@ -1,5 +1,11 @@
 " Basic Vim configuration
 
+if exists('+termguicolors')
+  let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
 set number
 set nowrap
 set tabstop=4
@@ -7,7 +13,6 @@ set ignorecase
 set smartcase
 set mouse=a
 set spell spelllang=en_us
-set background=dark
 
 " Disable auto formatting options for all files
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o formatoptions-=t
@@ -49,8 +54,6 @@ augroup SpellUnderline
     \   guisp=Red
   augroup END
 
-colorscheme zellner
-
 " Plugins
 
 call plug#begin('~/.config/nvim/plugged')
@@ -59,6 +62,8 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
+Plug 'ap/vim-css-color'
+Plug 'nanotech/jellybeans.vim'
 call plug#end()
 
 " Plugin configuration

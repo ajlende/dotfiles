@@ -5,6 +5,7 @@ install() {
 		all)
 			stow --no-folding \
 				alacritty \
+				awesome \
 				base16 \
 				bat \
 				bin \
@@ -13,7 +14,8 @@ install() {
 				neofetch \
 				npm \
 				nvim \
-				spectrwm \
+				pam \
+				polybar \
 				spotify \
 				startpage \
 				vscode \

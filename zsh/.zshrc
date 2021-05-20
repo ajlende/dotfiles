@@ -33,6 +33,14 @@
 # Aliases & Funcitons                  #
 ########################################
 
+# Provide a way to call the old ones in case
+alias __cat="/usr/bin/cat"
+alias __grep="/usr/bin/grep"
+alias __htop="/usr/bin/htop"
+alias __ls="/usr/bin/ls"
+alias __pacman="/usr/bin/pacman"
+alias __shutdown="/usr/bin/shutdown"
+
 # Overcoming the muscle memory of old commands in favor of new ones is too hard
 alias cat="bat"
 alias grep="rg"
@@ -42,16 +50,24 @@ alias open="xdg-open"
 alias pacman="yay"
 alias tree="exa --tree"
 
-# Provide a way to call the old ones in case
-alias __cat="/usr/bin/cat"
-alias __grep="/usr/bin/grep"
-alias __htop="/usr/bin/htop"
-alias __ls="/usr/bin/ls"
-alias __pacman="/usr/bin/pacman"
-
 # Brought over from grml-zsh-config
 alias ll="exa -lg --git"
 alias la="exa -lga --git"
+
+# Quickly go to the previous directory 
+alias -- -='cd -'
+
+# MacOS-like copy
+alias pbcopy="xclip -selection clipboard"
+
+# MacOS-like paste
+alias pbpaste="xclip -selection clipboard -o"
+
+
+# Quickly go to the git root directory
+...() {
+	cd "$(git rev-parse --show-toplevel)"
+}
 
 # Search file contents in the current directory
 skrg() {
@@ -77,19 +93,22 @@ reload() {
 
 # Add confirmations to commands I don't want to accidentally run
 confirm() {
-    local answer
-    echo -ne "zsh: sure you want to run '${YELLOW}$*${NC}' [yN]? "
-    read -q answer
-        echo
-    if [[ "${answer}" =~ ^[Yy]$ ]]; then
-        command "${@}"
-    else
-        return 1
-    fi
+	local answer
+	echo -ne "zsh: sure you want to run '${YELLOW}$*${NC}' [yN]? "
+	read -q answer
+		echo
+	if [[ "${answer}" =~ ^[Yy]$ ]]; then
+		command "${@}"
+	else
+		return 1
+	fi
 }
 
 # 'Cause sometimes you miss the 'g' when typing 'ddg'
 dd() { confirm $0 $@; }
+
+# Remember to update when shutting down. AUR still needs manual updating.
+alias shutdown="__pacman -Syu && confirm __shutdown"
 
 ########################################
 # Interactive Environment Variables    #
@@ -133,6 +152,9 @@ setopt INC_APPEND_HISTORY
 # Ignore dupes in line editor, doesn't apply to file
 setopt HIST_FIND_NO_DUPS
 
+# Instead of typing 'cd my_folder', just type 'my_folder'
+setopt AUTO_CD
+
 # Manually load plugins without needing a plugin manager
 . /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 . /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -159,4 +181,10 @@ autoload -Uz compinit; compinit
 
 # Start prompt
 eval "$(starship init zsh)"
+
+########################################
+# SSH Agent Keychain                   #
+########################################
+
+eval "$(keychain --eval --noask --confhost --quiet)"
 
