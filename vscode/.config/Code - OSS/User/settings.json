@@ -1,5 +1,4 @@
 {
-	"workbench.colorTheme": "Monokai Pro",
 	"workbench.startupEditor": "newUntitledFile",
 
 	"editor.fontFamily": "'Dank Mono', 'Fira Code', 'Noto Sans Mono', 'Noto Color Emoji', 'EmojiOne', monospace",
@@ -74,8 +73,1470 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"workbench.iconTheme": "Monokai Pro Icons",
-	"window.zoomLevel": 1,
 	"[html]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	}
+	},
+	// This is a comment
+	// "editor.tokenColorCustomizations": {
+	// 	"textMateRules": [
+	// 		{
+	// 			"scope": [
+	// 				"comment",
+	// 				"comment keyword",
+	// 				"comment markup.underline.link",
+	// 				"comment string",
+	// 				"comment punctuation.definition",
+	// 				"comment punctuation",
+	// 				"comment text"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#4C566A",
+	// 				"fontStyle": "italic"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "comment storage.type",
+	// 			"settings": {
+	// 				"foreground": "#4C566A"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "comment entity.name.type",
+	// 			"settings": {
+	// 				"foreground": "#F7F7F7"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": ["comment variable", "comment variable.other"],
+	// 			"settings": {
+	// 				"foreground": "#F7F7F7"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "comment keyword.codetag.notation",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "comment.git-status.header.remote",
+	// 			"settings": {
+	// 				"foreground": "#63C5EA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "comment.git-status.header.local",
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "comment.other.git-status.head",
+	// 			"settings": {
+	// 				"foreground": "#F9F9F9"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "constant",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "constant.other",
+	// 			"settings": {
+	// 				"foreground": "#F9F9F9"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "constant.other.php",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "constant.other.property",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "constant.other.citation.latex",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "constant.other.color",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "constant.other.character-class.escape",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "constant.other.key",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "constant.other.symbol",
+	// 			"settings": {
+	// 				"foreground": "#FA946E"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "constant.other.elm",
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "constant.numeric",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "constant.language",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "constant.character.escape",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "constant.numeric.line-number.find-in-files",
+	// 			"settings": {
+	// 				"foreground": "#00FF00"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "constant.numeric.line-number.match.find-in-files",
+	// 			"settings": {
+	// 				"foreground": "#FA5AA4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "entity.name.section",
+	// 			"settings": {
+	// 				"foreground": "#FA5AA4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": ["entity.name.function", "entity.name.function.templated"],
+	// 			"settings": {
+	// 				"foreground": "#2BE491"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "entity.name.function.member.static",
+	// 			"settings": {
+	// 				"foreground": "#F9F9F9"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"entity.name.type.class.templated",
+	// 				"entity.name.type.class.generic",
+	// 				"entity.name.type.namespace"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "entity.name.label",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "entity.name.function.preprocessor",
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "entity.name",
+	// 			"settings": {
+	// 				"foreground": "#2BE491"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "entity.name.class",
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "entity.name.constant",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "entity.name.namespace",
+	// 			"settings": {
+	// 				"foreground": "#F9F9F9"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "entity.other.inherited-class",
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA",
+	// 				"fontStyle": "italic"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "entity.name.function",
+	// 			"settings": {
+	// 				"foreground": "#2BE491"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"entity.name.tag",
+	// 				"entity.name.tag.js.jsx support.class.component.js.jsx",
+	// 				"entity.name.tag support.class.component",
+	// 				"source.vue support.class.component"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#63C5EA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "entity.name.function.operator",
+	// 			"settings": {
+	// 				"foreground": "#63C5EA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"entity.name.type",
+	// 				"entity.name.type.class.reference",
+	// 				"entity.name.type.class.value"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "entity.other.attribute-name",
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA",
+	// 				"fontStyle": "italic"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"entity.other.attribute-name.class.css",
+	// 				"entity.other.attribute-name.parent-selector-suffix.css",
+	// 				"entity.other.attribute-name.parent-selector-suffix.css punctuation.definition.entity.css",
+	// 				"entity.other.attribute-name.css",
+	// 				"entity.other.animation-name.css"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#2BE491"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "entity.other.attribute-name.id.css",
+	// 			"settings": {
+	// 				"foreground": "#FA946E"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"entity.other.attribute-name.pseudo-class.css",
+	// 				"entity.other.pseudo-class.css",
+	// 				"entity.other.pseudo-element.css"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA",
+	// 				"fontStyle": "italic"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": ["entity.name.function", "support.function"],
+	// 			"settings": {
+	// 				"foreground": "#2BE491"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "entity.other.git-status.hex",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "entity.other.jinja2.delimiter",
+	// 			"settings": {
+	// 				"foreground": "#F4F4F4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "entity.name.operator.custom-literal",
+	// 			"settings": {
+	// 				"foreground": "#F9F9F9"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "entity.name.operator.custom-literal.string",
+	// 			"settings": {
+	// 				"foreground": "#FA5AA4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "entity.name.operator.custom-literal.number",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "entity.name.type.rust",
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "entity.name.lifetime.rust",
+	// 			"settings": {
+	// 				"foreground": "#63C5EA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "invalid",
+	// 			"settings": {
+	// 				"fontStyle": "italic"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "keyword",
+	// 			"settings": {
+	// 				"foreground": "#63C5EA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "keyword.control",
+	// 			"settings": {
+	// 				"foreground": "#63C5EA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "keyword.control.directive",
+	// 			"settings": {
+	// 				"foreground": "#63C5EA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"keyword.operator",
+	// 				"keyword.operator.member",
+	// 				"keyword.operator.new"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#63C5EA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "keyword.other.substitution",
+	// 			"settings": {
+	// 				"foreground": "#F4F4F4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": ["keyword.other.template.begin", "keyword.other.template.end"],
+	// 			"settings": {
+	// 				"foreground": "#63C5EA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"keyword.operator.heading.restructuredtext",
+	// 				"keyword.operator.table.row.restructuredtext keyword.operator.table.data.restructuredtext"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#F4F4F4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "keyword.other.parenthesis.elm",
+	// 			"settings": {
+	// 				"foreground": "#F4F4F4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"keyword.other.fn.rust",
+	// 				"keyword.other.rust",
+	// 				"keyword.other.unsafe.rust",
+	// 				"keyword.other.where.rust"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": ["keyword.control.rust", "keyword.operator.misc.rust"],
+	// 			"settings": {
+	// 				"foreground": "#63C5EA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "markup.italic",
+	// 			"settings": {
+	// 				"fontStyle": "italic"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "markup.bold",
+	// 			"settings": {
+	// 				"fontStyle": "bold"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "markup.heading",
+	// 			"settings": {
+	// 				"foreground": "#FA5AA4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "markup.raw",
+	// 			"settings": {
+	// 				"foreground": "#FA946E"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "markup.underline",
+	// 			"settings": {
+	// 				"fontStyle": "underline"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "markup.underline.link",
+	// 			"settings": {
+	// 				"foreground": "#2BE491"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"markup.inserted",
+	// 				"markup.inserted punctuation.definition.inserted"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#2BE491"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"markup.deleted",
+	// 				"markup.deleted punctuation.definition.deleted"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#63C5EA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"markup.changed",
+	// 				"markup.changed punctuation.definition.changed"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#FA5AA4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"markup.ignored",
+	// 				"markup.ignored punctuation.definition.ignored"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#F4F4F4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "markup.untracked",
+	// 			"settings": {
+	// 				"foreground": "#F4F4F4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "markup.quote",
+	// 			"settings": {
+	// 				"fontStyle": "italic"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"meta.brace.round",
+	// 				"meta.brace.square",
+	// 				"meta.brace.curly",
+	// 				"meta.delimiter.comma.js",
+	// 				"meta.function-call.without-arguments.js",
+	// 				"meta.function-call.method.without-arguments.js"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#F4F4F4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"meta.function-call.generic.python",
+	// 				"support.function.builtin.python"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#2BE491"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "meta.function-call.python meta.function-call.arguments.python",
+	// 			"settings": {
+	// 				"foreground": "#F9F9F9"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "meta.instance.constructor",
+	// 			"settings": {
+	// 				"foreground": "#2BE491"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"meta.attribute-with-value.class string",
+	// 				"meta.attribute.class.html string"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#2BE491"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"meta.attribute-with-value.id string",
+	// 				"meta.attribute.id.html string"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#FA946E"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"source.json meta.structure.dictionary",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary",
+	// 				"source.json meta.structure.dictionary string",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string",
+	// 				"source.json meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary string"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#F9F9F9"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"source.json meta.structure.dictionary.value string",
+	// 				"source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string",
+	// 				"source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string",
+	// 				"source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string",
+	// 				"source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string",
+	// 				"source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string",
+	// 				"source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string",
+	// 				"source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string",
+	// 				"source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string",
+	// 				"source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string",
+	// 				"source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string",
+	// 				"source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string",
+	// 				"source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string",
+	// 				"source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string",
+	// 				"source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string",
+	// 				"source.json meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value meta.structure.dictionary meta.structure.dictionary.value string"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#FA5AA4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "meta.object.member",
+	// 			"settings": {
+	// 				"foreground": "#F9F9F9"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "meta.property-list.css variable.other",
+	// 			"settings": {
+	// 				"foreground": "#FA946E"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": ["entity.name.constant.preprocessor", "meta.preprocessor"],
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "meta.diff.git-diff.header",
+	// 			"settings": {
+	// 				"foreground": "#FA5AA4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "meta.type_params.rust",
+	// 			"settings": {
+	// 				"foreground": "#F9F9F9"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"meta.attribute.rust",
+	// 				"meta.annotation.rust",
+	// 				"variable.language.rust",
+	// 				"variable.annotation.rust",
+	// 				"meta.annotation.rust string",
+	// 				"meta.annotation.rust keyword",
+	// 				"meta.annotation.rust keyword.operator",
+	// 				"meta.attribute.rust string"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#F7F7F7"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "punctuation",
+	// 			"settings": {
+	// 				"foreground": "#F4F4F4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"punctuation.definition.tag",
+	// 				"punctuation.definition.tag source",
+	// 				"punctuation.definition.group.begin.ruby",
+	// 				"punctuation.definition.group.end.ruby",
+	// 				"punctuation.definition.group.begin.css",
+	// 				"punctuation.definition.group.end.css",
+	// 				"punctuation.definition.string.end.html source.css"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#F4F4F4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "punctuation.definition.group",
+	// 			"settings": {
+	// 				"foreground": "#F9F9F9"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "punctuation.definition.comment",
+	// 			"settings": {
+	// 				"foreground": "#4C566A"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"punctuation.definition.variable",
+	// 				"punctuation.definition.keyword.scss",
+	// 				"punctuation.definition.entity.css"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#F7F7F7"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"punctuation.section.embedded",
+	// 				"punctuation.section.embedded entity.name.tag",
+	// 				"punctuation.section.embedded constant.other",
+	// 				"punctuation.section.embedded source",
+	// 				"punctuation.section.embedded.begin"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#FA946E"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"punctuation.template-string.element.begin",
+	// 				"punctuation.template-string.element.end",
+	// 				"punctuation.definition.string.template.begin",
+	// 				"punctuation.definition.string.template.end",
+	// 				"string.quoted.template punctuation.definition.string.begin",
+	// 				"string.quoted.template punctuation.definition.string.end",
+	// 				"punctuation.definition.template-expression.begin",
+	// 				"punctuation.definition.template-expression.end"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#63C5EA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"meta.paragraph.markdown meta.dummy.line-break",
+	// 				"meta.paragraph.markdown meta.hard-line-break.markdown"
+	// 			],
+	// 			"settings": {
+	// 				"background": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "region.redish",
+	// 			"settings": {
+	// 				"foreground": "#63C5EA",
+	// 				"background": "#63C5EA59"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "region.orangish",
+	// 			"settings": {
+	// 				"foreground": "#FA946E",
+	// 				"background": "#FA946E59"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "region.yellowish",
+	// 			"settings": {
+	// 				"foreground": "#FA5AA4",
+	// 				"background": "#FA5AA459"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "region.greenish",
+	// 			"settings": {
+	// 				"foreground": "#2BE491",
+	// 				"background": "#2BE49159"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "region.bluish",
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA",
+	// 				"background": "#7ACBEA59"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "region.purplish",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4",
+	// 				"background": "#CF8EF459"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "region.pinkish",
+	// 			"settings": {
+	// 				"foreground": "#63C5EA",
+	// 				"background": "#63C5EA59"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "region.whitish",
+	// 			"settings": {
+	// 				"foreground": "#FFFFFF"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "source",
+	// 			"settings": {
+	// 				"foreground": "#F9F9F9"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": ["source.scss", "source.sass"],
+	// 			"settings": {
+	// 				"foreground": "#F4F4F4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"source.sass variable.other",
+	// 				"source.sass variable.sass",
+	// 				"source.scss variable.other",
+	// 				"source.scss variable.scss",
+	// 				"source.scss variable.sass",
+	// 				"source.css variable.other",
+	// 				"source.css variable.scss",
+	// 				"source.less variable.other",
+	// 				"source.less variable.other.less",
+	// 				"source.less variable.declaration.less"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#FA946E",
+	// 				"fontStyle": "italic"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "source.git-show.commit.sha",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"source.git-show.author",
+	// 				"source.git-show.date",
+	// 				"source.git-diff.command",
+	// 				"source.git-diff.command meta.diff.git-diff.header.from-file",
+	// 				"source.git-diff.command meta.diff.git-diff.header.to-file"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#F4F4F4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"source.git-show meta.diff.git-diff.header.extended.index.from-sha",
+	// 				"source.git-show meta.diff.git-diff.header.extended.index.to-sha"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "source.git-show meta.diff.range.unified",
+	// 			"settings": {
+	// 				"foreground": "#FA946E"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"source.git-show meta.diff.header.from-file",
+	// 				"source.git-show meta.diff.header.to-file"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#F4F4F4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "storage",
+	// 			"settings": {
+	// 				"foreground": "#63C5EA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "storage.type",
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA",
+	// 				"fontStyle": "italic"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "storage.type.extends",
+	// 			"settings": {
+	// 				"foreground": "#63C5EA",
+	// 				"fontStyle": "normal"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "storage.type.function.arrow",
+	// 			"settings": {
+	// 				"foreground": "#63C5EA",
+	// 				"fontStyle": "normal"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": ["storage.modifier", "storage.type.modifier"],
+	// 			"settings": {
+	// 				"foreground": "#63C5EA",
+	// 				"fontStyle": "italic"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "storage.class.restructuredtext.ref",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"storage.modifier.visibility.rust",
+	// 				"storage.modifier.lifetime.rust"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#63C5EA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"storage.modifier.const.rust",
+	// 				"storage.modifier.dyn.rust",
+	// 				"storage.modifier.mut.rust",
+	// 				"storage.modifier.static.rust",
+	// 				"storage.type.rust",
+	// 				"storage.type.core.rust",
+	// 				"storage.class.std.rust"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"storage.type.rust",
+	// 				"storage.modifier.const.rust",
+	// 				"storage.modifier.dyn.rust",
+	// 				"storage.modifier.mut.rust",
+	// 				"storage.modifier.static.rust",
+	// 				"keyword.other.rust",
+	// 				"keyword.other.where.rust"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#63C5EA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "string",
+	// 			"settings": {
+	// 				"foreground": "#FA5AA4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "string.unquoted.label",
+	// 			"settings": {
+	// 				"foreground": "#F9F9F9"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "string source",
+	// 			"settings": {
+	// 				"foreground": "#F9F9F9"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"string source punctuation.section.embedded",
+	// 				"string punctuation.definition.string source"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#F4F4F4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": ["string.other.link.title", "string.other.link.description"],
+	// 			"settings": {
+	// 				"foreground": "#63C5EA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "string.other.link.description.title",
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"string.regexp punctuation.definition.string.begin",
+	// 				"string.regexp punctuation.definition.string.end"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#63C5EA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": ["string.other.ref", "string.other.restructuredtext.ref"],
+	// 			"settings": {
+	// 				"foreground": "#2BE491"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "string.other.git-status.help.key",
+	// 			"settings": {
+	// 				"foreground": "#F7F7F7"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "string.other.git-status.remote",
+	// 			"settings": {
+	// 				"foreground": "#63C5EA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "support.constant",
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "support.constant.handlebars",
+	// 			"settings": {
+	// 				"foreground": "#F4F4F4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "support.type.vendor-prefix.css",
+	// 			"settings": {
+	// 				"foreground": "#F7F7F7"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "support.function",
+	// 			"settings": {
+	// 				"foreground": "#2BE491"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "support.function.delimiter.elm",
+	// 			"settings": {
+	// 				"foreground": "#F4F4F4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": ["support.type", "entity.name.type.object.console"],
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA",
+	// 				"fontStyle": "italic"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "support.variable",
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "support.type.property-name",
+	// 			"settings": {
+	// 				"foreground": "#F9F9F9",
+	// 				"fontStyle": "normal"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "support.class",
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "support.constant.core.rust",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "text",
+	// 			"settings": {
+	// 				"foreground": "#F9F9F9"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "text.find-in-files",
+	// 			"settings": {
+	// 				"foreground": "#F9F9F9"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": ["variable", "variable.other"],
+	// 			"settings": {
+	// 				"foreground": "#F9F9F9"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": ["variable.parameter", "parameters variable.function"],
+	// 			"settings": {
+	// 				"foreground": "#FA946E",
+	// 				"fontStyle": "italic"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"variable.language",
+	// 				"variable.parameter.function.language.special.self.python",
+	// 				"variable.parameter.function.language.special.cls.python"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#F7F7F7",
+	// 				"fontStyle": "italic"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "variable.language.arguments",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "variable.other.class",
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "variable.other.constant",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "variable.other.readwrite",
+	// 			"settings": {
+	// 				"foreground": "#F9F9F9"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "variable.other.member",
+	// 			"settings": {
+	// 				"foreground": "#F9F9F9"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "variable.other.enummember",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"variable.other.property",
+	// 				"variable.other.property.static",
+	// 				"variable.other.event"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#F9F9F9"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "variable.function",
+	// 			"settings": {
+	// 				"foreground": "#2BE491"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "variable.other.substitution",
+	// 			"settings": {
+	// 				"foreground": "#FA946E"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": [
+	// 				"source.ruby variable.other.readwrite.instance.ruby",
+	// 				"source.ruby variable.other.readwrite.class.ruby"
+	// 			],
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "source.jinja2 variable.other.jinja2.block",
+	// 			"settings": {
+	// 				"foreground": "#2BE491"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "source.jinja2 variable.other.jinja2",
+	// 			"settings": {
+	// 				"foreground": "#FA946E"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "token.info-token",
+	// 			"settings": {
+	// 				"foreground": "#7ACBEA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "token.warn-token",
+	// 			"settings": {
+	// 				"foreground": "#EE9C11"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "token.error-token",
+	// 			"settings": {
+	// 				"foreground": "#63C5EA"
+	// 			}
+	// 		},
+	// 		{
+	// 			"scope": "token.debug-token",
+	// 			"settings": {
+	// 				"foreground": "#CF8EF4"
+	// 			}
+	// 		}
+	// 	]
+	// },
+	// "workbench.colorCustomizations": {
+	// 	"foreground": "#f9f9f9",
+	// 	"focusBorder": "#7ACBEA",
+	// 	"selection.background": "#434c5e",
+	// 	"scrollbar.shadow": "#4c566a",
+	// 	"activityBar.foreground": "#f9f9f9",
+	// 	"activityBar.background": "#4c566a",
+	// 	"activityBar.inactiveForeground": "#f9f9f966",
+	// 	"activityBarBadge.foreground": "#ffffff",
+	// 	"activityBarBadge.background": "#7ACBEA",
+	// 	"sideBar.background": "#373e4d",
+	// 	"sideBar.foreground": "#f9f9f9",
+	// 	"sideBarSectionHeader.background": "#f7000000",
+	// 	"sideBarSectionHeader.foreground": "#f9f9f9",
+	// 	"sideBarSectionHeader.border": "#f9f9f933",
+	// 	"sideBarTitle.foreground": "#f9f9f9",
+	// 	"list.inactiveSelectionBackground": "#434c5e",
+	// 	"list.inactiveSelectionForeground": "#f9f9f9",
+	// 	"list.hoverBackground": "#56687e",
+	// 	"list.hoverForeground": "#f9f9f9",
+	// 	"list.activeSelectionBackground": "#56687e",
+	// 	"list.activeSelectionForeground": "#f9f9f9",
+	// 	"tree.indentGuidesStroke": "#4c566a",
+	// 	"list.dropBackground": "#434c5e",
+	// 	"list.highlightForeground": "#7ACBEA",
+	// 	"list.focusBackground": "#434c5e",
+	// 	"list.focusForeground": "#f9f9f9",
+	// 	"listFilterWidget.background": "#434c5e",
+	// 	"listFilterWidget.outline": "#00000000",
+	// 	"listFilterWidget.noMatchesOutline": "#63C5EA",
+	// 	"statusBar.foreground": "#ffffff",
+	// 	"statusBar.background": "#4c566a",
+	// 	"statusBarItem.hoverBackground": "#ffffff1f",
+	// 	"statusBar.debuggingBackground": "#fa946e",
+	// 	"statusBar.debuggingForeground": "#373e4d",
+	// 	"statusBar.noFolderBackground": "#cf8ef4",
+	// 	"statusBar.noFolderForeground": "#373e4d",
+	// 	"statusBarItem.remoteBackground": "#2be491",
+	// 	"statusBarItem.remoteForeground": "#373e4d",
+	// 	"titleBar.activeBackground": "#4c566a",
+	// 	"titleBar.activeForeground": "#f9f9f9",
+	// 	"titleBar.inactiveBackground": "#4c566a",
+	// 	"titleBar.inactiveForeground": "#f9f9f999",
+	// 	"titleBar.border": "#00000000",
+	// 	"menubar.selectionForeground": "#cccccc",
+	// 	"menubar.selectionBackground": "#ffffff1a",
+	// 	"menubar.selectionBorder": "#ffffff",
+	// 	"menu.foreground": "#f9f9f9",
+	// 	"menu.background": "#373e4d",
+	// 	"menu.selectionForeground": "#ffffff",
+	// 	"menu.selectionBackground": "#f8f8f21f",
+	// 	"menu.selectionBorder": "#00000000",
+	// 	"menu.separatorBackground": "#f8f8f21f",
+	// 	"menu.border": "#f9f9f94d",
+	// 	"button.background": "#7ACBEA",
+	// 	"button.foreground": "#ffffff",
+	// 	"button.hoverBackground": "#87d5f2",
+	// 	"button.secondaryForeground": "#ffffff",
+	// 	"button.secondaryBackground": "#434c5e",
+	// 	"button.secondaryHoverBackground": "#495366",
+	// 	"input.background": "#373e4d",
+	// 	"input.border": "#00000000",
+	// 	"input.foreground": "#f9f9f9",
+	// 	"inputOption.activeBackground": "#434c5e",
+	// 	"inputOption.activeBorder": "#007acc00",
+	// 	"inputOption.activeForeground": "#ffffff",
+	// 	"input.placeholderForeground": "#f9f9f980",
+	// 	"textLink.foreground": "#7ACBEA",
+	// 	"editor.background": "#373e4d",
+	// 	"editor.foreground": "#f9f9f9",
+	// 	"editorLineNumber.foreground": "#f9f9f966",
+	// 	"editorCursor.foreground": "#f9f9f9",
+	// 	"editorCursor.background": "#373e4d",
+	// 	"editor.selectionBackground": "#6c92ab",
+	// 	"editor.inactiveSelectionBackground": "#40485a",
+	// 	"editorWhitespace.foreground": "#ffffff4d",
+	// 	"editor.selectionHighlightBackground": "#ffffff26",
+	// 	"editor.selectionHighlightBorder": "#373e4d",
+	// 	"editor.findMatchBackground": "#7ACBEA55",
+	// 	"editor.findMatchBorder": "#f9f9f955",
+	// 	"editor.findMatchHighlightBackground": "#cf8ef455",
+	// 	"editor.findMatchHighlightBorder": "#ffffff00",
+	// 	"editor.findRangeHighlightBackground": "#4c566a80",
+	// 	"editor.findRangeHighlightBorder": "#ffffff00",
+	// 	"editor.rangeHighlightBackground": "#ffffff0b",
+	// 	"editor.rangeHighlightBorder": "#ffffff00",
+	// 	"editor.hoverHighlightBackground": "#fa946e4d",
+	// 	"editor.wordHighlightStrongBackground": "#FA5AA400",
+	// 	"editor.wordHighlightBackground": "#63C5EA4d",
+	// 	"editor.lineHighlightBackground": "#4c566a",
+	// 	"editor.lineHighlightBorder": "#56687e",
+	// 	"editorLineNumber.activeForeground": "#f9f9f9",
+	// 	"editorLink.activeForeground": "#7ACBEA",
+	// 	"editorIndentGuide.background": "#4c566a",
+	// 	"editorIndentGuide.activeBackground": "#56687e",
+	// 	"editorRuler.foreground": "#4c566a",
+	// 	"editorBracketMatch.background": "#0064001a",
+	// 	"editorBracketMatch.border": "#4c566a",
+	// 	"editor.foldBackground": "#264f784d",
+	// 	"editorOverviewRuler.background": "#25252500",
+	// 	"editorOverviewRuler.border": "#7f7f7f4d",
+	// 	"editorError.foreground": "#63C5EA",
+	// 	"editorError.background": "#B73A3400",
+	// 	"editorError.border": "#ffffff00",
+	// 	"editorWarning.foreground": "#ee9c11",
+	// 	"editorWarning.background": "#A9904000",
+	// 	"editorWarning.border": "#ffffff00",
+	// 	"editorInfo.foreground": "#7ACBEA",
+	// 	"editorInfo.background": "#4490BF00",
+	// 	"editorInfo.border": "#7ACBEA00",
+	// 	"editorGutter.background": "#373e4d",
+	// 	"editorGutter.modifiedBackground": "#7ACBEA",
+	// 	"editorGutter.addedBackground": "#2be491",
+	// 	"editorGutter.deletedBackground": "#63C5EA",
+	// 	"editorGutter.foldingControlForeground": "#f9f9f999",
+	// 	"editorCodeLens.foreground": "#4c566a",
+	// 	"editorGroup.border": "#4c566a",
+	// 	"diffEditor.insertedTextBackground": "#2be4911a",
+	// 	"diffEditor.removedTextBackground": "#63C5EA1a",
+	// 	"diffEditor.border": "#4c566a",
+	// 	"panel.background": "#373e4d",
+	// 	"panel.border": "#80808059",
+	// 	"panelTitle.activeBorder": "#f9f9f9",
+	// 	"panelTitle.activeForeground": "#f9f9f9",
+	// 	"panelTitle.inactiveForeground": "#f4f4f4aa",
+	// 	"badge.background": "#7ACBEA",
+	// 	"badge.foreground": "#ffffff",
+	// 	"terminal.foreground": "#f9f9f9",
+	// 	"terminal.selectionBackground": "#4c566a60",
+	// 	"terminalCursor.background": "#f9f9f9",
+	// 	"terminalCursor.foreground": "#373e4d",
+	// 	"terminal.border": "#80808059",
+	// 	"terminal.ansiBlack": "#434c5e",
+	// 	"terminal.ansiBlue": "#7ACBEA",
+	// 	"terminal.ansiBrightBlack": "#4c566a",
+	// 	"terminal.ansiBrightBlue": "#7acbea",
+	// 	"terminal.ansiBrightCyan": "#7ACBEA",
+	// 	"terminal.ansiBrightGreen": "#44eb9f",
+	// 	"terminal.ansiBrightMagenta": "#d8a6f4",
+	// 	"terminal.ansiBrightRed": "#fa74b2",
+	// 	"terminal.ansiBrightWhite": "#f4f4f4",
+	// 	"terminal.ansiBrightYellow": "#faa687",
+	// 	"terminal.ansiCyan": "#FA5AA4",
+	// 	"terminal.ansiGreen": "#2be491",
+	// 	"terminal.ansiMagenta": "#cf8ef4",
+	// 	"terminal.ansiRed": "#63C5EA",
+	// 	"terminal.ansiWhite": "#f7f7f7",
+	// 	"terminal.ansiYellow": "#fa946e",
+	// 	"breadcrumb.background": "#373e4d",
+	// 	"breadcrumb.foreground": "#f9f9f999",
+	// 	"breadcrumb.focusForeground": "#f9f9f9",
+	// 	"editorGroupHeader.tabsBackground": "#373e4d",
+	// 	"tab.activeForeground": "#ffffff",
+	// 	"tab.border": "#4c566a",
+	// 	"tab.activeBackground": "#4c566a",
+	// 	"tab.activeBorder": "#00000000",
+	// 	"tab.activeBorderTop": "#00000000",
+	// 	"tab.inactiveBackground": "#373e4d",
+	// 	"tab.inactiveForeground": "#f9f9f9",
+	// 	"scrollbarSlider.background": "#434c5e99",
+	// 	"scrollbarSlider.hoverBackground": "#434c5ecc",
+	// 	"scrollbarSlider.activeBackground": "#434c5e",
+	// 	"progressBar.background": "#7ACBEA",
+	// 	"widget.shadow": "#0000005c",
+	// 	"editorWidget.foreground": "#f9f9f9",
+	// 	"editorWidget.background": "#373e4d",
+	// 	"editorWidget.resizeBorder": "#4c566a",
+	// 	"pickerGroup.border": "#4c566a",
+	// 	"pickerGroup.foreground": "#7ACBEA",
+	// 	"debugToolBar.background": "#373e4d",
+	// 	"debugToolBar.border": "#4c566a",
+	// 	"notifications.foreground": "#f9f9f9",
+	// 	"notifications.background": "#373e4d",
+	// 	"notificationToast.border": "#4c566a",
+	// 	"notificationsErrorIcon.foreground": "#63C5EA",
+	// 	"notificationsWarningIcon.foreground": "#ee9c11",
+	// 	"notificationsInfoIcon.foreground": "#7ACBEA",
+	// 	"notificationCenter.border": "#4c566a",
+	// 	"notificationCenterHeader.foreground": "#f9f9f9",
+	// 	"notificationCenterHeader.background": "#4c566a",
+	// 	"notifications.border": "#4c566a",
+	// 	"gitDecoration.addedResourceForeground": "#2be491",
+	// 	"gitDecoration.conflictingResourceForeground": "#fa946e",
+	// 	"gitDecoration.deletedResourceForeground": "#63C5EA",
+	// 	"gitDecoration.ignoredResourceForeground": "#4c566a",
+	// 	"gitDecoration.modifiedResourceForeground": "#7acbea",
+	// 	"gitDecoration.stageDeletedResourceForeground": "#fa74b2",
+	// 	"gitDecoration.stageModifiedResourceForeground": "#7acbea",
+	// 	"gitDecoration.submoduleResourceForeground": "#cf8ef4",
+	// 	"gitDecoration.untrackedResourceForeground": "#44eb9f",
+	// 	"editorMarkerNavigation.background": "#28323e",
+	// 	"editorMarkerNavigationError.background": "#63C5EA",
+	// 	"editorMarkerNavigationWarning.background": "#ee9c11",
+	// 	"editorMarkerNavigationInfo.background": "#7ACBEA",
+	// 	"merge.currentHeaderBackground": "#31916f",
+	// 	"merge.currentContentBackground": "#354f54",
+	// 	"merge.incomingHeaderBackground": "#4d829b",
+	// 	"merge.incomingContentBackground": "#3b4c5d",
+	// 	"merge.commonHeaderBackground": "#4c566a",
+	// 	"merge.commonContentBackground": "#3c4455",
+	// 	"editorSuggestWidget.background": "#28323e",
+	// 	"editorSuggestWidget.border": "#4c566a",
+	// 	"editorSuggestWidget.foreground": "#d4d4d4",
+	// 	"editorSuggestWidget.highlightForeground": "#7ACBEA",
+	// 	"editorSuggestWidget.selectedBackground": "#434c5e",
+	// 	"editorHoverWidget.foreground": "#f9f9f9",
+	// 	"editorHoverWidget.background": "#28323e",
+	// 	"editorHoverWidget.border": "#4c566a",
+	// 	"peekView.border": "#4c566a",
+	// 	"peekViewEditor.background": "#28323e",
+	// 	"peekViewEditorGutter.background": "#28323e",
+	// 	"peekViewEditor.matchHighlightBackground": "#7ACBEA4d",
+	// 	"peekViewEditor.matchHighlightBorder": "#7ACBEA",
+	// 	"peekViewResult.background": "#28323e",
+	// 	"peekViewResult.fileForeground": "#ffffff",
+	// 	"peekViewResult.lineForeground": "#bbbbbb",
+	// 	"peekViewResult.matchHighlightBackground": "#7ACBEA4d",
+	// 	"peekViewResult.selectionBackground": "#7ACBEA33",
+	// 	"peekViewResult.selectionForeground": "#f9f9f9",
+	// 	"peekViewTitle.background": "#4c566a",
+	// 	"peekViewTitleDescription.foreground": "#f9f9f999",
+	// 	"peekViewTitleLabel.foreground": "#ffffff",
+	// 	"icon.foreground": "#f9f9f9",
+	// 	"checkbox.background": "#373e4d",
+	// 	"checkbox.foreground": "#f9f9f9",
+	// 	"checkbox.border": "#00000000",
+	// 	"dropdown.background": "#373e4d",
+	// 	"dropdown.foreground": "#f9f9f9",
+	// 	"dropdown.border": "#00000000",
+	// 	"minimapGutter.addedBackground": "#2be491",
+	// 	"minimapGutter.modifiedBackground": "#7ACBEA",
+	// 	"minimapGutter.deletedBackground": "#63C5EA",
+	// 	"minimap.findMatchHighlight": "#7ACBEA55",
+	// 	"minimap.selectionHighlight": "#6c92ab",
+	// 	"minimap.errorHighlight": "#63C5EA",
+	// 	"minimap.warningHighlight": "#ee9c11",
+	// 	"minimap.background": "#373e4d",
+	// 	"sideBar.dropBackground": "#434c5e",
+	// 	"editorGroup.emptyBackground": "#373e4d",
+	// 	"panelSection.border": "#80808059",
+	// 	"statusBarItem.activeBackground": "#FFFFFF25",
+	// 	"settings.headerForeground": "#f9f9f9",
+	// 	"settings.focusedRowBackground": "#ffffff07",
+	// 	"walkThrough.embeddedEditorBackground": "#00000050",
+	// 	"breadcrumb.activeSelectionForeground": "#f9f9f9",
+	// 	"editorGutter.commentRangeForeground": "#f9f9f999",
+	// 	"debugExceptionWidget.background": "#373e4d",
+	// 	"debugExceptionWidget.border": "#4c566a",
+	// 	"sideBar.border": "#4c566a",
+	// 	"statusBar.border": "#4c566a",
+	// 	"activityBar.border": "#4c566a"
+	// },
+	"workbench.colorTheme": "Monokai Pro"
 }

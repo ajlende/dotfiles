@@ -5,19 +5,20 @@ install() {
 		all)
 			stow --no-folding \
 				alacritty \
-				awesome \
-				base16 \
 				bat \
-				bin \
+				dunst \
 				git \
 				mime \
 				neofetch \
+				neovim \
 				npm \
-				nvim \
+				openbox \
 				pam \
-				polybar \
-				spotify \
+				parcellite \
+				picom \
+				rofi \
 				startpage \
+				tint2 \
 				vscode \
 				xorg \
 				zsh
