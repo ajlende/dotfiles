@@ -1,5 +1,6 @@
-# Required for the tj/n node version manager which installs node, npx, and npm there
-export PATH="/usr/local/bin:$PATH"
+# Use volta for managing node versions
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
 # Install node modules into the home directory to avoid sudo
 # https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
@@ -20,3 +21,7 @@ export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 # Local scripts
 export PATH="$HOME/.local/bin:$PATH"
 
+# Wayland experiments
+#if [[ -z $DISPLAY && $(tty) == /dev/tty1 && $XDG_SESSION_TYPE == tty ]]; then
+#  MOZ_ENABLE_WAYLAND=1 QT_QPA_PLATFORM=wayland XDG_SESSION_TYPE=wayland exec dbus-run-session gnome-session
+#fi
