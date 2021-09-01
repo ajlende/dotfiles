@@ -11,6 +11,9 @@
 	alias = "!f() { git config --get-regexp alias | sed 's/^alias\\.\\([^[:space:]]*\\)/git \\1 = git/g' | sed 's/git !/!/g' | sed 's/!git/git/g' | sed 's/!f() { \\(.*\\) }; f$/\\1/g' | sort; }; f"
 	c = commit --no-verify
 	co = !git checkout $(git branch --all | sk)
+	copr = !gh pr checkout
+	b = branch --sort=-committerdate
+	bb = branch --sort=committerdate --format='%(committerdate:relative-local)  \t%(refname:short)'
 	amend = commit --no-verify --amend
 	cached = diff --cached
 	undo = "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
@@ -24,6 +27,7 @@
 	ls = log --abbrev-commit --format=format:'%C(bold blue)%h%C(reset) %C(white)%s%C(reset) %C(bold green)- %an%C(reset) %C(dim white)(%ar)%C(reset)%C(auto)%d%C(reset)' --all
 	l = log --oneline
 	ll = log
+	fatp = fetch --all --tags --prune
 	g = !git graph short
 	gg = !git graph
 	gl = !git graph long
@@ -32,9 +36,8 @@
 	up = !git pull --rebase --prune $@ && git submodule update --init --recursive
 	wip = !git add -A && git commit -nm 'WIP'
 	wipe = !git add -A && git commit -nqm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
-	bclean = "!f() { git checkout ${1-develop} && git branch --merged ${1-develop} | grep -Ev " ${1-develop}$" | xargs git branch -d; }; f"
-	bdone = "!f() { git checkout ${1-develop} && git up && git bclean ${1-develop}; }; f"
 	visual = !gitkracken
+	od = "!f() { git diff --name-only ${1-master}...HEAD | xargs code }; f"
 	root = rev-parse --show-toplevel
 	squash = "!f() { git reset --hard ${1-master} && git merge --squash HEAD@{1}; }; f"
 [diff]
