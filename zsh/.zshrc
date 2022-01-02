@@ -75,9 +75,15 @@ setopt HIST_FIND_NO_DUPS
 setopt AUTO_CD
 
 # Manually load plugins without needing a plugin manager
-. /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-. /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-. /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+if [[ `uname` == 'Darwin' ]]; then
+	. /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+	. /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+	. /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+else
+	. /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+	. /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+	. /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+fi
 
 # Override up and down arrow keys to substring search
 bindkey '^[[A' history-substring-search-up
