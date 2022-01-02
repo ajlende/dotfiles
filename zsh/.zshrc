@@ -40,8 +40,8 @@ export EDITOR="$VISUAL"
 # Color man pages with bat
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
-# Just cat if it fits on one screen
-export LESS="$LESS --quit-if-one-screen"
+# Just cat if it fits on one screen (no init needed for git)
+export LESS="$LESS --quit-if-one-screen --no-init"
 
 # Allow ANSI color escape seqences to be colors instead of text (not to be confused with --raw-control-chars)
 export LESS="$LESS --RAW-CONTROL-CHARS"
