@@ -49,6 +49,9 @@ export LESS="$LESS --RAW-CONTROL-CHARS"
 # Always make ^C exit
 export LESS="$LESS --quit-on-intr"
 
+# Set tab width to 4
+export LESS="$LESS --tabs=4"
+
 # Save history to a file
 export HISTFILE=$HOME/.zsh_history
 
