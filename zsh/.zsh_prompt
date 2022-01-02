@@ -1,3 +1,5 @@
+# ajlende's prompt (aprompt)
+
 # ANSI color escape codes with my colorscheme colors commented
 APROMPT_COLOR_RED='%{\e[31m%}'     # red
 APROMPT_COLOR_BLUE='%{\e[34m%}'    # orange
@@ -83,9 +85,7 @@ aprompt_user_host() {
 	elif [[ $LOGNAME != $USER || $USER = 'root' ]]; then
 		me="%n"
 	fi
-	if [[ -n $me ]]; then
-		echo "$APROMPT_COLORS_USER_HOST$me$APROMPT_COLOR_RESET:"
-	fi
+	[[ -n $me ]] && echo "$APROMPT_COLORS_USER_HOST$me$APROMPT_COLOR_RESET:"
 }
 
 # Prompt symbol colored by return status
