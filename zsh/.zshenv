@@ -2,6 +2,12 @@
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
+# Use chruby for managing ruby versions on MacOS
+if [[ `uname` == 'Darwin' ]]; then
+    . /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+    . /opt/homebrew/opt/chruby/share/chruby/auto.sh
+fi
+
 # Install node modules into the home directory to avoid sudo
 # https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
 export PATH="$HOME/.npm-global/bin:$PATH"
