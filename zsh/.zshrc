@@ -30,87 +30,6 @@
 # +----------------+-----------+-----------+------+------------------------------------------------+
 
 ########################################
-# Aliases & Funcitons                  #
-########################################
-
-# Provide a way to call the old ones in case
-alias __cat="/usr/bin/cat"
-alias __grep="/usr/bin/grep"
-alias __htop="/usr/bin/htop"
-alias __ls="/usr/bin/ls"
-alias __pacman="/usr/bin/pacman"
-alias __shutdown="/usr/bin/shutdown"
-
-# Overcoming the muscle memory of old commands in favor of new ones is too hard
-alias cat="bat"
-alias grep="rg"
-alias htop="btm"
-alias ls="exa"
-alias open="xdg-open"
-alias pacman="yay"
-alias tree="exa --tree"
-
-# Brought over from grml-zsh-config
-alias ll="exa -lg --git"
-alias la="exa -lga --git"
-
-# Quickly go to the previous directory 
-alias -- -='cd -'
-
-# MacOS-like copy
-alias pbcopy="xclip -selection clipboard"
-
-# MacOS-like paste
-alias pbpaste="xclip -selection clipboard -o"
-
-
-# Quickly go to the git root directory
-...() {
-	cd "$(git rev-parse --show-toplevel)"
-}
-
-# Search file contents in the current directory
-skrg() {
-	sk --ansi -i -c 'rg --color=always --line-number "{}"'
-}
-
-# Search DuckDuckGo and open the result in the command line
-ddg() {
-	local cmd='php -r "'"echo urlencode('$@');"'"'
-	local terms=`eval $cmd`
-	xdg-open "https://duckduckgo.com/?q=$terms"
-}
-
-# Shhhh!
-quiet() {
-	$* > /dev/null 2>&1
-}
-
-# Just restart the whole shell instead of sourcing files
-reload() {
-	exec "$SHELL" "$@"
-}
-
-# Add confirmations to commands I don't want to accidentally run
-confirm() {
-	local answer
-	echo -ne "zsh: sure you want to run '${YELLOW}$*${NC}' [yN]? "
-	read -q answer
-		echo
-	if [[ "${answer}" =~ ^[Yy]$ ]]; then
-		command "${@}"
-	else
-		return 1
-	fi
-}
-
-# 'Cause sometimes you miss the 'g' when typing 'ddg'
-dd() { confirm $0 $@; }
-
-# Remember to update when shutting down. AUR still needs manual updating.
-alias shutdown="__pacman -Syu && confirm __shutdown"
-
-########################################
 # Interactive Environment Variables    #
 ########################################
 
@@ -183,8 +102,74 @@ autoload -Uz compinit; compinit
 eval "$(starship init zsh)"
 
 ########################################
-# SSH Agent Keychain                   #
+# Aliases & Funcitons                  #
 ########################################
 
-eval "$(keychain --eval --noask --confhost --quiet)"
+# Provide a way to call the old ones in case
+alias __cat="/usr/bin/cat"
+alias __grep="/usr/bin/grep"
+alias __htop="/usr/bin/htop"
+alias __ls="/usr/bin/ls"
+
+# Overcoming the muscle memory of old commands in favor of new ones is too hard
+alias cat="bat"
+alias grep="rg"
+alias htop="btm"
+alias ls="exa"
+alias pacman="yay"
+alias tree="exa --tree"
+
+# Brought over from grml-zsh-config
+alias ll="exa -lg --git"
+alias la="exa -lga --git"
+
+# Quickly go to the git root directory or home or to the root
+...() {
+	local repo="$(git rev-parse --show-toplevel 2>/dev/null)"
+	if [[ -n "$repo" ]]; then
+		cd "$repo"
+	elif [[ $PWD == "$HOME"* ]]; then
+		cd
+	else
+		cd /
+	fi
+}
+
+# Search file contents in the current directory
+skrg() {
+	sk --ansi -i -c 'rg --color=always --line-number "{}"'
+}
+
+# Search DuckDuckGo and open the result in the command line
+ddg() {
+	local cmd='php -r "'"echo urlencode('$@');"'"'
+	local terms=`eval $cmd`
+	open "https://duckduckgo.com/?q=$terms"
+}
+
+# Shhhh!
+quiet() {
+	$* > /dev/null 2>&1
+}
+
+# Just restart the whole shell instead of sourcing files
+reload() {
+	exec "$SHELL" "$@"
+}
+
+# Add confirmations to commands I don't want to accidentally run
+confirm() {
+	local answer
+	echo -ne "zsh: sure you want to run '${YELLOW}$*${NC}' [yN]? "
+	read -q answer
+		echo
+	if [[ "${answer}" =~ ^[Yy]$ ]]; then
+		command "${@}"
+	else
+		return 1
+	fi
+}
+
+# 'Cause sometimes you miss the 'g' when typing 'ddg'
+dd() { confirm $0 $@; }
 
