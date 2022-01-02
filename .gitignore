@@ -54,4 +54,5 @@
 
 !zsh/.zshenv
 !zsh/.zshrc
+!zsh/.zsh_prompt
 

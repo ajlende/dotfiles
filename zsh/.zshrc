@@ -110,8 +110,8 @@ bindkey -v
 # Start completions
 autoload -Uz compinit; compinit
 
-# Start prompt
-eval "$(starship init zsh)"
+# Load custom propmt
+. $HOME/.zsh_prompt
 
 ########################################
 # Aliases & Funcitons                  #
