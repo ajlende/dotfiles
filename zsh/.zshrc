@@ -95,6 +95,9 @@ export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND="fg=0,bg=1,bold"
 # Enable fuzzy searching in 
 export HISTORY_SUBSTRING_SEARCH_FUZZY=1
 
+# Enable vi mode
+bindkey -v
+
 # Start completions
 autoload -Uz compinit; compinit
 
