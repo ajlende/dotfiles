@@ -40,15 +40,6 @@
 	od = "!f() { git diff --name-only ${1-master}...HEAD | xargs code }; f"
 	root = rev-parse --show-toplevel
 	squash = "!f() { git reset --hard ${1-master} && git merge --squash HEAD@{1}; }; f"
-[diff]
-	tool = vimdiff
-[difftool]
-	prompt = false
-[merge]
-	tool = vimdiff
-	conflictstyle = diff3
-[mergetool]
-	prompt = false
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
