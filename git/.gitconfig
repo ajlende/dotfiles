@@ -3,7 +3,7 @@
 	name = Alex Lende
 [core]
 	excludesfile = /home/ajlende/.gitignore
-	pager = less -x1,5
+	pager = less -x1,5 -i
 [help]
 	autocorrect = 20
 [alias]
