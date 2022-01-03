@@ -14,6 +14,9 @@ export GOPATH="$HOME/.go"
 # The custom go path needs to be added manually
 export PATH="$GOPATH/bin:$PATH"
 
+# Add cargo install binaries to the path
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # Local scripts
 export PATH="$HOME/.local/bin:$PATH"
 
