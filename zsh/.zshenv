@@ -14,9 +14,9 @@ export GOPATH="$HOME/.go"
 # The custom go path needs to be added manually
 export PATH="$GOPATH/bin:$PATH"
 
-# Required for running rootless docker
-export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
-
 # Local scripts
 export PATH="$HOME/.local/bin:$PATH"
+
+# Required for running rootless docker
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 
