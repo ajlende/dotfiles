@@ -122,6 +122,7 @@ alias __cat="/usr/bin/cat"
 alias __grep="/usr/bin/grep"
 alias __htop="/usr/bin/htop"
 alias __ls="/usr/bin/ls"
+alias __pacman="/usr/bin/pacman"
 
 # Overcoming the muscle memory of old commands in favor of new ones is too hard
 alias cat="bat"
@@ -130,12 +131,17 @@ alias htop="btm"
 alias ls="exa"
 alias pacman="yay"
 alias tree="exa --tree"
+alias cloc="scc"
 
 # Brought over from grml-zsh-config
 alias ll="exa -lg --git"
 alias la="exa -lga --git"
 
-# Quickly go to the git root directory or home or to the root
+# MacOS-like copy/paste
+alias pbcopy="xclip -selection clipboard"
+alias pbpaste="xclip -selection clipboard -o"
+
+# Quickly go to the git root directory
 ...() {
 	local repo="$(git rev-parse --show-toplevel 2>/dev/null)"
 	if [[ -n "$repo" ]]; then
@@ -147,8 +153,13 @@ alias la="exa -lga --git"
 	fi
 }
 
+# Find the process using a port
+portf() {
+    lsof -i :$1
+}
+
 # Search file contents in the current directory
-skrg() {
+search() {
 	sk --ansi -i -c 'rg --color=always --line-number "{}"'
 }
 
