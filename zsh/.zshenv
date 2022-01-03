@@ -8,13 +8,6 @@ if [[ `uname` == 'Darwin' ]]; then
     . /opt/homebrew/opt/chruby/share/chruby/auto.sh
 fi
 
-# Install node modules into the home directory to avoid sudo
-# https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally
-export PATH="$HOME/.npm-global/bin:$PATH"
-
-# Search globally installed modules during module resolution
-export NODE_PATH="$HOME/.npm-global/lib/node_modules"
-
 # Hide the go directory as a dotfile directory
 export GOPATH="$HOME/.go"
 

@@ -12,7 +12,6 @@ install() {
 				git \
 				mime \
 				neofetch \
-				npm \
 				nvim \
 				pam \
 				polybar \
