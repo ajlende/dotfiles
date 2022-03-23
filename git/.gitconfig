@@ -21,7 +21,7 @@
 	s = status --short
 	st = status -sb
 	stat = status -sb
-	sync = "!f() { git checkout --quiet --detach; git fetch upstream ${1-master}:${1-master}; git push origin ${1-master}:${1-master}; git checkout --quiet -; }; f"
+	sync = "!f() { git checkout --quiet --detach; git fetch ${2-origin} ${1-master}:${1-master}; git push origin ${1-master}:${1-master}; git checkout --quiet -; }; f"
 	adog = log --all --decorate --oneline --graph
 	ls = log --abbrev-commit --format=format:'%C(bold blue)%h%C(reset) %C(white)%s%C(reset) %C(bold green)- %an%C(reset) %C(dim white)(%ar)%C(reset)%C(auto)%d%C(reset)' --all
 	l = log --oneline
