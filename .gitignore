@@ -7,9 +7,9 @@
 
 !LICENSE
 !README.md
+!aprompt-demo.png
 !screenshot-dark.png
 !screenshot-light.png
-!aprompt-demo.png
 
 !docs/colors.css
 !docs/index.css
@@ -31,11 +31,12 @@
 
 !git/.gitconfig
 !git/.gitignore
+!git/.stow-local-ignore
 
 !npm/.npmrc
 
-!neofetch/.config/neofetch/config.conf
 !neofetch/.config/neofetch/ascii.txt
+!neofetch/.config/neofetch/config.conf
 
 !spectrwm/.local/bin/spectrwm_cmd
 !spectrwm/.spectrwm.conf
@@ -44,8 +45,6 @@
 !spotify/.config/spotifyd/spotifyd.conf
 
 !startpage/.config/startpage
-
-!nvim/.config/nvim/init.vim
 
 !vscode/.config/Code\ -\ OSS/User/keybindings.json
 !vscode/.config/Code\ -\ OSS/User/settings.json
