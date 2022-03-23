@@ -147,6 +147,8 @@ alias la="exa -lga --git"
 alias pbcopy="xclip -selection clipboard"
 alias pbpaste="xclip -selection clipboard -o"
 
+alias postgres_login="sudo --login --user=postgres psql"
+
 # Quickly go to the git root directory
 ...() {
 	local repo="$(git rev-parse --show-toplevel 2>/dev/null)"
