@@ -1,7 +1,3 @@
-# Use volta for managing node versions
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
-
 # Use chruby for managing ruby versions on MacOS
 if [[ `uname` == 'Darwin' ]]; then
     . /opt/homebrew/opt/chruby/share/chruby/chruby.sh

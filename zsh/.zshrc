@@ -62,6 +62,12 @@ export SAVEHIST=922337203685477508
 export HISTSIZE=32767
 
 ########################################
+# Interactive environment for node.js  #
+########################################
+
+eval "$(fnm env --use-on-cd)"
+
+########################################
 # Terminal configuration and Prompt    #
 ########################################
 
