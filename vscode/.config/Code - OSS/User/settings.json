@@ -1,16 +1,17 @@
 {
-	"workbench.colorTheme": "Monokai Pro",
 	"workbench.startupEditor": "newUntitledFile",
 
 	"editor.fontFamily": "'Dank Mono', 'Fira Code', 'Noto Sans Mono', 'Noto Color Emoji', 'EmojiOne', monospace",
 	"editor.fontLigatures": true,
 	"editor.minimap.maxColumn": 100,
 	"editor.rulers": [80, 100, 120],
-	"editor.formatOnSave": true,
 
 	"files.insertFinalNewline": true,
 	"files.associations": {
-		"*.rasi": "less"
+		"*.rasi": "less",
+		".env": "shellscript",
+		".env.example": "shellscript",
+		"rush.json": "jsonc"
 	},
 
 	"color-highlight.markerType": "dot-before",
@@ -74,8 +75,36 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"workbench.iconTheme": "Monokai Pro Icons",
-	"window.zoomLevel": 1,
 	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"security.workspace.trust.untrustedFiles": "open",
+	"[markdown]": {
+		"files.trimTrailingWhitespace": false,
+		"editor.wordWrapColumn": 80,
+		"editor.wordWrap": "on",
+		"editor.quickSuggestions": false,
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"cSpell.userWords": [
+		"Overridable",
+		"Overrideable",
+		"Preprocessors",
+		"repurpose",
+		"stylesheet"
+	],
+	"markdown-preview-enhanced.previewTheme": "github-light.css",
+	"markdown.extension.italic.indicator": "_",
+	"zenMode.fullScreen": false,
+	"gitlens.advanced.fileHistoryFollowsRenames": true,
+	"window.zoomLevel": 1,
+	"workbench.colorTheme": "Ayu Dark",
+	"workbench.editorAssociations": {
+		"git-rebase-todo": "default"
+	},
+	"editor.formatOnSave": true,
+	"diffEditor.ignoreTrimWhitespace": false,
+	"[typescript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	}
 }
