@@ -28,6 +28,14 @@
 
 !bat/.config/bat/config
 !bat/.config/bat/themes/base16-ngeva.tmTheme
+!bat/.config/bat/themes/Monokai\ Classic.tmTheme
+!bat/.config/bat/themes/Monokai\ Pro\ (Filter\ Machine).tmTheme
+!bat/.config/bat/themes/Monokai\ Pro\ (Filter\ Octagon).tmTheme
+!bat/.config/bat/themes/Monokai\ Pro\ (Filter\ Ristretto).tmTheme
+!bat/.config/bat/themes/Monokai\ Pro\ (Filter\ Spectrum).tmTheme
+!bat/.config/bat/themes/Monokai\ Pro\ Light\ (Filter\ Sun).tmTheme
+!bat/.config/bat/themes/Monokai\ Pro\ Light.tmTheme
+!bat/.config/bat/themes/Monokai\ Pro.tmTheme
 
 !git/.gitconfig
 !git/.gitignore
