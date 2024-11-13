@@ -1,5 +1,5 @@
 [user]
-	email = alex@lende.xyz
+	email = alex+github.com@lende.xyz
 	name = Alex Lende
 [core]
 	excludesfile = /home/ajlende/.gitignore
@@ -10,10 +10,10 @@
 	git = !exec git
 	alias = "!f() { git config --get-regexp alias | sed 's/^alias\\.\\([^[:space:]]*\\)/git \\1 = git/g' | sed 's/git !/!/g' | sed 's/!git/git/g' | sed 's/!f() { \\(.*\\) }; f$/\\1/g' | sort; }; f"
 	c = commit --no-verify
-	co = !git checkout $(git branch --all | sk)
+	co = !git checkout $(git branch --sort=-committerdate | sk)
 	copr = !gh pr checkout
-	b = branch --sort=-committerdate
-	bb = branch --sort=committerdate --format='%(committerdate:relative-local)  \t%(refname:short)'
+	b = branch --sort=-committerdate --format='%(committerdate:relative-local)  \t%(refname:short)'
+	bb = branch --all --sort=-committerdate --format='%(committerdate:relative-local)  \t%(refname:short)'
 	amend = commit --no-verify --amend
 	cached = diff --cached
 	undo = "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
@@ -22,8 +22,9 @@
 	st = status -sb
 	stat = status -sb
 	sync = "!f() { git checkout --quiet --detach; git fetch ${2-origin} ${1-master}:${1-master}; git push origin ${1-master}:${1-master}; git checkout --quiet -; }; f"
+	last = log -1 --stat
 	adog = log --all --decorate --oneline --graph
-	ls = log --abbrev-commit --format=format:'%C(bold blue)%h%C(reset) %C(white)%s%C(reset) %C(bold green)- %an%C(reset) %C(dim white)(%ar)%C(reset)%C(auto)%d%C(reset)' --all
+	ls = log --abbrev-commit --format=format:'%C(bold blue)%h%C(reset) %C(white)%s%C(reset) %C(bold green)- %an%C(reset) %C(dim white)(%ar)%C(reset)%C(auto)%d%C(reset)'
 	l = log --oneline
 	ll = log
 	fatp = fetch --all --tags --prune
@@ -36,8 +37,9 @@
 	wip = !git add -A && git commit -nm 'WIP'
 	wipe = !git add -A && git commit -nqm 'WIPE SAVEPOINT' && git reset HEAD~1 --hard
 	visual = !gitkracken
-	brdiff = "!f() { br=${1-master}; shift; git diff $br...HEAD $@; }; f"
+	od = "!f() { git diff --name-only ${1-master}...HEAD | xargs code; }; f"
 	bropen = "!f() { git diff --name-only ${1-master}...HEAD | xargs code; }; f"
+	brdiff = "!f() { br=${1-master}; shift; git diff $br...HEAD $@; }; f"
 	diffb = brdiff trunk --stat
 	openb = bropen trunk
 	root = rev-parse --show-toplevel
@@ -47,6 +49,7 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-
 [pull]
 	ff = only
+[push]
+	autoSetupRemote = true

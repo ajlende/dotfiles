@@ -144,3 +144,8 @@ fabric.properties
 
 .exclude/
 
+###########
+# LocalWP #
+###########
+
+local-phpinfo.php
