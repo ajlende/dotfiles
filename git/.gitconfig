@@ -1,19 +1,24 @@
 [user]
 	email = alex+github.com@lende.xyz
 	name = Alex Lende
+
 [core]
 	excludesfile = /Users/ajlende/.gitignore
 	pager = less -x1,5 -i
+
 [help]
 	autocorrect = 20
+
 [alias]
 	git = !exec git
 	alias = "!f() { git config --get-regexp alias | sed 's/^alias\\.\\([^[:space:]]*\\)/git \\1 = git/g' | sed 's/git !/!/g' | sed 's/!git/git/g' | sed 's/!f() { \\(.*\\) }; f$/\\1/g' | sort; }; f"
 	c = commit --no-verify
-	co = !git checkout $(git branch --sort=-committerdate | sk)
+	cb = !git checkout $(git b | sk | awk -F'\t' '{print $2}')
+	cbb = !git checkout $(git bb | sk | awk -F'\t' '{print $2}')
+	co = cb
 	copr = !gh pr checkout
-	b = branch --sort=-committerdate --format='%(committerdate:relative-local)  \t%(refname:short)'
-	bb = branch --all --sort=-committerdate --format='%(committerdate:relative-local)  \t%(refname:short)'
+	b = branch --sort=-committerdate --format='%(committerdate:relative-local) \t%(refname:short)'
+	bb = b --all
 	amend = commit --no-verify --amend
 	cached = diff --cached
 	undo = "!f() { git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; }; f"
@@ -44,6 +49,7 @@
 	openb = bropen trunk
 	root = rev-parse --show-toplevel
 	squash = "!f() { git reset --hard ${1-master} && git merge --squash HEAD@{1}; }; f"
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
