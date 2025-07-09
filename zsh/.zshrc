@@ -8,6 +8,9 @@ alias grep="rg"
 alias ls="eza"
 alias tree="eza --tree"
 alias cloc="scc"
+alias pip="uv pip"
+alias python="uv run"
+alias vim="nvim"
 
 # Brought over from grml-zsh-config
 alias ll="eza -lg --git"
@@ -39,32 +42,6 @@ quiet() {
 reload() {
 	exec "$SHELL" "$@"
 }
-
-########################################
-# Interactive environment for node.js  #
-########################################
-
-eval "$(fnm env --use-on-cd)"
-
-########################################
-# Interactive environment variables    #
-########################################
-
-# Who would ever use anything else?
-export VISUAL=vim
-export EDITOR="$VISUAL"
-
-# Just cat if it fits on one screen (no init needed for git)
-export LESS="$LESS --quit-if-one-screen --no-init"
-
-# Allow ANSI color escape seqences to be colors instead of text (not to be confused with --raw-control-chars)
-export LESS="$LESS --RAW-CONTROL-CHARS"
-
-# Always make ^C exit
-export LESS="$LESS --quit-on-intr"
-
-# Set tab width to 4
-export LESS="$LESS --tabs=4"
 
 ########################################
 # Colors                               *
@@ -207,42 +184,78 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z-_}={A-Za-z_-}' 'r:|[._-]=* r:|=*'
 # Add additional zsh-completions
 fpath=($(brew --prefix)/share/zsh-completions $fpath)
 
-# Initialize completions
+# Initialize zsh completions
 autoload -U compinit && compinit
 
 # Add more features for completions
 zmodload zsh/complist
 
-######################################################################################################
-# +------------------------------------------------------------------------------------------------+ #
-# |                                                                                                | #
-# |                                     ZSH Configuration Files                                    | #
-# |                                                                                                | #
-# +----------------+-----------+-----------+-------------------------------------------------------+ #
-# |                |Interactive|Interactive|Script|                   Description                  | #
-# |                |login      |non-login  |      |                                                | #
-# +----------------+-----------+-----------+------+------------------------------------------------+ #
-# |/etc/zshenv     |    A      |    A      |  A   | Exported environment variables needed by all   | #
-# +----------------+-----------+-----------+------+ programs (ex. $PATH, $EDITOR, $PAGER).         | #
-# |~/.zshenv       |    B      |    B      |  B   |                                                | #
-# +----------------+-----------+-----------+------+------------------------------------------------+ #
-# |/etc/zprofile   |    C      |           |      | Alternative to zlogin for an experience like   | #
-# +----------------+-----------+-----------+------+ ksh. This should not be used in place of       | #
-# |~/.zprofile     |    D      |           |      | .profile; that should be done in .zshrc.       | #
-# +----------------+-----------+-----------+------+------------------------------------------------+ #
-# |/etc/zshrc      |    E      |    C      |      | Set up aliases, functions, history options,    | #
-# +----------------+-----------+-----------+------+ other options (setopt, unsetopt), interactive- | #
-# |~/.zshrc        |    F      |    D      |      | specific environment variables ($LS_COLORS).   | #
-# +----------------+-----------+-----------+------+------------------------------------------------+ #
-# |/etc/zlogin     |    G      |           |      | Should NOT change shell environment at all!!!  | #
-# +----------------+-----------+-----------+------+ Set terminal type and start xsession or other  | #
-# |~/.zlogin       |    H      |           |      | external commands.                             | #
-# +----------------+-----------+-----------+------+------------------------------------------------+ #
-# |                |           |           |      |                                                | #
-# +----------------+-----------+-----------+------+------------------------------------------------+ #
-# |~/.zlogout      |    I      |           |      | Clean up anything done by zlogin.              | #
-# +----------------+-----------+-----------+------+                                                | #
-# |/etc/zlogout    |    J      |           |      |                                                | #
-# +----------------+-----------+-----------+------+------------------------------------------------+ #
-######################################################################################################
+
+########################################
+# Interactive environment for bun      #
+########################################
+
+# Add bun completions
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+
+########################################
+# Interactive environment for node.js  #
+########################################
+
+eval "$(fnm env --use-on-cd)"
+
+########################################
+# Interactive environment for python   #
+########################################
+
+# Add shell completions for uv
+eval "$(uv generate-shell-completion zsh)"
+eval "$(uvx --generate-shell-completion zsh)"
+
+# Automatically activate venv via chpwd hook
+function _venv_autoload_hook() {
+  if [[ -d .venv ]]; then
+    if [[ "$VIRTUAL_ENV" != "$PWD/.venv" ]]; then
+      source .venv/bin/activate
+    fi
+  else
+    if [[ -n "$VIRTUAL_ENV" ]]; then
+      deactivate
+    fi
+  fi
+}
+add-zsh-hook chpwd _venv_autoload_hook && _venv_autoload_hook
+
+####################################################################################################
+# +----------------------------------------------------------------------------------------------+ #
+# |                                                                                              | #
+# |                                   ZSH Configuration Files                                    | #
+# |                                                                                              | #
+# +---------------+-----------+-----------+--------+---------------------------------------------+ #
+# |               | New Term  | Nested    |        |                                             | #
+# | Config file   | TTY/SSH   | shell     | Script | Description                                 | #
+# +---------------+-----------+-----------+--------+---------------------------------------------+ #
+# | /etc/zshenv   |     1     |     1     |   1    | Essential environment variables needed by   | #
+# +---------------+-----------+-----------+--------| any process. Must not produce any output.   | #
+# | ~/.zshenv     |     2     |     2     |   2    | Ex: $PATH, $EDITOR, umask                   | #
+# +---------------+-----------+-----------+--------+---------------------------------------------+ #
+# | /etc/zprofile |     3     |           |        | Commands run once for a new session. Sets   | #
+# +---------------+-----------+-----------+--------| session-specific variables, startup tasks.  | #
+# | ~/.zprofile   |     4     |           |        | Ex: ssh-add, brew shellenv, fortune         | #
+# +---------------+-----------+-----------+--------+---------------------------------------------+ #
+# | /etc/zshrc    |     5     |     3     |        | Shell behavior customization: options,      | #
+# +---------------+-----------+-----------+--------| aliases, functions, prompt, completions.    | #
+# | ~/.zshrc      |     6     |     4     |        | Ex: setopt, alias ll='ls -l', compinit      | #
+# +---------------+-----------+-----------+--------+---------------------------------------------+ #
+# | /etc/zlogin   |     7     |           |        | Commands run late in new session startup.   | #
+# +---------------+-----------+-----------+--------| Prefer using .zprofile instead.             | #
+# | ~/.zlogin     |     8     |           |        | Ex: echo "Welcome", startx (historical)     | #
+# +---------------+-----------+-----------+--------+---------------------------------------------+ #
+# |               |           |           |        |                                             | #
+# +---------------+-----------+-----------+--------+---------------------------------------------+ #
+# | ~/.zlogout    |     9     |           |        | Commands run when a session ends.           | #
+# +---------------+-----------+-----------+--------| Used for cleanup or final messages.         | #
+# | /etc/zlogout  |    10     |           |        | Ex: clear, ehco "Goodbye"                   | #
+# +---------------+-----------+-----------+--------+---------------------------------------------+ #
+####################################################################################################
 
