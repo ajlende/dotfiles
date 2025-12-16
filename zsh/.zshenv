@@ -6,37 +6,42 @@
 export PATH="$HOME/.local/bin:$PATH"
 
 ########################################
-# External programs                    #
+# Development Environment              #
 ########################################
 
 # Docker
-export DOCKER_HOST="unix://$HOME/.colima/default/docker.sock"
+# export DOCKER_HOST="unix://$HOME/.colima/default/docker.sock"
+
+# Rootless docker
+# export DOCKER_HOST=unix://$HOME/.local/share/containers/podman/machine/qemu/podman.sock
 
 # PNPM
-export PNPM_HOME="$HOME/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
+# export PNPM_HOME="$HOME/Library/pnpm"
+# export PATH="$PNPM_HOME:$PATH"
 
 # Bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
+# export BUN_INSTALL="$HOME/.bun"
+# export PATH="$BUN_INSTALL/bin:$PATH"
 
-########################################
-# Interactive environment variables    #
-########################################
+# Rust & ESP
+# export PATH="$HOME/.cargo/bin:$PATH"
+# export IDF_PATH="$HOME/esp/esp-idf"
 
-# Who would ever use anything else?
-export VISUAL=nvim
-export EDITOR="$VISUAL"
+# PHP Composer
+# export COMPOSER_HOME="$HOME/.composer"
+# export PATH="$COMPOSER_HOME/vendor/bin:$PATH"
 
-# Just cat if it fits on one screen (no init needed for git)
-export LESS="$LESS --quit-if-one-screen --no-init"
+# Go
+# export GOPATH="$HOME/.go"
+# export PATH="$GOPATH/bin:$PATH"
 
-# Allow ANSI color escape seqences to be colors instead of text (not to be confused with --raw-control-chars)
-export LESS="$LESS --RAW-CONTROL-CHARS"
+# Android SDK
+# export ANDROID_HOME="$HOME/Library/Android/sdk"
+# export PATH=${ANDROID_HOME}/emulator:${PATH}
+# export PATH=${ANDROID_HOME}/platform-tools:${PATH}
 
-# Always make ^C exit
-export LESS="$LESS --quit-on-intr"
-
-# Set tab width to 4
-export LESS="$LESS --tabs=4"
+# Chromium De-Google
+# export GOOGLE_API_KEY="no"
+# export GOOGLE_DEFAULT_CLIENT_ID="no"
+# export GOOGLE_DEFAULT_CLIENT_SECRET="no"
 

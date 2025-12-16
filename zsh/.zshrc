@@ -6,6 +6,7 @@
 alias cat="bat"
 alias grep="rg"
 alias ls="eza"
+alias top="btm"
 alias tree="eza --tree"
 alias cloc="scc"
 alias pip="uv pip"
@@ -42,6 +43,26 @@ quiet() {
 reload() {
 	exec "$SHELL" "$@"
 }
+
+########################################
+# Interactive environment variables    #
+########################################
+
+# Who would ever use anything else?
+export VISUAL=nvim
+export EDITOR="$VISUAL"
+
+# Just cat if it fits on one screen (no init needed for git)
+export LESS="$LESS --quit-if-one-screen --no-init"
+
+# Allow ANSI color escape seqences to be colors instead of text (not to be confused with --raw-control-chars)
+export LESS="$LESS --RAW-CONTROL-CHARS"
+
+# Always make ^C exit
+export LESS="$LESS --quit-on-intr"
+
+# Set tab width to 4
+export LESS="$LESS --tabs=4"
 
 ########################################
 # Colors                               *
@@ -106,7 +127,7 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # Overrides for syntax higlighting
 ZSH_HIGHLIGHT_STYLES[path]=
-ZSH_HIGHLIGHT_STYLES[path_pathseparator]=fg=black,bold
+ZSH_HIGHLIGHT_STYLES[path_pathseparator]=
 ZSH_HIGHLIGHT_STYLES[path_prefix]=
 
 ########################################
@@ -190,41 +211,69 @@ autoload -U compinit && compinit
 # Add more features for completions
 zmodload zsh/complist
 
+##########################################
+# TabTab completions                     #
+##########################################
 
-########################################
-# Interactive environment for bun      #
-########################################
+# tabtab source for packages
+# if [[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]]; then 
+#   . ~/.config/tabtab/zsh/__tabtab.zsh
+# fi
 
-# Add bun completions
-[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+##########################################
+# Interactive environment for JavaScript #
+##########################################
 
-########################################
-# Interactive environment for node.js  #
-########################################
+# Fast node.js manager
+# eval "$(fnm env --use-on-cd)"
 
-eval "$(fnm env --use-on-cd)"
+# Bun completions
+# . "$HOME/.bun/_bun"
 
-########################################
-# Interactive environment for python   #
-########################################
+# Deno env
+# . "$HOME/.deno/env"
+
+# Deno completions
+# if [[ ":$FPATH:" != *":$HOME/.zsh/completions:"* ]]; then
+#   export FPATH="$HOME/.zsh/completions:$FPATH"
+# fi
+
+##########################################
+# Interactive environment for Rust & ESP #
+##########################################
+
+# . "$HOME/.cargo/env"
+# . "$HOME/.esp/export-esp.sh"
+
+##########################################
+# Interactive environment for Ruby       #
+##########################################
+
+# Ruby Chruby
+# . /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+# . /opt/homebrew/opt/chruby/share/chruby/auto.sh
+
+##########################################
+# Interactive environment for Python     #
+##########################################
 
 # Add shell completions for uv
-eval "$(uv generate-shell-completion zsh)"
-eval "$(uvx --generate-shell-completion zsh)"
+# eval "$(uv generate-shell-completion zsh)"
+# eval "$(uvx --generate-shell-completion zsh)"
 
 # Automatically activate venv via chpwd hook
-function _venv_autoload_hook() {
-  if [[ -d .venv ]]; then
-    if [[ "$VIRTUAL_ENV" != "$PWD/.venv" ]]; then
-      source .venv/bin/activate
-    fi
-  else
-    if [[ -n "$VIRTUAL_ENV" ]]; then
-      deactivate
-    fi
-  fi
-}
-add-zsh-hook chpwd _venv_autoload_hook && _venv_autoload_hook
+# function _venv_autoload_hook() {
+#   if [[ -d .venv ]]; then
+#     if [[ "$VIRTUAL_ENV" != "$PWD/.venv" ]]; then
+#       source .venv/bin/activate
+#     fi
+#   else
+#     if [[ -n "$VIRTUAL_ENV" ]]; then
+#       deactivate
+#     fi
+#   fi
+# }
+# add-zsh-hook chpwd _venv_autoload_hook && _venv_autoload_hook
 
 ####################################################################################################
 # +----------------------------------------------------------------------------------------------+ #
