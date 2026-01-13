@@ -1,0 +1,51 @@
+setopt localoptions NO_shwordsplit
+
+local action branch base staged unstaged revision misc
+local output
+
+base=${vcs_comm[basedir]}
+
+# First bookmark that is an ancestor of the current change
+output=$(${vcs_comm[cmd]} log --ignore-working-copy -n 1 --no-graph --color always \
+  -r "coalesce(ancestors(present(@)) & bookmarks(), root())" \
+  -T '
+    separate("\n",
+      "branch:" ++ stringify(if(root, label("root", "root()"), bookmarks.map(|b| b.name()).join(" "))),
+      "staged:" ++ if(bookmarks.any(|b| !b.synced()), "true", ""),
+    )
+  ' 2>/dev/null)
+
+# Parse line-by-line to handle colons in values and ensure first match
+for line in ${(f)output}; do
+  [[ $line = branch:(#b)(*) ]] && branch=${match[1]}
+  [[ $line = staged:(#b)(*) ]] && staged=${match[1]}
+done
+
+# Current change
+output=$(${vcs_comm[cmd]} log --ignore-working-copy -n 1 --no-graph --color always -r "@" \
+  -T '
+    separate("\n",
+      "revision:" ++ change_id.shortest(8),
+      "action:" ++ if(empty, empty_commit_marker, format_commit_labels(self)),
+      "misc:" ++ if(description, description.first_line(), label(if(empty, "empty"), description_placeholder)),
+    )
+  ' 2>/dev/null)
+
+# Parse line-by-line to handle colons in values and ensure first match
+for line in ${(f)output}; do
+  [[ $line = revision:(#b)(*) ]] && revision=${match[1]}
+  [[ $line = action:(#b)(*) ]] && action=${match[1]}
+  [[ $line = misc:(#b)(*) ]] && misc=${match[1]}
+done
+
+unstaged=""
+
+# | %a | action   | label   | (empty), (conflict), (hidden), (divergent)                   |
+# | %b | branch   | string  | first parent bookmark name                                   |
+# | %R | base     | string  | full path to the base directory                              |
+# | %c | staged   | boolean | true if any tracked bookmarks for the branch are not synced  |
+# | %u | unstaged | boolean | false until I can think of something to do with it           |
+# | %i | revision | label   | 8 character change_id, formatted                             |
+# | %m | misc     | label   | first line of description, formatted                         |
+
+VCS_INFO_formats "${action}" "${branch}" "${base}" "${staged}" "${unstaged}" "${revision}" "${misc}"

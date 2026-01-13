@@ -1,6 +1,8 @@
 # ajlende's prompt (aprompt)
 
 # ANSI color escape codes with my colorscheme colors commented
+APROMPT_COLOR_BLACK='%{\e[30m%}'   # black
+APROMPT_COLOR_WHITE='%{\e[37m%}'   # white
 APROMPT_COLOR_RED='%{\e[31m%}'     # red
 APROMPT_COLOR_BLUE='%{\e[34m%}'    # orange
 APROMPT_COLOR_YELLOW='%{\e[33m%}'  # yellow
@@ -19,6 +21,9 @@ APROMPT_COLORS_VCS_DEFAULT=$APROMPT_COLOR_MAGENTA
 APROMPT_COLORS_VCS_UNSTAGED=$APROMPT_COLOR_RED
 APROMPT_COLORS_VCS_STAGED=$APROMPT_COLOR_GREEN
 APROMPT_COLORS_BG_JOBS=$APROMPT_COLOR_BLUE
+APROMPT_COLORS_VCS_ACTION=$APROMPT_COLOR_RED
+APROMPT_COLORS_VCS_STACK=$APROMPT_COLOR_BLACK
+APROMPT_COLORS_VCS_MESSAGE=$APROMPT_COLOR_WHITE
 
 # Prompt symbols for insert/main and command mode
 APROMPT_VIINS='❯'
@@ -49,16 +54,33 @@ aprompt_window_title() {
 aprompt_window_title
 chpwd_functions+=( aprompt_window_title )
 
-# Enable native zsh git/svn support populating $vcs_info_msg_0_
+# Enable native zsh git/jj support populating $vcs_info_msg_0_
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
-zstyle ':vcs_info:*' enable git svn
+fpath+="$HOME/.zsh/functions/vcs_info/backends"
+zstyle ':vcs_info:*' enable jj git
 zstyle ':vcs_info:*' max-exports 1
 zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:*' formats "$APROMPT_COLORS_VCS_REPO%r$APROMPT_COLOR_RESET $APROMPT_COLORS_VCS_DEFAULT%u%c%b$APROMPT_COLOR_RESET $APROMPT_COLORS_PWD%S$APROMPT_COLOR_RESET"
 zstyle ':vcs_info:*' stagedstr "$APROMPT_COLORS_VCS_STAGED"
 zstyle ':vcs_info:*' unstagedstr "$APROMPT_COLORS_VCS_UNSTAGED"
+zstyle ':vcs_info:*' formats       "$APROMPT_COLORS_VCS_REPO%r$APROMPT_COLOR_RESET $APROMPT_COLORS_VCS_DEFAULT%u%c%b$APROMPT_COLOR_RESET $APROMPT_COLORS_PWD%S$APROMPT_COLOR_RESET $APROMPT_COLORS_VCS_STACK%Q$APROMPT_COLOR_RESET $APROMPT_COLORS_VCS_MESSAGE%m$APROMPT_COLOR_RESET"
+zstyle ':vcs_info:*' actionformats "$APROMPT_COLORS_VCS_REPO%r$APROMPT_COLOR_RESET $APROMPT_COLORS_VCS_DEFAULT%u%c%b$APROMPT_COLOR_RESET $APROMPT_COLORS_PWD%S$APROMPT_COLOR_RESET $APROMPT_COLORS_VCS_STACK%Q$APROMPT_COLOR_RESET $APROMPT_COLORS_VCS_ACTION%a$APROMPT_COLOR_RESET $APROMPT_COLORS_VCS_MESSAGE%m$APROMPT_COLOR_RESET"
+zstyle ':vcs_info:jj*+set-message:*' hooks jj-stack-info
++vi-jj-stack-info() {
+    local current_id
+    local -a stack_commits
+	local -i count position
+    current_id=$(${vcs_comm[cmd]} log --no-graph --ignore-working-copy -r '@' -T 'change_id' 2>/dev/null)
+    stack_commits=(${(f)"$(${vcs_comm[cmd]} log --no-graph --ignore-working-copy \
+		-r 'coalesce(immutable(), root())..present(@) | descendants(present(@))' \
+		-T 'change_id ++ "\n"' 2>/dev/null)"})
+    count=${#stack_commits}
+    position=${stack_commits[(i)${current_id}]}
+    position=$((count - position + 1))
+    hook_com[quilt]="[${position}/${count}]"
+	# hook_com[quilt] populates %Q
+}
 
 # Enable redrawing of prompt variables for vcs_info and zle keymap (vi mode)
 setopt prompt_subst

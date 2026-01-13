@@ -60,8 +60,9 @@
 !xorg/.Xmodmap
 !xorg/.xinitrc
 
+!zsh/.zsh/functions/vcs_info/backends/VCS_INFO_detect_jj
+!zsh/.zsh/functions/vcs_info/backends/VCS_INFO_get_data_jj
 !zsh/.zprofile
 !zsh/.zsh_prompt
 !zsh/.zshenv
 !zsh/.zshrc
-
