@@ -220,13 +220,10 @@ autoload -U compinit && compinit
 zmodload zsh/complist
 
 ##########################################
-# TabTab completions                     #
+# User ZSH completions                   #
 ##########################################
 
-# tabtab source for packages
-# if [[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]]; then 
-#   . ~/.config/tabtab/zsh/__tabtab.zsh
-# fi
+# fpath+="$HOME/.zsh/completions"
 
 ##########################################
 # Interactive environment for JavaScript #
