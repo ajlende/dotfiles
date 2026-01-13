@@ -8,4 +8,4 @@
 
 ## Aprompt zsh theme
 
-<a href="https://ajlende.github.io/dotfiles"><img alt="MacOS iTerm screenshot ZSH prompt demo" src="aprompt-demo.png" /></a>
+<a href="https://ajlende.github.io/dotfiles"><img alt="ZSH Aprompt Git Demo" src="aprompt-git-demo.png" /></a>
