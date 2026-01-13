@@ -81,6 +81,10 @@ zstyle ':vcs_info:jj*+set-message:*' hooks jj-stack-info
     hook_com[quilt]="[${position}/${count}]"
 	# hook_com[quilt] populates %Q
 }
+# zstyle ':vcs_info:*' stagedstr "S"
+# zstyle ':vcs_info:*' unstagedstr "U"
+# zstyle ':vcs_info:*' formats       "vcs(%s) commit(%i) unstaged($APROMPT_COLORS_VCS_UNSTAGED%u$APROMPT_COLOR_RESET) staged($APROMPT_COLORS_VCS_STAGED%c$APROMPT_COLOR_RESET) branch($APROMPT_COLORS_VCS_DEFAULT%b$APROMPT_COLOR_RESET) repo($APROMPT_COLORS_VCS_REPO%r$APROMPT_COLOR_RESET) subdir($APROMPT_COLORS_PWD%S$APROMPT_COLOR_RESET) quilt($APROMPT_COLORS_VCS_STACK%Q$APROMPT_COLOR_RESET) misc($APROMPT_COLORS_VCS_MESSAGE%m$APROMPT_COLOR_RESET)"
+# zstyle ':vcs_info:*' actionformats "vcs(%s) commit(%i) unstaged($APROMPT_COLORS_VCS_UNSTAGED%u$APROMPT_COLOR_RESET) staged($APROMPT_COLORS_VCS_STAGED%c$APROMPT_COLOR_RESET) branch($APROMPT_COLORS_VCS_DEFAULT%b$APROMPT_COLOR_RESET) repo($APROMPT_COLORS_VCS_REPO%r$APROMPT_COLOR_RESET) subdir($APROMPT_COLORS_PWD%S$APROMPT_COLOR_RESET) quilt($APROMPT_COLORS_VCS_STACK%Q$APROMPT_COLOR_RESET) action($APROMPT_COLORS_VCS_ACTION%a$APROMPT_COLOR_RESET) misc($APROMPT_COLORS_VCS_MESSAGE%m$APROMPT_COLOR_RESET)"
 
 # Enable redrawing of prompt variables for vcs_info and zle keymap (vi mode)
 setopt prompt_subst
