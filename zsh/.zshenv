@@ -1,3 +1,7 @@
+# Unique paths and fpaths
+typeset -U PATH path
+typeset -U FPATH fpath
+
 ########################################
 # Local scripts                        #
 ########################################
