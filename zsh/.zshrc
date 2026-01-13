@@ -210,20 +210,20 @@ zstyle ':completion:*' group-name ''
 zstyle ':completion:*' special-dirs true
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z-_}={A-Za-z_-}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
-# Add additional zsh-completions
-fpath[1,0]="$brew_prefix/share/zsh-completions"
-
 # Initialize zsh completions
 autoload -U compinit && compinit
 
 # Add more features for completions
 zmodload zsh/complist
 
-##########################################
-# User ZSH completions                   #
-##########################################
+# Add additional zsh-completions
+fpath[1,0]="$brew_prefix/share/zsh-completions"
 
-# fpath+="$HOME/.zsh/completions"
+# User ZSH completions
+fpath+="$HOME/.zsh/completions"
+
+# jj dynamic completions
+source <(COMPLETE=zsh jj)
 
 ##########################################
 # Interactive environment for JavaScript #
