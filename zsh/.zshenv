@@ -49,3 +49,5 @@ export PATH="$HOME/.local/bin:$PATH"
 # export GOOGLE_DEFAULT_CLIENT_ID="no"
 # export GOOGLE_DEFAULT_CLIENT_SECRET="no"
 
+# .NET CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
+DOTNET_CLI_TELEMETRY_OPTOUT=1

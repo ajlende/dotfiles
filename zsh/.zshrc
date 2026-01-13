@@ -223,40 +223,14 @@ zmodload zsh/complist
 # User ZSH completions                   #
 ##########################################
 
-# fpath+="$HOME/.zsh/completions"
+fpath+="$HOME/.zsh/completions"
 
 ##########################################
 # Interactive environment for JavaScript #
 ##########################################
 
 # Fast node.js manager
-# eval "$(fnm env --use-on-cd)"
-
-# Bun completions
-# . "$HOME/.bun/_bun"
-
-# Deno env
-# . "$HOME/.deno/env"
-
-# Deno completions
-# if [[ ":$FPATH:" != *":$HOME/.zsh/completions:"* ]]; then
-#   export FPATH="$HOME/.zsh/completions:$FPATH"
-# fi
-
-##########################################
-# Interactive environment for Rust & ESP #
-##########################################
-
-# . "$HOME/.cargo/env"
-# . "$HOME/.esp/export-esp.sh"
-
-##########################################
-# Interactive environment for Ruby       #
-##########################################
-
-# Ruby Chruby
-# . /opt/homebrew/opt/chruby/share/chruby/chruby.sh
-# . /opt/homebrew/opt/chruby/share/chruby/auto.sh
+eval "$(fnm env --use-on-cd)"
 
 ##########################################
 # Interactive environment for Python     #
@@ -309,7 +283,7 @@ zmodload zsh/complist
 # +---------------+-----------+-----------+--------+---------------------------------------------+ #
 # | ~/.zlogout    |     9     |           |        | Commands run when a session ends.           | #
 # +---------------+-----------+-----------+--------| Used for cleanup or final messages.         | #
-# | /etc/zlogout  |    10     |           |        | Ex: clear, ehco "Goodbye"                   | #
+# | /etc/zlogout  |    10     |           |        | Ex: clear, echo "Goodbye"                   | #
 # +---------------+-----------+-----------+--------+---------------------------------------------+ #
 ####################################################################################################
 
