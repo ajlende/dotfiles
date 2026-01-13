@@ -1,3 +1,5 @@
+local brew_prefix=$(brew --prefix)
+
 ########################################
 # Aliases & Funcitons                  #
 ########################################
@@ -129,7 +131,7 @@ setopt HIST_IGNORE_SPACE
 ########################################
 
 # Enable zsh-syntax-highlighting plugin
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $brew_prefix/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Overrides for syntax higlighting
 ZSH_HIGHLIGHT_STYLES[path]=
@@ -142,7 +144,7 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=
 
 # Enable zsh-history-substring-search plugin
 # Must happen after zsh-syntax-hightlighting
-source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+source $brew_prefix/share/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 # Enable fuzzy searching in 
 export HISTORY_SUBSTRING_SEARCH_FUZZY=1
@@ -160,7 +162,7 @@ export HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND="fg=0,bg=1,bold"
 
 # Enable zsh-autosuggestions
 # Must happen after zsh-history-substring-search
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $brew_prefix/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Color of the autosuggestions
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=4"
@@ -209,7 +211,7 @@ zstyle ':completion:*' special-dirs true
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z-_}={A-Za-z_-}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 # Add additional zsh-completions
-fpath=($(brew --prefix)/share/zsh-completions $fpath)
+fpath[1,0]="$brew_prefix/share/zsh-completions"
 
 # Initialize zsh completions
 autoload -U compinit && compinit
