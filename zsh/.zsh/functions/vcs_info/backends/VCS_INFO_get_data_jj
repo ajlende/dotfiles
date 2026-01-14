@@ -1,51 +1,45 @@
-setopt localoptions NO_shwordsplit
+setopt localoptions extended_glob
 
-local action branch base staged unstaged revision misc
-local output
+local sgr_pattern=$'\e\\[[0-9;]*m'
 
-base=${vcs_comm[basedir]}
+local jjaction jjbranch jjbase jjstaged jjunstaged jjrevision jjmisc
+local -a output
 
-# First bookmark that is an ancestor of the current change
-output=$(${vcs_comm[cmd]} log --ignore-working-copy -n 1 --no-graph --color always \
+jjbase=${vcs_comm[basedir]}
+
+output=("${(0)$(${vcs_comm[cmd]} log --ignore-working-copy -n 1 --no-graph --color never \
   -r "coalesce(ancestors(present(@)) & bookmarks(), root())" \
-  -T '
-    separate("\n",
-      "branch:" ++ stringify(if(root, label("root", "root()"), bookmarks.map(|b| b.name()).join(" "))),
-      "staged:" ++ if(bookmarks.any(|b| !b.synced()), "true", ""),
-    )
-  ' 2>/dev/null)
+  -T 'separate("\0",
+        if(root, "root()", bookmarks.map(|b| b.name()).join(" ")),
+        if(bookmarks.any(|b| !b.synced()), "true", "false"),
+        if(!current_working_copy, "true", "false"),
+      )' 2>/dev/null)}")
+output+=("${(0)$(${vcs_comm[cmd]} log --ignore-working-copy -n 1 --no-graph --color always \
+  -r "coalesce(present(@), root())" \
+  -T 'separate("\0",
+        change_id.shortest(8),
+        if(description, description.first_line(), label(if(empty, "empty"), description_placeholder)),
+        if(empty, empty_commit_marker, format_commit_labels(self)),
+      )' 2>/dev/null)}")
 
-# Parse line-by-line to handle colons in values and ensure first match
-for line in ${(f)output}; do
-  [[ $line = branch:(#b)(*) ]] && branch=${match[1]}
-  [[ $line = staged:(#b)(*) ]] && staged=${match[1]}
-done
+output=("${(@)output//\%/%%}")
+output=("${(@)output//\$/\\\$}")
+output=("${(@)output//\`/\\\`}")
+output=(${(S)output//(#m)${~sgr_pattern}/%{$MATCH%}})
 
-# Current change
-output=$(${vcs_comm[cmd]} log --ignore-working-copy -n 1 --no-graph --color always -r "@" \
-  -T '
-    separate("\n",
-      "revision:" ++ change_id.shortest(8),
-      "action:" ++ if(empty, empty_commit_marker, format_commit_labels(self)),
-      "misc:" ++ if(description, description.first_line(), label(if(empty, "empty"), description_placeholder)),
-    )
-  ' 2>/dev/null)
+jjbranch=${output[1]}
+jjunstaged=${output[2]#false}
+jjstaged=${output[3]#false}
+jjrevision=${output[4]}
+jjmisc=${output[5]}
+jjaction=${output[6]}
 
-# Parse line-by-line to handle colons in values and ensure first match
-for line in ${(f)output}; do
-  [[ $line = revision:(#b)(*) ]] && revision=${match[1]}
-  [[ $line = action:(#b)(*) ]] && action=${match[1]}
-  [[ $line = misc:(#b)(*) ]] && misc=${match[1]}
-done
+# | %a | action   | label   | (empty), (conflict), (hidden), (divergent) |
+# | %b | branch   | string  | first bookmark ancestor name               |
+# | %R | base     | string  | full path to the base directory            |
+# | %c | staged   | boolean | true if working copy is ahead of bookmark  |
+# | %u | unstaged | boolean | true if bookmark is out of sync            |
+# | %i | revision | label   | 8 character change_id, formatted           |
+# | %m | misc     | label   | first line of description, formatted       |
 
-unstaged=""
-
-# | %a | action   | label   | (empty), (conflict), (hidden), (divergent)                   |
-# | %b | branch   | string  | first parent bookmark name                                   |
-# | %R | base     | string  | full path to the base directory                              |
-# | %c | staged   | boolean | true if any tracked bookmarks for the branch are not synced  |
-# | %u | unstaged | boolean | false until I can think of something to do with it           |
-# | %i | revision | label   | 8 character change_id, formatted                             |
-# | %m | misc     | label   | first line of description, formatted                         |
-
-VCS_INFO_formats "${action}" "${branch}" "${base}" "${staged}" "${unstaged}" "${revision}" "${misc}"
+VCS_INFO_formats "${jjaction}" "${jjbranch}" "${jjbase}" "${jjstaged}" "${jjunstaged}" "${jjrevision}" "${jjmisc}"

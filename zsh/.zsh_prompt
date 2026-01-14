@@ -71,7 +71,7 @@ zstyle ':vcs_info:jj*+set-message:*' hooks jj-stack-info
     local current_id
     local -a stack_commits
 	local -i count position
-    current_id=$(${vcs_comm[cmd]} log --no-graph --ignore-working-copy -r '@' -T 'change_id' 2>/dev/null)
+    current_id="$(${vcs_comm[cmd]} log --no-graph --ignore-working-copy -r '@' -T 'change_id' 2>/dev/null)"
     stack_commits=(${(f)"$(${vcs_comm[cmd]} log --no-graph --ignore-working-copy \
 		-r 'coalesce(immutable(), root())..present(@) | descendants(present(@))' \
 		-T 'change_id ++ "\n"' 2>/dev/null)"})
@@ -119,7 +119,11 @@ aprompt_symbol_return() {
 	echo "%(?.$APROMPT_COLORS_RETURN_TRUE.$APROMPT_COLORS_RETURN_FALSE)$APROMPT_SYMBOL$APROMPT_COLOR_RESET "
 }
 
+# Print vcs info on precmd
+aprompt_precmd() {
+	print -P $'\n'"$(aprompt_vcs_pwd)"
+}
+precmd_functions+=( aprompt_precmd )
+
 # PS1 Prompt
-PROMPT='
-$(aprompt_vcs_pwd)
-$(aprompt_bg_jobs)$(aprompt_user_host)$(aprompt_symbol_return)'
+PROMPT='$(aprompt_bg_jobs)$(aprompt_user_host)$(aprompt_symbol_return)'
